@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/amclin/react-project-boilerplate.git"
@@ -20,5 +18,24 @@
   "bugs": {
     "url": "https://github.com/amclin/react-project-boilerplate/issues"
   },
-  "homepage": "https://github.com/amclin/react-project-boilerplate#readme"
+  "homepage": "https://github.com/amclin/react-project-boilerplate#readme",
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-angular": "^8.2.0",
+    "husky": "^3.0.7"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm test"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
+  }
 }
