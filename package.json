@@ -1,0 +1,24 @@
+{
+  "name": "react-project-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/amclin/react-project-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "react",
+    "starter"
+  ],
+  "author": "Anthony McLin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amclin/react-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/amclin/react-project-boilerplate#readme"
+}
