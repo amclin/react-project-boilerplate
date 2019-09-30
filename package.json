@@ -25,9 +25,10 @@
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
     "lint:prettier": "pretty-quick",
+    "pretest": "npm run lint",
     "semantic-release": "npx semantic-release",
     "start": "next start",
-    "test": "npm run lint"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -40,6 +41,7 @@
     "@semantic-release/github": "^5.4.3",
     "@semantic-release/npm": "^5.1.15",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
     "eslint": "^6.5.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -48,9 +50,11 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.7",
+    "jest": "^24.9.0",
     "lint-staged": "^9.4.0",
     "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1"
+    "pretty-quick": "^1.11.1",
+    "react-test-renderer": "^16.10.1"
   },
   "husky": {
     "hooks": {
@@ -63,6 +67,15 @@
     "extends": [
       "@commitlint/config-angular"
     ]
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "./.next/",
+      "./node_modules/"
+    ],
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "lint-staged": {
     "**/*": [

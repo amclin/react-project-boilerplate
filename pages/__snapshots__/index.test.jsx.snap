@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages:Homepage renders the homepage 1`] = `
+<div>
+  Welcome to the boilerplate React app using NextJS!
+</div>
+`;
