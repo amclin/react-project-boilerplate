@@ -1,3 +1,13 @@
+## Unit Tests
+Code coverage for unit tests must remain above 90%. Unit testing is handled using Jest.
+
+Run unit tests via `npm test`.
+
+A coverage report is shown in the inline test results. A browseable coverage report is also output to `./coverage/lcov-report/index.html`
+
+When running unit tests from a CICD pipline, the environment variable `CI` should be set to `true` before executing the test.
+`CI=true npm test`
+
 ## Code Formatting
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
