@@ -23,7 +23,7 @@
     "build": "next build",
     "dev": "next",
     "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint --ignore-path .gitignore --ext .js,.jsx ./",
+    "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
     "semantic-release": "npx semantic-release",
     "start": "next start",
     "test": "npm run lint"
