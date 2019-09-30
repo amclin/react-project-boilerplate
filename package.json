@@ -28,7 +28,7 @@
     "pretest": "npm run lint",
     "semantic-release": "npx semantic-release",
     "start": "next start",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -69,9 +69,23 @@
     ]
   },
   "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": ["<rootDir>/build/", "<rootDir>/.next/", "<rootDir>/node_modules/", "<rootDir>/coverage/", "/__mocks__/"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
     "testPathIgnorePatterns": [
       "./.next/",
-      "./node_modules/"
+      "./node_modules/",
+      "./build/",
+      "./coverage/"
     ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"

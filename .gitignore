@@ -4,6 +4,7 @@ node_modules
 # IDE/OS files
 .vscode
 
-# Compiled build and dev files
+# Compiled build files, dev files, and reports
 build
 .next
+coverage
