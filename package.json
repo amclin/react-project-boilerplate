@@ -21,7 +21,7 @@
   "homepage": "https://github.com/amclin/react-project-boilerplate#readme",
   "scripts": {
     "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint **/*.{jsx,js}",
+    "lint:eslint": "eslint --ext .js,.jsx ./",
     "semantic-release": "npx semantic-release",
     "test": "npm run lint"
   },

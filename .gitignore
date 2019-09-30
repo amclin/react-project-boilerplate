@@ -1,2 +1,8 @@
+# 3rd party libraries
 node_modules
+
+# IDE/OS files
 .vscode
+
+# Compiled build and dev files
+build
