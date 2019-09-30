@@ -6,3 +6,4 @@ node_modules
 
 # Compiled build and dev files
 build
+.next
