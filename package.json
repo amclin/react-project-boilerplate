@@ -24,6 +24,7 @@
     "dev": "next",
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
+    "lint:prettier": "pretty-quick",
     "semantic-release": "npx semantic-release",
     "start": "next start",
     "test": "npm run lint"
