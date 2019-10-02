@@ -72,7 +72,13 @@
     "collectCoverageFrom": [
       "**/*.{js,jsx,ts,tsx}"
     ],
-    "coveragePathIgnorePatterns": ["<rootDir>/build/", "<rootDir>/.next/", "<rootDir>/node_modules/", "<rootDir>/coverage/", "/__mocks__/"],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/coverage/",
+      "/__mocks__/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 90,
@@ -82,10 +88,10 @@
       }
     },
     "testPathIgnorePatterns": [
-      "./.next/",
-      "./node_modules/",
-      "./build/",
-      "./coverage/"
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/build/",
+      "<rootDir>/coverage/"
     ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
