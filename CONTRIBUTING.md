@@ -1,4 +1,9 @@
 ## Unit Tests
+![Branch Code Coverage](./coverage/badge-branches.svg)
+![Functions Code Coverage](./coverage/badge-functions.svg)
+![Lines Code Coverage](./coverage/badge-lines.svg)
+![Statements Code Coverage](./coverage/badge-statements.svg)
+
 Code coverage for unit tests must remain above 90%. Unit testing is handled using Jest.
 
 Run unit tests via `npm test`.
