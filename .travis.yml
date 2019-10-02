@@ -12,5 +12,4 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - npm run test:badges
-          - npm run semantic-release
+          npm run test:badges && npm run semantic-release
