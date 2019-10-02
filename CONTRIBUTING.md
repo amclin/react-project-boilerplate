@@ -27,6 +27,35 @@ Plugins:
 
 To ensure your editor will style code automatically, make sure you have support installed for `.editorconfig` and `.eslint`. For example, VSCode has both plugins for both [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) that will pick up the respective configuration files and assist you in formatting your code.
 
+## Commit Messages
+Commit messages shouldn't be just "*fixing x*" or "*adding y*". They should explain **why** a change was made so that it is useful for future developers looking at the history. Include links to relevant documents or external library bug reports, and include ticket numbers where appropriate.
+
+### Commit Message Syntax
+In order to facilitate [automated changelogs and versionsing](#releases) all git commits are expected to follow the [Angular commit syntax](https://gist.github.com/stephenparish/9941e89d80e2bc58a153). This is enforced using `commitlint` triggered by `husky`.
+
+```
+<prefix>(<scope>):<subject>
+
+<longer message>
+
+<footer>
+```
+
+Valid prefixes:
+* `fix`: Bugfixes (avoid mixing bugfixes and features in the same commit)
+* `docs`: Documentation
+* `feat`: Features and new functionality
+* `test`: Adding unit tests without functional code changes
+* `style`: Changes to code styling only (eg. single vs double quotes, spaces vs tabs). **Do not confuse this with CSS styling**
+* `refactor`: Internal changes (non-functional) only. Should have no changes to unit tests
+* `chore`: Project maintenance
+
+**When a commit contains a breaking change, the footer must begin with: `BREAKING CHANGE: `** so that release versions can properly reflect semantic versioning rules.  Breaking changes should also document what other developers will need to do in order to accomidate the change. Breaking changes are those that are not backwards compatible, and change how this project is consumed (APIs, paths to includable libraries, run commands, etc).
+
+#### Skipping CICD pipelines
+Automated CICD Pipelines can be skipped on a particular commit by appending the flag `[skip-ci]`. This normally should only be done when the pipelines themselves make commits in order to prevent runaway builds.
+
+
 ## Releases
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 This project follows [Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning) guidelines for release numbers.
