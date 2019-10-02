@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/amclin/react-project-boilerplate/compare/v1.3.0...v1.4.0) (2019-10-02)
+
+
+### Features
+
+* **test:** display badges showing code coverage ([0c38bf2](https://github.com/amclin/react-project-boilerplate/commit/0c38bf2))
+
 # [1.3.0](https://github.com/amclin/react-project-boilerplate/compare/v1.2.0...v1.3.0) (2019-10-02)
 
 
