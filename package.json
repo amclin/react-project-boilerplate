@@ -1,6 +1,6 @@
 {
   "name": "react-project-boilerplate",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "main": "index.js",
   "private": true,

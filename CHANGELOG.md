@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/amclin/react-project-boilerplate/compare/v1.4.0...v1.4.1) (2019-10-02)
+
+
+### Bug Fixes
+
+* **ci:** correct syntax for travis release commands ([ff94f49](https://github.com/amclin/react-project-boilerplate/commit/ff94f49))
+* **ci:** travis should update coverage badges ([4cdb2cf](https://github.com/amclin/react-project-boilerplate/commit/4cdb2cf))
+
 # [1.4.0](https://github.com/amclin/react-project-boilerplate/compare/v1.3.0...v1.4.0) (2019-10-02)
 
 
