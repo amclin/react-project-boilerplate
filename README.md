@@ -6,18 +6,21 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 # react-project-boilerplate
+
 This package includes the global command for creating new React projects incorporating Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
 
 ## Using
 
 ### The Easy Way
+
 1. Run `npx react-project-boilerplate`
 2. Create a new empty repo in GitHub with the same project name
 3. Push the new local commits up the new remote repo
 
 ### The Hard Way
+
 1. Clone this repo to a location on your local system
 2. Navigate to the folder where you want to create a new project
 3. Run `node ../<path to the boilerplate>/index.js`
-2. Create a new empty repo in GitHub with the same project name
-3. Push the new local commits up the new remote repo
+4. Create a new empty repo in GitHub with the same project name
+5. Push the new local commits up the new remote repo

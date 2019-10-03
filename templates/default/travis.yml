@@ -1,6 +1,6 @@
 language: node_js
 node_js:
- - lts/*
+  - lts/*
 jobs:
   include:
     # Define the release stage that runs semantic-release
@@ -11,5 +11,4 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
-        script:
-          npm run test:badges && npm run semantic-release
+        script: npm run test:badges && npm run semantic-release

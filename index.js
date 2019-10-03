@@ -9,7 +9,7 @@ const { createApp } = require('./create-app')
 const { validateNpmName } = require('./helpers/validate-pkg')
 const packageJson = require('./package.json')
 const { shouldUseYarn } = require('./helpers/should-use-yarn')
-const {log, error} = require('./helpers/logger')
+const { log, error } = require('./helpers/logger')
 
 let projectPath = ''
 
@@ -46,7 +46,7 @@ async function run() {
           return true
         }
         return `Invalid project name: ${validation.problems[0]}`
-      },
+      }
     })
 
     if (typeof res.path === 'string') {
@@ -57,16 +57,12 @@ async function run() {
   if (!projectPath) {
     log()
     log('Please specify the project directory:')
-    log(
-      `  ${chalk.cyan(program.name())} ${chalk.green('<project-directory>')}`
-    )
+    log(`  ${chalk.cyan(program.name())} ${chalk.green('<project-directory>')}`)
     log()
     log('For example:')
     log(`  ${chalk.cyan(program.name())} ${chalk.green('my-next-app')}`)
     log()
-    log(
-      `Run ${chalk.cyan(`${program.name()} --help`)} to see all options.`
-    )
+    log(`Run ${chalk.cyan(`${program.name()} --help`)} to see all options.`)
     process.exit(1)
   }
 
@@ -92,7 +88,7 @@ async function run() {
     example:
       typeof program.example === 'string' && program.example.trim()
         ? program.example.trim()
-        : undefined,
+        : undefined
   })
 }
 
@@ -105,9 +101,7 @@ async function notifyUpdate() {
       const isYarn = shouldUseYarn()
 
       log()
-      log(
-        chalk.yellow.bold('A new version of `create-next-app` is available!')
-      )
+      log(chalk.yellow.bold('A new version of `create-next-app` is available!'))
       log(`
         You can update by running:
           ${chalk.cyan(

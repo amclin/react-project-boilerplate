@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 const fs = require('fs')
 const path = require('path')
-const {log} = require('./logger')
+const { log } = require('./logger')
 
 const isFolderEmpty = (root, name) => {
   const validFiles = [
@@ -22,7 +22,7 @@ const isFolderEmpty = (root, name) => {
     'mkdocs.yml',
     'npm-debug.log',
     'yarn-debug.log',
-    'yarn-error.log',
+    'yarn-error.log'
   ]
 
   const conflicts = fs

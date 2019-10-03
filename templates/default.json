@@ -1,44 +1,36 @@
 {
-    "dependencies": [
-        "next",
-        "react",
-        "react-dom"
-    ],
-    "devDependencies": [
-        "@babel/core",
-        "@babel/preset-env",
-        "@commitlint/cli",
-        "@commitlint/config-angular",
-        "@semantic-release/changelog",
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/git",
-        "@semantic-release/github",
-        "@semantic-release/npm",
-        "babel-eslint",
-        "babel-jest",
-        "eslint",
-        "eslint-config-airbnb",
-        "eslint-config-prettier",
-        "eslint-plugin-import",
-        "eslint-plugin-jsx-a11y",
-        "eslint-plugin-react",
-        "eslint-plugin-react-hooks",
-        "husky",
-        "jest",
-        "jest-coverage-badges",
-        "lint-staged",
-        "prettier",
-        "pretty-quick",
-        "react-test-renderer"
-    ],
+  "dependencies": ["next", "react", "react-dom"],
+  "devDependencies": [
+    "@babel/core",
+    "@babel/preset-env",
+    "@commitlint/cli",
+    "@commitlint/config-angular",
+    "@semantic-release/changelog",
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/git",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "babel-eslint",
+    "babel-jest",
+    "eslint",
+    "eslint-config-airbnb",
+    "eslint-config-prettier",
+    "eslint-plugin-import",
+    "eslint-plugin-jsx-a11y",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks",
+    "husky",
+    "jest",
+    "jest-coverage-badges",
+    "lint-staged",
+    "prettier",
+    "pretty-quick",
+    "react-test-renderer"
+  ],
   "package": {
     "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
     "main": "index.js",
-    "keywords": [
-      "boilerplate",
-      "react",
-      "starter"
-    ],
+    "keywords": ["boilerplate", "react", "starter"],
     "author": "Anthony McLin",
     "license": "MIT",
     "scripts": {
@@ -61,14 +53,10 @@
       }
     },
     "commitlint": {
-      "extends": [
-        "@commitlint/config-angular"
-      ]
+      "extends": ["@commitlint/config-angular"]
     },
     "jest": {
-      "collectCoverageFrom": [
-        "**/*.{js,jsx,ts,tsx}"
-      ],
+      "collectCoverageFrom": ["**/*.{js,jsx,ts,tsx}"],
       "coveragePathIgnorePatterns": [
         "<rootDir>/build/",
         "<rootDir>/.next/",
@@ -76,13 +64,7 @@
         "<rootDir>/coverage/",
         "/__mocks__/"
       ],
-      "coverageReporters": [
-        "clover",
-        "json",
-        "json-summary",
-        "lcov",
-        "text"
-      ],
+      "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],
       "coverageThreshold": {
         "global": {
           "branches": 90,
@@ -102,11 +84,7 @@
       }
     },
     "lint-staged": {
-      "**/*": [
-        "eslint",
-        "pretty-quick — staged",
-        "git add"
-      ]
+      "**/*": ["eslint", "pretty-quick — staged", "git add"]
     },
     "prettier": {
       "tabWidth": 2,

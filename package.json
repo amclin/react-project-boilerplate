@@ -66,7 +66,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm test",
+      "pre-commit": "npm run lint:prettier && npm test",
       "pre-push": "npm test"
     }
   },
@@ -100,7 +100,7 @@
     "coverageThreshold": {
       "global": {
         "branches": 0,
-        "functions": 8.0,
+        "functions": 8,
         "lines": 4.4,
         "statements": 4.7
       }

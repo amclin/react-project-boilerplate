@@ -1,4 +1,4 @@
-const {execSync} = require('child_process')
+const { execSync } = require('child_process')
 const dns = require('dns')
 const url = require('url')
 

@@ -1,6 +1,6 @@
-const {execSync} = require('child_process')
+const { execSync } = require('child_process')
 const rimraf = require('rimraf')
-const {log, error} = require('./helpers/logger')
+const { log, error } = require('./helpers/logger')
 
 describe('Integration', () => {
   beforeEach(() => {
@@ -13,8 +13,8 @@ describe('Integration', () => {
   it('Can generate a new project from the default template', async () => {
     // Run the generator expecting successful STDOUT
     try {
-      await execSync('node ./index.js --no-git -- tmp', {stdio: 'inherit'})
-    } catch(e) {
+      await execSync('node ./index.js --no-git -- tmp', { stdio: 'inherit' })
+    } catch (e) {
       error('Failed to complete generation process.')
       expect(true).toEqual(false) // Force test failure
     }
