@@ -1,0 +1,8 @@
+# This file is here to ensure that dependencies for the projects
+# generated from the templates don't get reported as dependencies
+# for the generator project. This is EXPLICITLY different from the
+# linting needs of the generated projects. That comes from the
+# eslintrc file within the template.
+rules:
+  import/no-extraneous-dependencies: [error, { devDependencies: true }]
+

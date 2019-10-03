@@ -7,5 +7,4 @@ node_modules
 # Compiled build files, dev files, and reports
 build
 .next
-/coverage
-/tmp
+coverage
