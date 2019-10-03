@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const spawn = require('cross-spawn')
-const {log} = require('./logger')
+const { log } = require('./logger')
 
 const install = (
   root,
@@ -28,19 +28,21 @@ const install = (
       }
     } else {
       command = 'npm'
-      const saveCommand = (devDependencies) ? '--save-dev' : '--save'
-      args = ([
+      const saveCommand = devDependencies ? '--save-dev' : '--save'
+      args = [
         'install',
         dependencies && saveCommand,
         dependencies && '--save-exact',
         '--loglevel',
-        'error',
-      ].filter(Boolean)).concat(dependencies || [])
+        'error'
+      ]
+        .filter(Boolean)
+        .concat(dependencies || [])
     }
 
     const child = spawn(command, args, {
       stdio: 'inherit',
-      env: { ...process.env, ADBLOCK: '1', DISABLE_OPENCOLLECTIVE: '1' },
+      env: { ...process.env, ADBLOCK: '1', DISABLE_OPENCOLLECTIVE: '1' }
     })
     child.on('close', code => {
       if (code !== 0) {

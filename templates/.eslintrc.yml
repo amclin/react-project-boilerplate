@@ -5,4 +5,3 @@
 # eslintrc file within the template.
 rules:
   import/no-extraneous-dependencies: [error, { devDependencies: true }]
-

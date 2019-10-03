@@ -5,24 +5,19 @@ const makeDir = require('make-dir')
 const os = require('os')
 const path = require('path')
 
-const {downloadAndExtractExample} = require('./helpers/examples')
-const {hasExample} = require('./helpers/examples');
-const {install} = require('./helpers/install')
-const {isFolderEmpty} = require('./helpers/is-folder-empty')
-const {getOnline} = require('./helpers/is-online')
-const {shouldUseYarn} = require('./helpers/should-use-yarn')
-const {initGit, commitFirst} = require('./helpers/init-git')
-const {populateProject} = require('./helpers/populate-project')
-const {log, error} = require('./helpers/logger')
+const { downloadAndExtractExample } = require('./helpers/examples')
+const { hasExample } = require('./helpers/examples')
+const { install } = require('./helpers/install')
+const { isFolderEmpty } = require('./helpers/is-folder-empty')
+const { getOnline } = require('./helpers/is-online')
+const { shouldUseYarn } = require('./helpers/should-use-yarn')
+const { initGit, commitFirst } = require('./helpers/init-git')
+const { populateProject } = require('./helpers/populate-project')
+const { log, error } = require('./helpers/logger')
 
 const templateSettings = require('./templates/default.json')
 
-const createApp = async ({
-  appPath,
-  useNpm,
-  noGit=false,
-  example,
-}) => {
+const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   if (example) {
     const found = await hasExample(example)
     if (!found) {
@@ -57,7 +52,7 @@ const createApp = async ({
 
   const gitRemote = `git+ssh://git@github.com/amclin/${appName}.git`
   const homepage = `https://github.com/amclin/${appName}`
-  if(noGit) {
+  if (noGit) {
     log(`Skipping creation of git repository.`)
     log()
   } else {
@@ -86,14 +81,15 @@ const createApp = async ({
       name: appName,
       version,
       private: true,
-      "repository": {
-        "type": "git",
-        "url": gitRemote
+      repository: {
+        type: 'git',
+        url: gitRemote
       },
       homepage,
-      "bugs": {
-        "url": `${homepage}/issues`
-      }}
+      bugs: {
+        url: `${homepage}/issues`
+      }
+    }
 
     fs.writeFileSync(
       path.join(root, 'package.json'),
@@ -116,32 +112,40 @@ const createApp = async ({
     log()
 
     await install(root, templateSettings.devDependencies, {
-      useYarn, isOnline, devDependencies:true
+      useYarn,
+      isOnline,
+      devDependencies: true
     })
     log()
 
     await cpy('**', root, {
       parents: true,
       cwd: path.join(__dirname, 'templates', 'default'),
-      rename: (name) => {
-        const dotFiles = ['babelrc', 'editorconfig', 'eslintrc.json', 'gitignore', 'travis.yml']
-        if(dotFiles.indexOf(name) > -1) {
+      rename: name => {
+        const dotFiles = [
+          'babelrc',
+          'editorconfig',
+          'eslintrc.json',
+          'gitignore',
+          'travis.yml'
+        ]
+        if (dotFiles.indexOf(name) > -1) {
           return '.'.concat(name)
         }
         return name
-      },
+      }
     })
 
-    await populateProject({root, appName, homepage})
+    await populateProject({ root, appName, homepage })
   }
 
-  if(noGit) {
+  if (noGit) {
     log(`Skipping initial commit to git repository.`)
     log()
   } else {
     log(`Committing to the git repository.`)
     log()
-    await commitFirst({version})
+    await commitFirst({ version })
   }
 
   let cdpath = ''
@@ -166,19 +170,16 @@ const createApp = async ({
   log('We suggest that you begin by typing:')
   log()
   log(chalk.cyan('  cd'), cdpath)
-  log(
-    `  ${chalk.cyan(`${displayedCommand} ${useYarn ? '' : 'run '}dev`)}`
-  )
+  log(`  ${chalk.cyan(`${displayedCommand} ${useYarn ? '' : 'run '}dev`)}`)
   log()
   log()
-  if(!noGit) {
+  if (!noGit) {
     log(`-----------------------------------------------
 A git repo is created, but changes have not been pushed to the
 remote git server. Make sure an empy repo exists at:
   ${chalk.cyan(gitRemote)}
 and then run the onetime command:
-  ${chalk.cyan('git push --follow-tags push')}`
-  )
+  ${chalk.cyan('git push --follow-tags push')}`)
     log(`-----------------------------------------------`)
   }
 }

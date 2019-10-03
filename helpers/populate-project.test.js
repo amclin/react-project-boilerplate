@@ -1,8 +1,8 @@
 const fs = require('fs')
 const rimraf = require('rimraf')
 
-const {populateProject} = require('./populate-project')
-const {log, error} = require('./logger')
+const { populateProject } = require('./populate-project')
+const { log, error } = require('./logger')
 
 const tmpDir = 'tmp'
 const tmpFile = `${tmpDir}/testPopulateProject.md`
@@ -12,7 +12,7 @@ const mockMd = `
   more sample content
   %%HOMEPAGE%%
   and yet more content
-`;
+`
 
 describe('populate-project', () => {
   beforeEach(() => {
@@ -30,21 +30,21 @@ describe('populate-project', () => {
 
   it('replaces variables in markdown files', async () => {
     // stub new file
-    if (!fs.existsSync(tmpDir)){
-      fs.mkdirSync(tmpDir);
+    if (!fs.existsSync(tmpDir)) {
+      fs.mkdirSync(tmpDir)
     }
-    fs.writeFileSync(tmpFile, mockMd, (e) => {
+    fs.writeFileSync(tmpFile, mockMd, e => {
       error(e)
       expect(true).toEqual(false) // Force test failure
     })
     // run replacement
     await populateProject({
-      root : tmpDir,
-      appName : 'mockAppName',
-      homepage : 'http://example.com/mockHomepage'
+      root: tmpDir,
+      appName: 'mockAppName',
+      homepage: 'http://example.com/mockHomepage'
     })
     // load replacement
-    const result = fs.readFileSync(tmpFile, 'utf8', (e) => {
+    const result = fs.readFileSync(tmpFile, 'utf8', e => {
       expect(true).toEqual(false) // Force test failure
       error(e)
     })
