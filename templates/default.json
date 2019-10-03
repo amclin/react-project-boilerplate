@@ -1,0 +1,143 @@
+{
+    "dependencies": [
+        "next",
+        "react",
+        "react-dom"
+    ],
+    "devDependencies": [
+        "@babel/core",
+        "@babel/preset-env",
+        "@commitlint/cli",
+        "@commitlint/config-angular",
+        "@semantic-release/changelog",
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/git",
+        "@semantic-release/github",
+        "@semantic-release/npm",
+        "babel-eslint",
+        "babel-jest",
+        "eslint",
+        "eslint-config-airbnb",
+        "eslint-config-prettier",
+        "eslint-plugin-import",
+        "eslint-plugin-jsx-a11y",
+        "eslint-plugin-react",
+        "eslint-plugin-react-hooks",
+        "husky",
+        "jest",
+        "jest-coverage-badges",
+        "lint-staged",
+        "prettier",
+        "pretty-quick",
+        "react-test-renderer"
+    ],
+  "package": {
+    "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
+    "main": "index.js",
+    "keywords": [
+      "boilerplate",
+      "react",
+      "starter"
+    ],
+    "author": "Anthony McLin",
+    "license": "MIT",
+    "scripts": {
+      "build": "next build",
+      "dev": "next",
+      "lint": "npm run lint:eslint",
+      "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
+      "lint:prettier": "pretty-quick",
+      "pretest": "npm run lint",
+      "semantic-release": "npx semantic-release",
+      "start": "next start",
+      "test": "jest --coverage",
+      "test:badges": "jest-coverage-badges"
+    },
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "pre-commit": "npm test",
+        "pre-push": "npm test"
+      }
+    },
+    "commitlint": {
+      "extends": [
+        "@commitlint/config-angular"
+      ]
+    },
+    "jest": {
+      "collectCoverageFrom": [
+        "**/*.{js,jsx,ts,tsx}"
+      ],
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/build/",
+        "<rootDir>/.next/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/coverage/",
+        "/__mocks__/"
+      ],
+      "coverageReporters": [
+        "clover",
+        "json",
+        "json-summary",
+        "lcov",
+        "text"
+      ],
+      "coverageThreshold": {
+        "global": {
+          "branches": 90,
+          "functions": 90,
+          "lines": 90,
+          "statements": 90
+        }
+      },
+      "testPathIgnorePatterns": [
+        "<rootDir>/.next/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/build/",
+        "<rootDir>/coverage/"
+      ],
+      "transform": {
+        "^.+\\.[t|j]sx?$": "babel-jest"
+      }
+    },
+    "lint-staged": {
+      "**/*": [
+        "eslint",
+        "pretty-quick — staged",
+        "git add"
+      ]
+    },
+    "prettier": {
+      "tabWidth": 2,
+      "semi": false,
+      "singleQuote": true
+    },
+    "release": {
+      "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+          "@semantic-release/npm",
+          {
+            "npmPublish": false
+          }
+        ],
+        [
+          "@semantic-release/git",
+          {
+            "assets": [
+              "CHANGELOG.md",
+              "docs",
+              "package.json",
+              "coverage/badge-*.svg"
+            ],
+            "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          }
+        ],
+        "@semantic-release/github"
+      ]
+    }
+  }
+}

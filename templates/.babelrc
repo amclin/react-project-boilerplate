@@ -1,0 +1,8 @@
+// This file is here to ensure that Jest can parse files properly
+// for running unit tests of the templates from the generator
+// project. This is EXPLICITLY different from the babel needs of
+// of the generated projects themselves. That comes from the
+// babelrc file within the template.
+{
+  "presets": ["@babel/preset-env","next/babel"]
+}
