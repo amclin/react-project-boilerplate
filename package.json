@@ -1,5 +1,5 @@
 {
-  "name": "@amclin/create-react-app",
+  "name": "amclin-create-react-app",
   "version": "2.0.1",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "repository": {

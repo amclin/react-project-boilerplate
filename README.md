@@ -13,7 +13,7 @@ This package includes the global command for creating new React projects incorpo
 
 ### The Easy Way
 
-1. Run `npx @amclin/create-react-app`
+1. Run `npx amclin-create-react-app`
 2. Create a new empty repo in GitHub with the same project name
 3. Push the new local commits up the new remote repo
 
