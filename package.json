@@ -1,5 +1,5 @@
 {
-  "name": "react-project-boilerplate",
+  "name": "@amclin/create-react-app",
   "version": "1.4.1",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "private": true,
