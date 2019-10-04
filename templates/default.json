@@ -48,7 +48,7 @@
     "husky": {
       "hooks": {
         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "pre-commit": "npm test",
+        "pre-commit": "lint-staged",
         "pre-push": "npm test"
       }
     },
@@ -84,7 +84,8 @@
       }
     },
     "lint-staged": {
-      "**/*": ["eslint", "pretty-quick — staged", "git add"]
+      "**/*.{js,jsx,ts,tsx}": ["eslint"],
+      "**/*": ["pretty-quick — staged", "git add"]
     },
     "prettier": {
       "tabWidth": 2,
