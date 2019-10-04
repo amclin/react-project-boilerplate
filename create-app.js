@@ -78,7 +78,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   } else {
     const packageJson = {
       ...templateSettings.package,
-      name: appName,
+      name: `@amclin/${appName}`,
       version,
       private: true,
       repository: {
