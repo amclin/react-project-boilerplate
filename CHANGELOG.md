@@ -1,3 +1,29 @@
+# [2.0.0](https://github.com/amclin/react-project-boilerplate/compare/v1.4.1...v2.0.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* **ci:** restore missing travis config ([ca2360b](https://github.com/amclin/react-project-boilerplate/commit/ca2360b))
+
+
+### Features
+
+* **template:** namespace generated project ([c18b7be](https://github.com/amclin/react-project-boilerplate/commit/c18b7be))
+* ensure linting on commit ([f9efa59](https://github.com/amclin/react-project-boilerplate/commit/f9efa59))
+* scripted wizard ([9806de8](https://github.com/amclin/react-project-boilerplate/commit/9806de8))
+* support releasing to npm ([89326e2](https://github.com/amclin/react-project-boilerplate/commit/89326e2))
+
+
+### BREAKING CHANGES
+
+*   formerly:
+    1. clone repo
+    2. manually alter package.json, readme, etc
+    3. Bind and push to a new repo
+    4. Unbind from the boilerplate repo
+  now:
+    1. run `npx @amclin/react-project-boilerplate`
+
 ## [1.4.1](https://github.com/amclin/react-project-boilerplate/compare/v1.4.0...v1.4.1) (2019-10-02)
 
 
