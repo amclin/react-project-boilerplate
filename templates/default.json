@@ -110,6 +110,7 @@
               "CHANGELOG.md",
               "docs",
               "package.json",
+              "package-lock.josn",
               "coverage/badge-*.svg"
             ],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
