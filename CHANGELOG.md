@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/amclin/react-project-boilerplate/compare/v2.0.0...v2.0.1) (2019-10-04)
+
+
+### Bug Fixes
+
+* **ci:** allow public release ([4d1965a](https://github.com/amclin/react-project-boilerplate/commit/4d1965a))
+
 # [2.0.0](https://github.com/amclin/react-project-boilerplate/compare/v1.4.1...v2.0.0) (2019-10-04)
 
 
