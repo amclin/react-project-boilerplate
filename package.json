@@ -64,6 +64,7 @@
   },
   "files": [
     "/*.js",
+    "/helpers/**/*.js",
     "/templates/**/*"
   ],
   "husky": {
