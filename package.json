@@ -2,7 +2,6 @@
   "name": "@amclin/create-react-app",
   "version": "2.0.0",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/amclin/react-project-boilerplate.git"
