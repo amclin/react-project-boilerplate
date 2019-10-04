@@ -63,6 +63,10 @@
     "react-test-renderer": "^16.10.1",
     "rimraf": "^3.0.0"
   },
+  "files": [
+    "/*.js",
+    "/templates/**/*"
+  ],
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -148,12 +152,19 @@
             "CHANGELOG.md",
             "docs",
             "package.json",
+            "package-lock.josn",
             "coverage/badge-*.svg"
           ],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
-      "@semantic-release/github"
+      "@semantic-release/github",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true
+        }
+      ]
     ]
   },
   "dependencies": {
