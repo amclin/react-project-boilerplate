@@ -5,6 +5,7 @@ const populateProject = async ({ root, appName, homepage, author, year }) => {
   let results = false
 
   const options = {
+    ignore: [`${root}/node_modules/**/*`],
     files: [`${root}/**/*`],
     from: [/%%APPNAME%%/g, /%%HOMEPAGE%%/g, /%%AUTHOR%%/, /%%YEAR%%/],
     to: [appName, homepage, author, year]
