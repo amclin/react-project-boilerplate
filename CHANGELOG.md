@@ -1,3 +1,23 @@
+# [2.1.0](https://github.com/amclin/react-project-boilerplate/compare/v2.0.3...v2.1.0) (2019-10-07)
+
+
+### Bug Fixes
+
+* getting year was failing when generating license file ([b590025](https://github.com/amclin/react-project-boilerplate/commit/b590025))
+* incorrect instructions shown when global install was out of date ([ba011b2](https://github.com/amclin/react-project-boilerplate/commit/ba011b2))
+* populating templates sometimes fails from too many open files ([940effe](https://github.com/amclin/react-project-boilerplate/commit/940effe))
+* post-run instructions were missing created path ([3499607](https://github.com/amclin/react-project-boilerplate/commit/3499607))
+
+
+### Features
+
+* populate copyright info in generated license ([724f850](https://github.com/amclin/react-project-boilerplate/commit/724f850))
+* **components:** <Favicon> atomic molecule with sample favicons ([0ddff76](https://github.com/amclin/react-project-boilerplate/commit/0ddff76))
+* **components:** <GlobalHead> organism for reusable document head tags ([5d35445](https://github.com/amclin/react-project-boilerplate/commit/5d35445))
+* **components:** <HeadLink> as atomic design atom example ([f6d54c4](https://github.com/amclin/react-project-boilerplate/commit/f6d54c4))
+* **components:** <Manifest> component for PWAs with sample manifest ([cb452b3](https://github.com/amclin/react-project-boilerplate/commit/cb452b3))
+* **template:** provide better folder pattern for page routing ([dfcf3d1](https://github.com/amclin/react-project-boilerplate/commit/dfcf3d1))
+
 ## [2.0.3](https://github.com/amclin/react-project-boilerplate/compare/v2.0.2...v2.0.3) (2019-10-04)
 
 
