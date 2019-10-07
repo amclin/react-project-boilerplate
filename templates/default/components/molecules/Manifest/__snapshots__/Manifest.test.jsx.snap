@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Manifest creates a manifest <link> element suitable for the document head 1`] = `
+<link
+  href="/site.webmanifest"
+  rel="manifest"
+/>
+`;

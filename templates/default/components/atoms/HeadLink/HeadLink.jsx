@@ -14,15 +14,14 @@ const HeadLink = ({rel, href, type, sizes}) => {
 
 HeadLink.propTypes = {
   rel: PropTypes.string.isRequired,
-  href: PropTypes.string,
+  href: PropTypes.string.isRequired,
   type: PropTypes.string,
   sizes: PropTypes.string
 };
 
 HeadLink.defaultProps = {
-  href: null,
   type: undefined,
-  sizes: null
+  sizes: undefined
 }
 
 export default HeadLink
