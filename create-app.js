@@ -173,7 +173,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   log()
   log('We suggest that you begin by typing:')
   log()
-  log(chalk.cyan('  cd'), cdpath)
+  log(chalk.cyan(`  cd ${cdpath}`))
   log(`  ${chalk.cyan(`${displayedCommand} ${useYarn ? '' : 'run '}dev`)}`)
   log()
   log()
