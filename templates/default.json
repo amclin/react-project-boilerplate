@@ -1,5 +1,5 @@
 {
-  "dependencies": ["next", "react", "react-dom"],
+  "dependencies": ["next", "react", "react-dom", "prop-types"],
   "devDependencies": [
     "@babel/core",
     "@babel/preset-env",

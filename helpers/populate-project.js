@@ -1,13 +1,14 @@
 const replace = require('replace-in-file')
 const { log, error } = require('./logger')
 
-const populateProject = async ({ root, appName, homepage }) => {
+const populateProject = async ({ root, appName, homepage, author, year }) => {
   let results = false
 
   const options = {
-    files: [`${root}/**/*.md`],
-    from: [/%%APPNAME%%/g, /%%HOMEPAGE%%/g],
-    to: [appName, homepage]
+    ignore: [`${root}/node_modules/**/*`],
+    files: [`${root}/**/*`],
+    from: [/%%APPNAME%%/g, /%%HOMEPAGE%%/g, /%%AUTHOR%%/, /%%YEAR%%/],
+    to: [appName, homepage, author, year]
   }
 
   try {

@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/%40amclin%2Fcreate-react-app.svg)](https://www.npmjs.com/@amclin/create-react-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
+[![npm version](https://badge.fury.io/js/amclin-create-react-app.svg)](https://www.npmjs.com/@amclin/create-react-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
 
 ![Branch Code Coverage](./coverage/badge-branches.svg) ![Functions Code Coverage](./coverage/badge-functions.svg) ![Lines Code Coverage](./coverage/badge-lines.svg) ![Statements Code Coverage](./coverage/badge-statements.svg)
 
@@ -7,7 +7,7 @@
 
 # react-project-boilerplate
 
-This package includes the global command for creating new React projects incorporating Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
+This package includes the global command for creating new React projects incorporating [Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
 
 ## Using
 

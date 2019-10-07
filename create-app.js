@@ -52,6 +52,9 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
 
   const gitRemote = `git+ssh://git@github.com/amclin/${appName}.git`
   const homepage = `https://github.com/amclin/${appName}`
+  const author = `Anthony McLin`
+  const year = new Date().getFullYear()
+
   if (noGit) {
     log(`Skipping creation of git repository.`)
     log()
@@ -78,8 +81,9 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   } else {
     const packageJson = {
       ...templateSettings.package,
-      name: `@amclin/${appName}`,
+      name: `${appName}`,
       version,
+      author,
       private: true,
       repository: {
         type: 'git',
@@ -136,7 +140,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
       }
     })
 
-    await populateProject({ root, appName, homepage })
+    await populateProject({ root, appName, homepage, author, year })
   }
 
   if (noGit) {
@@ -169,7 +173,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   log()
   log('We suggest that you begin by typing:')
   log()
-  log(chalk.cyan('  cd'), cdpath)
+  log(chalk.cyan(`  cd ${cdpath}`))
   log(`  ${chalk.cyan(`${displayedCommand} ${useYarn ? '' : 'run '}dev`)}`)
   log()
   log()

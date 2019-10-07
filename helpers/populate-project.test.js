@@ -12,6 +12,7 @@ const mockMd = `
   more sample content
   %%HOMEPAGE%%
   and yet more content
+  (c) %%YEAR%% %%AUTHOR%%
 `
 
 describe('populate-project', () => {
@@ -41,7 +42,9 @@ describe('populate-project', () => {
     await populateProject({
       root: tmpDir,
       appName: 'mockAppName',
-      homepage: 'http://example.com/mockHomepage'
+      homepage: 'http://example.com/mockHomepage',
+      year: '2000',
+      author: 'Lorem Ipsum'
     })
     // load replacement
     const result = fs.readFileSync(tmpFile, 'utf8', e => {

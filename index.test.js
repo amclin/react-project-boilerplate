@@ -2,6 +2,10 @@ const { execSync } = require('child_process')
 const rimraf = require('rimraf')
 const { log, error } = require('./helpers/logger')
 
+// TODO: Jest can't process coverage of spaned processes
+// May need to wrap NYC to get the coverage of all the
+// code executed here
+
 describe('Integration', () => {
   beforeEach(() => {
     // Cleanup the temp

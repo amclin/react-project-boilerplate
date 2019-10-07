@@ -7,5 +7,6 @@ exports[`populate-project replaces variables in markdown files 1`] = `
   more sample content
   http://example.com/mockHomepage
   and yet more content
+  (c) 2000 Lorem Ipsum
 "
 `;
