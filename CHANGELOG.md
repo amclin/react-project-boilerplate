@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/amclin/react-project-boilerplate/compare/v2.0.2...v2.0.3) (2019-10-04)
+
+
+### Bug Fixes
+
+* ./helpers/ is missing ([15376b3](https://github.com/amclin/react-project-boilerplate/commit/15376b3))
+
 ## [2.0.2](https://github.com/amclin/react-project-boilerplate/compare/v2.0.1...v2.0.2) (2019-10-04)
 
 
