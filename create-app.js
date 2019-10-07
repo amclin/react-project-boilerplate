@@ -53,7 +53,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   const gitRemote = `git+ssh://git@github.com/amclin/${appName}.git`
   const homepage = `https://github.com/amclin/${appName}`
   const author = `Anthony McLin`
-  const year = new Date().getFullYear
+  const year = new Date().getFullYear()
 
   if (noGit) {
     log(`Skipping creation of git repository.`)
