@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/%40amclin%2Fcreate-react-app.svg)](https://www.npmjs.com/@amclin/create-react-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
+[![npm version](https://badge.fury.io/js/amclin-create-react-app.svg)](https://www.npmjs.com/@amclin/create-react-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
 
 ![Branch Code Coverage](./coverage/badge-branches.svg) ![Functions Code Coverage](./coverage/badge-functions.svg) ![Lines Code Coverage](./coverage/badge-lines.svg) ![Statements Code Coverage](./coverage/badge-statements.svg)
 
