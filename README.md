@@ -7,7 +7,7 @@
 
 # react-project-boilerplate
 
-This package includes the global command for creating new React projects incorporating Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
+This package includes the global command for creating new React projects incorporating [Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
 
 ## Using
 
