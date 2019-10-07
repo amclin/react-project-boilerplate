@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadLink creates a <link> element suitable for the document head 1`] = `
+<link
+  href="http://example.com"
+  rel="mockRel"
+  sizes="mockSizes"
+  type="mockType"
+/>
+`;
