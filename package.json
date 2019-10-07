@@ -106,7 +106,7 @@
         "branches": 0,
         "functions": 8,
         "lines": 4.4,
-        "statements": 4.7
+        "statements": 4.6
       }
     },
     "testPathIgnorePatterns": [
