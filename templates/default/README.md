@@ -33,3 +33,25 @@ To run a static site, deploy the contents of the `/build` folder to a webserver.
 #### Server-Side Rendering (SSR)
 
 To run a site with Server-Side Rendering, make sure the package is checked out and installed on a suitable NodeJS, NextJS, or serverless environment, and then run `npm start` (`npm run build` needs to have happened first ). See [NextJS documentation for more details](https://nextjs.org/docs#production-deployment).
+
+### Running In a Docker Container
+#### Compile the App
+To compile a docker image you first need to compile the NextJS app:
+```
+npm run build
+```
+If this is a statically-generated site (with or without client-side rendering), you then must export the NextJS app:
+```
+npm run export
+```
+
+#### Creating a Docker Image
+```
+./scripts/build-docker.sh
+```
+#### Running Docker Image
+Once the Docker image exists in your registry of choice (local or remote), you can then run the app and specify what port it should run on:
+```
+docker run -p 0.0.0.0:3000:80 react-example/%%APPNAME%%:latest
+```
+If you'd like to run on a different port, replace `3000` with the desired port.
