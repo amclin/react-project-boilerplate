@@ -35,6 +35,7 @@
     "license": "MIT",
     "scripts": {
       "build": "next build",
+      "export": "next export",
       "dev": "next",
       "lint": "npm run lint:eslint",
       "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
