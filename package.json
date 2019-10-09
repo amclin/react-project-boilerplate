@@ -1,6 +1,6 @@
 {
   "name": "amclin-create-react-app",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "repository": {
     "type": "git",

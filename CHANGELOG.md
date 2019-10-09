@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/amclin/react-project-boilerplate/compare/v2.2.0...v2.3.0) (2019-10-09)
+
+
+### Features
+
+* docker containers for static generated apps ([06dcbed](https://github.com/amclin/react-project-boilerplate/commit/06dcbedf611f659aafb8c3de48af8a520221fdaa)), closes [#8](https://github.com/amclin/react-project-boilerplate/issues/8)
+
 # [2.2.0](https://github.com/amclin/react-project-boilerplate/compare/v2.1.0...v2.2.0) (2019-10-09)
 
 
