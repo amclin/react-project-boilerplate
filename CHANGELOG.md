@@ -8,7 +8,7 @@
 
 ### Features
 
-* **next:** add `npm export` command for generating static sites ([0a94ba1](https://github.com/amclin/react-project-boilerplate/commit/0a94ba11f9494bfc5f0f07a60ea977f9d5f3f728)), closes [#8](https://github.com/amclin/react-project-boilerplate/issues/8) [#10](https://github.com/amclin/react-project-boilerplate/issues/10)
+* **next:** add `npm export` command for generating static sites ([0a94ba1](https://github.com/amclin/react-project-boilerplate/commit/0a94ba11f9494bfc5f0f07a60ea977f9d5f3f728)), prerequisite for [#8](https://github.com/amclin/react-project-boilerplate/issues/8) [#10](https://github.com/amclin/react-project-boilerplate/issues/10)
 
 # [2.1.0](https://github.com/amclin/react-project-boilerplate/compare/v2.0.3...v2.1.0) (2019-10-07)
 
