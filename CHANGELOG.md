@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/amclin/react-project-boilerplate/compare/v2.1.0...v2.2.0) (2019-10-09)
+
+
+### Bug Fixes
+
+* unit tests were preventing apps from building ([f8b9ba0](https://github.com/amclin/react-project-boilerplate/commit/f8b9ba04f90b4cda2d8a80c5681dc53f15511754)), closes [#12](https://github.com/amclin/react-project-boilerplate/issues/12)
+
+
+### Features
+
+* **next:** add `npm export` command for generating static sites ([0a94ba1](https://github.com/amclin/react-project-boilerplate/commit/0a94ba11f9494bfc5f0f07a60ea977f9d5f3f728)), closes [#8](https://github.com/amclin/react-project-boilerplate/issues/8) [#10](https://github.com/amclin/react-project-boilerplate/issues/10)
+
 # [2.1.0](https://github.com/amclin/react-project-boilerplate/compare/v2.0.3...v2.1.0) (2019-10-07)
 
 
