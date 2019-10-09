@@ -59,6 +59,7 @@
       "collectCoverageFrom": ["**/*.{js,jsx,ts,tsx}"],
       "coveragePathIgnorePatterns": [
         "<rootDir>/build/",
+        "<rootDir>/out/",
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
@@ -77,6 +78,7 @@
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/build/",
+        "<rootDir>/out/",
         "<rootDir>/coverage/"
       ],
       "transform": {
