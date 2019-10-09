@@ -22,6 +22,20 @@ describe('Integration', () => {
       error('Failed to complete generation process.')
       expect(true).toEqual(false) // Force test failure
     }
+    // Generated app should be buildable
+    try {
+      await execSync('(cd tmp ; npm run build)', { stdio: 'inherit' })
+    } catch (e) {
+      error('Generated app failed to build with `npm run build`')
+      expect(true).toEqual(false) // Force test failure
+    }
+    // Generated app should be exportable
+    try {
+      await execSync('(cd tmp ; npm run export)', { stdio: 'inherit' })
+    } catch (e) {
+      error('Generated app failed to export with `npm run export`')
+      expect(true).toEqual(false) // Force test failure
+    }
     // Cleanup the temp which verifies the tmp folder got populated
     rimraf.sync('./tmp', {}, () => {
       error('No tmp directory to remove.')

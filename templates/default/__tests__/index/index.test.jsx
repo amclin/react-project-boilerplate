@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import App from './index'
+import App from '../../pages/index'
 
 describe('Pages:Homepage', () => {
   it('renders the homepage', () => {
