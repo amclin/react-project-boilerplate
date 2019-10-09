@@ -55,3 +55,6 @@ Once the Docker image exists in your registry of choice (local or remote), you c
 docker run -p 0.0.0.0:3000:80 react-example/%%APPNAME%%:latest
 ```
 If you'd like to run on a different port, replace `3000` with the desired port.
+
+## Contributing
+Add new components and features using `npm run generate`. See [Contributing New Components](CONTRIBUTING.md#new-components) for more details.

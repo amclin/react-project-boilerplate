@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plopfile:default provides the default plop configuration 1`] = `
+Array [
+  "component",
+  Object {
+    "actions": Array [
+      Object {
+        "path": "components/{{atomicType}}s/{{properCase componentName}}/index.js",
+        "templateFile": "../templates/components/{{atomicType}}/index.js.hbs",
+        "type": "add",
+      },
+      Object {
+        "path": "components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.jsx",
+        "templateFile": "../templates/components/{{atomicType}}/{{properCase atomicType}}.jsx.hbs",
+        "type": "add",
+      },
+      Object {
+        "path": "components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.test.jsx",
+        "templateFile": "../templates/components/{{atomicType}}/{{properCase atomicType}}.test.jsx.hbs",
+        "type": "add",
+      },
+    ],
+    "description": "Create a component",
+    "prompts": Array [
+      Object {
+        "choices": Array [
+          "atom",
+          "molecule",
+          "organism",
+        ],
+        "message": "What level is this component?",
+        "name": "atomicType",
+        "type": "list",
+      },
+      Object {
+        "message": "Name of component?",
+        "name": "componentName",
+        "type": "input",
+      },
+      Object {
+        "message": "Short description of the component (eg: \`a list of names\`):",
+        "name": "componentDescription",
+        "type": "input",
+      },
+    ],
+  },
+]
+`;
