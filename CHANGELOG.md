@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/amclin/react-project-boilerplate/compare/v2.3.0...v2.4.0) (2019-10-10)
+
+
+### Features
+
+* **component-wizard:** generate atomic components using wizard ([a0e310a](https://github.com/amclin/react-project-boilerplate/commit/a0e310a363195ddd0031daf8bfb1a80eb99e6b91)), closes [#7](https://github.com/amclin/react-project-boilerplate/issues/7)
+
 # [2.3.0](https://github.com/amclin/react-project-boilerplate/compare/v2.2.0...v2.3.0) (2019-10-09)
 
 
