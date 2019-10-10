@@ -1,0 +1,13 @@
+import React from 'react'
+import TestRenderer from 'react-test-renderer'
+import {{properCase componentName}} from '.'
+
+describe('{{properCase componentName}}', () => {
+  it('creates {{componentDescription}}', () => {
+    const result = TestRenderer.create(
+      <{{properCase componentName}} />
+    ).toJSON()
+
+    expect(result).toMatchSnapshot()
+  })
+})

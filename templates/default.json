@@ -23,6 +23,7 @@
     "jest",
     "jest-coverage-badges",
     "lint-staged",
+    "plop",
     "prettier",
     "pretty-quick",
     "react-test-renderer"
@@ -37,6 +38,7 @@
       "build": "next build",
       "export": "next export",
       "dev": "next",
+      "generate": "plop",
       "lint": "npm run lint:eslint",
       "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
       "lint:prettier": "pretty-quick",
