@@ -1,3 +1,16 @@
+# [2.5.0](https://github.com/amclin/react-project-boilerplate/compare/v2.4.0...v2.5.0) (2019-10-11)
+
+
+### Bug Fixes
+
+* docker build script was not executable ([cd8c858](https://github.com/amclin/react-project-boilerplate/commit/cd8c8583487fa18fbe22c4de45c92b49cb8f947f))
+
+
+### Features
+
+* adopt common /src folder pattern ([1033a54](https://github.com/amclin/react-project-boilerplate/commit/1033a54b1d4f3ad27734b08e8f1e874f8d3030c0)), closes [#21](https://github.com/amclin/react-project-boilerplate/issues/21)
+* adopt NextJS v9 `public` folder pattern ([9c1da88](https://github.com/amclin/react-project-boilerplate/commit/9c1da8875b8af11038420c78c50294cf1fa51cd0)), closes [#19](https://github.com/amclin/react-project-boilerplate/issues/19)
+
 # [2.4.0](https://github.com/amclin/react-project-boilerplate/compare/v2.3.0...v2.4.0) (2019-10-10)
 
 
