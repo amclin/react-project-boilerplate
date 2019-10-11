@@ -1,5 +1,0 @@
-NextJS automatically assumes any `js` or `jsx` files in `/pages` should be compiled to actual routes. This causes problems for the unit test files which are named `.test.jsx`. Therefore unit tests for pages and APIs must be placed in a `__tests__` folder.
-
-**Note:** Unit tests for components and helpers should remain in the same folder as the component themselves. Only test files for `/pages/` should be in this `__tests__` directory.
-
-The other tests that make sense to include in this folder are for root-level scripts, to avoid cluttering up the project root.

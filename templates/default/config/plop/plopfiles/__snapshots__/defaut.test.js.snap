@@ -6,17 +6,17 @@ Array [
   Object {
     "actions": Array [
       Object {
-        "path": "components/{{atomicType}}s/{{properCase componentName}}/index.js",
+        "path": "src/components/{{atomicType}}s/{{properCase componentName}}/index.js",
         "templateFile": "../templates/components/{{atomicType}}/index.js.hbs",
         "type": "add",
       },
       Object {
-        "path": "components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.jsx",
+        "path": "src/components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.jsx",
         "templateFile": "../templates/components/{{atomicType}}/{{properCase atomicType}}.jsx.hbs",
         "type": "add",
       },
       Object {
-        "path": "components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.test.jsx",
+        "path": "src/components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.test.jsx",
         "templateFile": "../templates/components/{{atomicType}}/{{properCase atomicType}}.test.jsx.hbs",
         "type": "add",
       },

@@ -75,7 +75,7 @@ describe('Generated App', () => {
     // Loop through each type of component and test the files are created
     Object.entries(componentTypes).forEach(([componentType, data]) => {
       it(`can generate new ${componentType}s through the wizard`, async() => {
-        const path = `tmp/components/${componentType}s/MockComponent`
+        const path = `tmp/src/components/${componentType}s/MockComponent`
         const cmd = `(cd tmp; npm run generate -- component ${componentType} "mock component" "short description")`
 
         try {

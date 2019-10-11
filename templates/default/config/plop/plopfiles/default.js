@@ -32,19 +32,19 @@ module.exports = plop => {
       // Add the component index
       {
         type: 'add',
-        path: 'components/{{atomicType}}s/{{properCase componentName}}/index.js',
+        path: 'src/components/{{atomicType}}s/{{properCase componentName}}/index.js',
         templateFile: `${templates}/components/{{atomicType}}/index.js.hbs`,
       },
       // Add the component file
       {
         type: 'add',
-        path: 'components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.jsx',
+        path: 'src/components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.jsx',
         templateFile: `${templates}/components/{{atomicType}}/{{properCase atomicType}}.jsx.hbs`,
       },
       // Add the unit test file
       {
         type: 'add',
-        path: 'components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.test.jsx',
+        path: 'src/components/{{atomicType}}s/{{properCase componentName}}/{{properCase componentName}}.test.jsx',
         templateFile: `${templates}/components/{{atomicType}}/{{properCase atomicType}}.test.jsx.hbs`,
       },
     ],
