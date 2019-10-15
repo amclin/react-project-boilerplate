@@ -76,7 +76,11 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
     log('Installing packages. This might take a couple of minutes.')
     log()
 
-    await install(root, null, { useYarn, isOnline })
+    await install({
+      root,
+      useYarn,
+      isOnline
+    })
     log()
   } else {
     const packageJson = {
@@ -106,7 +110,12 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
     })
     log()
 
-    await install(root, templateSettings.dependencies, { useYarn, isOnline })
+    await install({
+      root,
+      dependencies: templateSettings.dependencies,
+      useYarn,
+      isOnline
+    })
     log()
 
     log(`Installing dev dependencies using ${displayedCommand}:`)
@@ -115,7 +124,9 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
     })
     log()
 
-    await install(root, templateSettings.devDependencies, {
+    await install({
+      root,
+      dependencies: templateSettings.devDependencies,
       useYarn,
       isOnline,
       devDependencies: true
