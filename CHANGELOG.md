@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/amclin/react-project-boilerplate/compare/v2.5.0...v2.5.1) (2019-10-15)
+
+
+### Bug Fixes
+
+* unexpected token issue in windows ([42762bb](https://github.com/amclin/react-project-boilerplate/commit/42762bb5ccb1b2684d0318ca184ab1be0e4e8e0d))
+
 # [2.5.0](https://github.com/amclin/react-project-boilerplate/compare/v2.4.0...v2.5.0) (2019-10-11)
 
 
