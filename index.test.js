@@ -7,6 +7,7 @@ const { error } = require('./helpers/logger')
 // TODO: Jest can't process coverage of spaned processes
 // May need to wrap NYC to get the coverage of all the
 // code executed here
+// https://github.com/amclin/react-project-boilerplate/issues/28
 
 describe('Integration Test', () => {
 describe('Generated App', () => {
