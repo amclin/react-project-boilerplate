@@ -115,7 +115,7 @@ async function notifyUpdate() {
       log(chalk.cyan()` npx amclin-create-react-app`)
       log(`That way you'll always have the latest.`)
     }
-  } catch {
+  } catch (e) {
     // ignore error
   }
 }

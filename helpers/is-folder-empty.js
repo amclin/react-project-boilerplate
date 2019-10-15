@@ -44,7 +44,7 @@ const isFolderEmpty = (root, name) => {
         } else {
           log(`  ${file}`)
         }
-      } catch {
+      } catch (e) {
         log(`  ${file}`)
       }
     })
