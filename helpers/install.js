@@ -2,9 +2,12 @@ const chalk = require('chalk')
 const spawn = require('cross-spawn')
 const { log } = require('./logger')
 
-const buildYarnCommand = ({dependencies, isOnline, root}) => {
-  const command = 'yarnpkg'
+const buildYarnCommand = ({dependencies, isOnline, root, devDependencies}) => {
+  const command = 'yarn'
   const args = dependencies ? ['add', '--exact'] : ['install']
+  if(devDependencies) {
+    args.push('--dev')
+  }
 
   if (!isOnline) {
     args.push('--offline')
