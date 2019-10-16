@@ -1,3 +1,15 @@
+# [2.6.0](https://github.com/amclin/react-project-boilerplate/compare/v2.5.1...v2.6.0) (2019-10-16)
+
+
+### Bug Fixes
+
+* running with yarn wasn't splitting dev dependencies ([27eccaf](https://github.com/amclin/react-project-boilerplate/commit/27eccaf2bb32593dbe25c9a614cd2882e9ac264a)), closes [#25](https://github.com/amclin/react-project-boilerplate/issues/25)
+
+
+### Features
+
+* **ci:** improve Travis configuration in generated project ([606e215](https://github.com/amclin/react-project-boilerplate/commit/606e21542eecc9202ec42b53a55ff4e3c84ce62d))
+
 ## [2.5.1](https://github.com/amclin/react-project-boilerplate/compare/v2.5.0...v2.5.1) (2019-10-15)
 
 
