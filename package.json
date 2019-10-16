@@ -107,8 +107,8 @@
       "global": {
         "branches": 0,
         "functions": 20,
-        "lines": 9.1,
-        "statements": 9.3
+        "lines": 9,
+        "statements": 9.2
       }
     },
     "testPathIgnorePatterns": [
