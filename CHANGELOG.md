@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/amclin/react-project-boilerplate/compare/v2.6.0...v2.7.0) (2019-10-16)
+
+
+### Features
+
+* **ci:** add Dependabot support in generated projects ([e3fb3b3](https://github.com/amclin/react-project-boilerplate/commit/e3fb3b3a2f2fc8c3176f8de8c74249a2cc864923))
+
 # [2.6.0](https://github.com/amclin/react-project-boilerplate/compare/v2.5.1...v2.6.0) (2019-10-16)
 
 
