@@ -1,0 +1,14 @@
+# Dependabot is a service that automates the
+# process of keeping your dependencies up
+# to date with the latest security and bug
+# fixes. To enable it for this repo, visit
+# https://dependabot.com
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "daily"
+    commit_message:
+      prefix: "fix"
+      prefix_development: "chore"
+      include_scope: true
