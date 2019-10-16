@@ -133,7 +133,10 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
     })
     log()
 
-    await cpy('**', root, {
+    await cpy([
+      '**',
+      '.dependabot/**'
+    ], root, {
       parents: true,
       cwd: path.join(__dirname, 'templates', 'default'),
       rename: name => {
@@ -189,7 +192,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
   log()
   log()
   if (!noGit) {
-    log(`-----------------------------------------------
+    log(`-GitHub----------------------------------------
 A git repo is created, but changes have not been pushed to the
 remote git server. Make sure an empy repo exists at:
   ${chalk.cyan(gitRemote)}
@@ -197,6 +200,17 @@ and then run the onetime command:
   ${chalk.cyan('git push --follow-tags push')}`)
     log(`-----------------------------------------------`)
   }
+  log()
+  log(`-Dependabot------------------------------------
+Your project is prepared with Dependabot support
+for automated management of updating dependencies
+with bugfixes and security updates. To enable it,
+you needto visit:
+  ${chalk.cyan(`https://dependabot.com `)}
+and grant Dependabot access to your GitHub
+repository.
+  `)
+  log(`-----------------------------------------------`)
 }
 
 module.exports = {
