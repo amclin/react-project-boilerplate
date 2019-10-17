@@ -101,18 +101,18 @@ async function notifyUpdate() {
       const isYarn = shouldUseYarn()
 
       log()
-      log(chalk.yellow.bold('A new version of `amclin-create-react-app` is available!'))
+      log(chalk.yellow.bold('A new version of `create-amclin-nextjs-app` is available!'))
       log(`
         You can update by running:
           ${chalk.cyan(
             isYarn
-              ? 'yarn global add amclin-create-react-app'
-              : 'npm i -g amclin-create-react-app'
+              ? 'yarn global add create-amclin-nextjs-app'
+              : 'npm i -g create-amclin-nextjs-app'
           )}
       `)
       log()
       log(`But an even better option is to globally uninstall and in the future run:`)
-      log(chalk.cyan()` npx amclin-create-react-app`)
+      log(chalk.cyan()` npx create-amclin-nextjs-app`)
       log(`That way you'll always have the latest.`)
     }
   } catch (e) {
