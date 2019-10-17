@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages:SecondPage renders an example page 1`] = `
+<main>
+  <p>
+    This is another page at a different URL.
+  </p>
+  <p>
+    Return to the
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      homepage
+    </a>
+  </p>
+</main>
+`;
