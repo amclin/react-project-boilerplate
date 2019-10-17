@@ -1,3 +1,16 @@
+# [2.8.0](https://github.com/amclin/react-project-boilerplate/compare/v2.7.0...v2.8.0) (2019-10-17)
+
+
+### Bug Fixes
+
+* generated app not building or exporting because of unit tests ([c16072c](https://github.com/amclin/react-project-boilerplate/commit/c16072c8f28d2b80fab61b95c99baf91a4b403bc))
+* incorrect import paths in generated unit tests ([a5064a9](https://github.com/amclin/react-project-boilerplate/commit/a5064a9f71bbcc7c5f2827f9e34f9e194861c936))
+
+
+### Features
+
+* provide example of multiple pages and routing ([6e8f66c](https://github.com/amclin/react-project-boilerplate/commit/6e8f66cb46f9de9e23fc3b68186de11bddabc7d2)), closes [#4](https://github.com/amclin/react-project-boilerplate/issues/4)
+
 # [2.7.0](https://github.com/amclin/react-project-boilerplate/compare/v2.6.0...v2.7.0) (2019-10-16)
 
 
