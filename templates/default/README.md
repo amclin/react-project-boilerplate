@@ -52,9 +52,10 @@ npm run export
 ```
 
 #### Creating a Docker Image
+You must have Docker Desktop or another Docker daemon installed and running before executing this script:
 
 ```
-./scripts/build-docker.sh
+`npm run build:docker`
 ```
 
 #### Running Docker Image
