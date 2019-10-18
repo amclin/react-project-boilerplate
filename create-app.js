@@ -133,26 +133,31 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
     })
     log()
 
-    await cpy([
-      '**',
-      '.dependabot/**'
-    ], root, {
-      parents: true,
-      cwd: path.join(__dirname, 'templates', 'default'),
-      rename: name => {
-        const dotFiles = [
-          'babelrc',
-          'editorconfig',
-          'eslintrc.json',
-          'gitignore',
-          'travis.yml'
-        ]
-        if (dotFiles.indexOf(name) > -1) {
-          return '.'.concat(name)
+    const copyTemplateFiles = (dir) => {
+      return cpy([
+        '**',
+        '.dependabot/**'
+      ], root, {
+        parents: true,
+        cwd: path.join(__dirname, 'templates', dir),
+        rename: name => {
+          const dotFiles = [
+            'babelrc',
+            'editorconfig',
+            'eslintrc.json',
+            'gitignore',
+            'travis.yml'
+          ]
+          if (dotFiles.indexOf(name) > -1) {
+            return '.'.concat(name)
+          }
+          return name
         }
-        return name
-      }
-    })
+      })
+    }
+
+    await copyTemplateFiles('default')
+
 
     await populateProject({ root, appName, homepage, author, year })
   }
