@@ -76,7 +76,7 @@
     }
   },
   "bin": {
-    "react-boilerplate-app": "./index.js"
+    "create-amclin-nextjs-app": "./index.js"
   },
   "commitlint": {
     "extends": [
