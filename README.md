@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/amclin-create-react-app.svg)](https://www.npmjs.com/amclin-create-react-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
+[![npm version](https://badge.fury.io/js/create-amclin-nextjs-app.svg)](https://www.npmjs.com/create-amclin-nextjs-app) [![Build Status](https://travis-ci.org/amclin/react-project-boilerplate.svg?branch=master)](https://travis-ci.org/amclin/react-project-boilerplate)
 
 ![Branch Code Coverage](./coverage/badge-branches.svg) ![Functions Code Coverage](./coverage/badge-functions.svg) ![Lines Code Coverage](./coverage/badge-lines.svg) ![Statements Code Coverage](./coverage/badge-statements.svg)
 
@@ -13,7 +13,7 @@ This package includes the global command for creating new React projects incorpo
 
 ### The Easy Way
 
-1. Run `npx amclin-create-react-app`
+1. Run `npx create-amclin-nextjs-app` or `yarn create amclin-nextjs-app`
 2. Create a new empty repo in GitHub with the same project name
 3. Push the new local commits up the new remote repo
 

@@ -1,5 +1,5 @@
 {
-  "name": "amclin-create-react-app",
+  "name": "create-amclin-nextjs-app",
   "version": "2.8.0",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "repository": {
