@@ -17,7 +17,7 @@ const { log, error } = require('./helpers/logger')
 
 const templateSettings = require('./templates/default.json')
 
-const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
+const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) => {
   if (example) {
     const found = await hasExample(example)
     if (!found) {
@@ -158,6 +158,12 @@ const createApp = async ({ appPath, useNpm, noGit = false, example }) => {
 
     await copyTemplateFiles('default')
 
+    // For sites with server-side React (not staticly generated)
+    // We need a different docker file and different build
+    // instructions
+    if(!isStatic) {
+      await copyTemplateFiles('default-ssr')
+    }
 
     await populateProject({ root, appName, homepage, author, year })
   }

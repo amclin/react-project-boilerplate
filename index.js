@@ -22,6 +22,7 @@ const program = new Commander.Command(packageJson.name)
   })
   .option('--use-npm')
   .option('--no-git', 'skip git creation and commits')
+  .option('--with-ssr', 'the generated project will have React server-side rendering')
   .option(
     '-e, --example <example-path>',
     'an example to bootstrap the app with'
@@ -30,12 +31,13 @@ const program = new Commander.Command(packageJson.name)
   .parse(process.argv)
 
 async function run() {
+  const questions = []
   if (typeof projectPath === 'string') {
     projectPath = projectPath.trim()
   }
 
   if (!projectPath) {
-    const res = await prompts({
+    questions.push({
       type: 'text',
       name: 'path',
       message: 'What is your project named?',
@@ -48,10 +50,21 @@ async function run() {
         return `Invalid project name: ${validation.problems[0]}`
       }
     })
+  }
 
-    if (typeof res.path === 'string') {
-      projectPath = res.path.trim()
-    }
+  if (!program.withSsr) {
+    questions.push({
+      type: 'confirm',
+      name: 'isStatic',
+      message: 'Will this site be statically-generated (choose No for server-side rendering)?',
+      initial: true
+    })
+  }
+
+  const res = await prompts(questions)
+
+  if (typeof res.path === 'string') {
+    projectPath = res.path.trim()
   }
 
   if (!projectPath) {
@@ -85,6 +98,7 @@ async function run() {
     appPath: resolvedProjectPath,
     useNpm: !!program.useNpm,
     noGit: !program.git,
+    isStatic: (program.withSsr) ? !program.withSsr : res.isStatic,
     example:
       typeof program.example === 'string' && program.example.trim()
         ? program.example.trim()

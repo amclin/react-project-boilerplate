@@ -14,7 +14,7 @@ describe('Generated App', () => {
   beforeAll( async () => {
     // Run the generator expecting successful STDOUT
     try {
-      await execSync('node ./index.js --use-npm --no-git -- tmp', { stdio: 'inherit' })
+      await execSync('node ./index.js --use-npm --no-git --with-ssr -- tmp', { stdio: 'inherit' })
     } catch (e) {
       error('Failed to complete generation process.', e)
       expect(true).toEqual(false) // Force test failure
