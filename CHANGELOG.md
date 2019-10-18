@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/amclin/react-project-boilerplate/compare/v2.8.0...v3.0.0) (2019-10-18)
+
+
+### Bug Fixes
+
+* rename npm package so yarn create works ([a60ee84](https://github.com/amclin/react-project-boilerplate/commit/a60ee84c347a41f27aff251e4025b89e1c4a5e10)), closes [#18](https://github.com/amclin/react-project-boilerplate/issues/18)
+
+
+### BREAKING CHANGES
+
+* `npx amclin-create-react-app` is now `npx create-amclin-nextjs-app`
+
 # [2.8.0](https://github.com/amclin/react-project-boilerplate/compare/v2.7.0...v2.8.0) (2019-10-17)
 
 
