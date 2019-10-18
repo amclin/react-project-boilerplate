@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/amclin/react-project-boilerplate/compare/v3.0.0...v3.0.1) (2019-10-18)
+
+
+### Bug Fixes
+
+* **yarn:** yarn create failing due to binary name ([7da9829](https://github.com/amclin/react-project-boilerplate/commit/7da9829715fd8cf3cb734e613793a037166eee49)), closes [#18](https://github.com/amclin/react-project-boilerplate/issues/18)
+
 # [3.0.0](https://github.com/amclin/react-project-boilerplate/compare/v2.8.0...v3.0.0) (2019-10-18)
 
 
