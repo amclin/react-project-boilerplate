@@ -4,6 +4,7 @@ const fs = require('fs')
 const makeDir = require('make-dir')
 const os = require('os')
 const path = require('path')
+const merge = require('deepmerge')
 
 const { downloadAndExtractExample } = require('./helpers/examples')
 const { hasExample } = require('./helpers/examples')
@@ -16,6 +17,8 @@ const { populateProject } = require('./helpers/populate-project')
 const { log, error } = require('./helpers/logger')
 
 const templateSettings = require('./templates/default.json')
+const ssrTemplateSettings = require('./templates/default-ssr.json')
+const staticTemplateSettings = require('./templates/default-static.json')
 
 const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) => {
   if (example) {
@@ -83,21 +86,26 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
     })
     log()
   } else {
-    const packageJson = {
-      ...templateSettings.package,
-      name: `${appName}`,
-      version,
-      author,
-      private: true,
-      repository: {
-        type: 'git',
-        url: gitRemote
+    const packageJson = merge(
+      {
+        ...templateSettings.package,
+        name: `${appName}`,
+        version,
+        author,
+        private: true,
+        repository: {
+          type: 'git',
+          url: gitRemote
+        },
+        homepage,
+        bugs: {
+          url: `${homepage}/issues`
+        }
       },
-      homepage,
-      bugs: {
-        url: `${homepage}/issues`
-      }
-    }
+      (isStatic) ?
+        staticTemplateSettings.package :
+        ssrTemplateSettings.package
+    )
 
     fs.writeFileSync(
       path.join(root, 'package.json'),
@@ -161,9 +169,11 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
     // For sites with server-side React (not staticly generated)
     // We need a different docker file and different build
     // instructions
-    if(!isStatic) {
-      await copyTemplateFiles('default-ssr')
-    }
+    await copyTemplateFiles(
+      (isStatic) ?
+        'default-static' :
+        'default-ssr'
+    )
 
     await populateProject({ root, appName, homepage, author, year })
   }
@@ -204,8 +214,9 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
   log()
   if (!noGit) {
     log(`-GitHub----------------------------------------
-A git repo is created, but changes have not been pushed to the
-remote git server. Make sure an empy repo exists at:
+A git repo is created, but changes have not been
+pushed to the remote git server. Make sure an
+empy repo exists at:
   ${chalk.cyan(gitRemote)}
 and then run the onetime command:
   ${chalk.cyan('git push --follow-tags push')}`)
@@ -216,11 +227,10 @@ and then run the onetime command:
 Your project is prepared with Dependabot support
 for automated management of updating dependencies
 with bugfixes and security updates. To enable it,
-you needto visit:
+you need to visit:
   ${chalk.cyan(`https://dependabot.com `)}
 and grant Dependabot access to your GitHub
-repository.
-  `)
+repository.`)
   log(`-----------------------------------------------`)
 }
 

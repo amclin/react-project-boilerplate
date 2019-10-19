@@ -56,7 +56,7 @@ async function run() {
     questions.push({
       type: 'confirm',
       name: 'isStatic',
-      message: 'Will this site be statically-generated (choose No for server-side rendering)?',
+      message: 'Is this app a statically-generated site? (For server-side-rendering choose No)',
       initial: true
     })
   }

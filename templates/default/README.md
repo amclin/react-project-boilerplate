@@ -21,52 +21,31 @@ This is a boilerplate React project incorporating NextJS, CICD pipelines, unit t
 
 After checking out this repo, run `npm install` to install dependencies
 
-### Running Dev Mode
+### Running in Dev Mode
 
 Run `npm run dev` to launch a NextJS development webserver at `http://localhost:3000`
 
-### Production Mode
+### Running in Production Mode
+For convenience and consistency, the preferred method of running in produciton mode is to use Docker. This will best match how an application is running on a shared environment.
 
-#### Static Sites
+#### Build a Docker image
+Create a Docker image from your current source code by running:
 
-To run a static site, deploy the contents of the `/build` folder to a webserver. This of course necessitates having run `npm run build` first to get a statically-generated site
+`npm run docker`
 
-#### Server-Side Rendering (SSR)
+**Warning** You must have Docker Desktop or similar Docker daemon installed and running or the script will fail.
 
-To run a site with Server-Side Rendering, make sure the package is checked out and installed on a suitable NodeJS, NextJS, or serverless environment, and then run `npm start` (`npm run build` needs to have happened first ). See [NextJS documentation for more details](https://nextjs.org/docs#production-deployment).
-
-### Running In a Docker Container
-
-#### Compile the App
-
-To compile a docker image you first need to compile the NextJS app:
-
-```
-npm run build
-```
-
-If this is a statically-generated site (with or without client-side rendering), you then must export the NextJS app:
-
-```
-npm run export
-```
-
-#### Creating a Docker Image
-You must have Docker Desktop or another Docker daemon installed and running before executing this script:
-
-```
-`npm run build:docker`
-```
-
-#### Running Docker Image
-
+#### Run a Docker Container
 Once the Docker image exists in your registry of choice (local or remote), you can then run the app and specify what port it should run on:
 
 ```
-docker run -p 0.0.0.0:3000:80 react-example/%%APPNAME%%:latest
+docker run -p 0.0.0.0:3000:3000 %%APPNAME%%:latest
 ```
 
-If you'd like to run on a different port, replace `3000` with the desired port.
+If you'd like to run on a different port, replace the first `3000` with the desired port.
+
+#### Alternative "local" production mode
+Alternatively the application can be run locally without using Docker. See [NextJS documentation for more details](https://nextjs.org/docs#production-deployment).
 
 ## Contributing
 
