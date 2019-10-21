@@ -1,3 +1,12 @@
+# [3.1.0](https://github.com/amclin/react-project-boilerplate/compare/v3.0.2...v3.1.0) (2019-10-21)
+
+
+### Features
+
+* docker images for server-side-rendered apps ([e5351c1](https://github.com/amclin/react-project-boilerplate/commit/e5351c1960f66b9b6e393b7ff3cd7a6615f497f3)), closes [#9](https://github.com/amclin/react-project-boilerplate/issues/9)
+* prompts for ssr vs static sites ([819bb2d](https://github.com/amclin/react-project-boilerplate/commit/819bb2db0cd6a6b8a8062e9934b9ba0e2aabc1b6)), closes [#10](https://github.com/amclin/react-project-boilerplate/issues/10)
+* simplify building Docker images ([839bbf5](https://github.com/amclin/react-project-boilerplate/commit/839bbf5423f85d6923f37c6cf815f74dd8301e33))
+
 ## [3.0.2](https://github.com/amclin/react-project-boilerplate/compare/v3.0.1...v3.0.2) (2019-10-18)
 
 
