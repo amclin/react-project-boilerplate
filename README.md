@@ -24,3 +24,20 @@ This package includes the global command for creating new React projects incorpo
 3. Run `node ../<path to the boilerplate>/index.js`
 4. Create a new empty repo in GitHub with the same project name
 5. Push the new local commits up the new remote repo
+
+### Advanced Examples
+
+#### Specify project name
+Skip the prompt and specify the project name on the command line:
+
+`npx create-amclin-nextjs-app -- myprojectname`
+
+#### Skip Git repo generation
+Skip the process of creating a git repo for the project. **Note:** *this can result in failures as some of the dependencies expect git to be present*:
+
+`npx create-amclin-nextjs-app --no-git`
+
+#### Assume Server-Side-Rendering (SSR)
+Skip the question and assume the generated project will need server-side rendering:
+
+`npx create-amclin-nextjs-app --with-ssr`

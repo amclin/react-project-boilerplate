@@ -1,0 +1,7 @@
+{
+  "package": {
+    "scripts": {
+      "docker": "npm run build && npm run export && npm run docker:build"
+    }
+  }
+}
