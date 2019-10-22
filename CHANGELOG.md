@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/amclin/react-project-boilerplate/compare/v3.1.1...v3.2.0) (2019-10-22)
+
+
+### Features
+
+* wizard to generate pages in newly created projects ([4e31578](https://github.com/amclin/react-project-boilerplate/commit/4e31578db9bc795b5ebc589d057a7eec4618fbf4)), closes [#16](https://github.com/amclin/react-project-boilerplate/issues/16)
+
 ## [3.1.1](https://github.com/amclin/react-project-boilerplate/compare/v3.1.0...v3.1.1) (2019-10-22)
 
 
