@@ -69,13 +69,13 @@ module.exports = plop => {
         type: 'input',
         name: 'pageName',
         message: 'SEO-friendly page title? (do not include app name)',
-        placeholder: 'My Example Page'
+        default: 'My Example Page'
       },
       {
         type: 'input',
         name: 'pagePath',
         message: 'URL to page? (Start from the first slash and leave off http://example.com and index.html)',
-        placeholder: 'example/my-example-page'
+        default: 'example/my-example-page'
       }
     ],
     actions: [
