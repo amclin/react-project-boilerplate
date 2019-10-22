@@ -1,3 +1,10 @@
+## [3.2.1](https://github.com/amclin/react-project-boilerplate/compare/v3.2.0...v3.2.1) (2019-10-22)
+
+
+### Bug Fixes
+
+* page creation wizard not displaying default values ([c98aa2d](https://github.com/amclin/react-project-boilerplate/commit/c98aa2d1db67e9e63e3b740308c5e5416d326798))
+
 # [3.2.0](https://github.com/amclin/react-project-boilerplate/compare/v3.1.1...v3.2.0) (2019-10-22)
 
 
