@@ -1,0 +1,11 @@
+import React from 'react'
+import renderer from 'react-test-renderer'
+import {{properCase pageName}} from '{{relativeSegments pagePath}}../../../pages/{{pagePath}}'
+
+describe('Pages:{{properCase pageName}}', () => {
+  it('renders the {{pageName}} page', () => {
+    const component = renderer.create(<{{properCase pageName}} />)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

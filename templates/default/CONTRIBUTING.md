@@ -10,7 +10,7 @@ This project follows the Atomic Design pattern for components.
 
 In a NextJS app, pages are stored under the `/pages/` path and APIs are at `/pages/api`. All other React components are stored in `/components/` following  Atomic Design folder structures.
 
-**Do not create new React components from scratch.** Instead, use the wizard to guide you through the process of stubbing out the necessary files and structures expected for each type of component
+**Do not create new React components or pages from scratch.** Instead, use the wizard to guide you through the process of stubbing out the necessary files and structures expected for each type of component
 
 ## Unit Tests
 
