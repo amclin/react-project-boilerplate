@@ -1,3 +1,5 @@
+**Do not create new NextJS pages from scratch.** Instead, use the wizard to guide you through the process of stubbing out the necessary files and structures expected for each type of component. See [Creating New Components](../../CONTRIBUTING.md#new-components)
+
 The `/pages` folder is provided for [NextJS filesystem-based routing](https://nextjs.org/docs).
 
 Over time, this means the `/pages` folder will get very messy as
