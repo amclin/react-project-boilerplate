@@ -1,3 +1,10 @@
+## [3.2.3](https://github.com/amclin/react-project-boilerplate/compare/v3.2.2...v3.2.3) (2019-10-23)
+
+
+### Bug Fixes
+
+* **deps:** bump deepmerge from 4.2.0 to 4.2.1 ([78647e6](https://github.com/amclin/react-project-boilerplate/commit/78647e6c44ac45c7e68edc5c32e397432304d8c5))
+
 ## [3.2.2](https://github.com/amclin/react-project-boilerplate/compare/v3.2.1...v3.2.2) (2019-10-22)
 
 
