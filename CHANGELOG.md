@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/amclin/react-project-boilerplate/compare/v3.2.3...v3.3.0) (2019-10-28)
+
+
+### Features
+
+* remove version locking on generated project dependencies ([9cdbd0b](https://github.com/amclin/react-project-boilerplate/commit/9cdbd0baa1af82cb07943e0c3379b67b802f7a6d))
+
 ## [3.2.3](https://github.com/amclin/react-project-boilerplate/compare/v3.2.2...v3.2.3) (2019-10-23)
 
 
