@@ -4,7 +4,7 @@ const { log } = require('./logger')
 
 const buildYarnCommand = ({dependencies, isOnline, root, devDependencies}) => {
   const command = 'yarn'
-  const args = dependencies ? ['add', '--exact'] : ['install']
+  const args = dependencies ? ['add'] : ['install']
   if(devDependencies) {
     args.push('--dev')
   }
@@ -32,7 +32,6 @@ const buildNpmCommand = ({dependencies, devDependencies}) => {
   const args = [
     'install',
     dependencies && saveCommand,
-    dependencies && '--save-exact',
     '--loglevel',
     'error'
   ]
