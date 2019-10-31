@@ -67,7 +67,9 @@
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
-        "/__mocks__/"
+        "/__mocks__/",
+        "<rootDir>/next.config.js",
+        "<rootDir>/src/pages/_document.js"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],
       "coverageThreshold": {
@@ -83,7 +85,9 @@
         "<rootDir>/node_modules/",
         "<rootDir>/build/",
         "<rootDir>/out/",
-        "<rootDir>/coverage/"
+        "<rootDir>/coverage/",
+        "<rootDir>/next.config.js",
+        "<rootDir>/src/pages/_document.js"
       ],
       "transform": {
         "^.+\\.[t|j]sx?$": "babel-jest"
