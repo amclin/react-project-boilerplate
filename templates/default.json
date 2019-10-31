@@ -68,7 +68,7 @@
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
         "/__mocks__/",
-        "<rootDir>/next.config.js",
+        "<rootDir>/language.config.js",
         "<rootDir>/src/pages/_document.js"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],
@@ -86,7 +86,7 @@
         "<rootDir>/build/",
         "<rootDir>/out/",
         "<rootDir>/coverage/",
-        "<rootDir>/next.config.js",
+        "<rootDir>/language.config.js",
         "<rootDir>/src/pages/_document.js"
       ],
       "transform": {

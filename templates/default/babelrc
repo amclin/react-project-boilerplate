@@ -1,3 +1,14 @@
 {
-  "presets": ["@babel/preset-env","next/babel"]
+  "presets": [
+    [
+      "next/babel",
+      {
+        "@babel/preset-env": {
+          //This tells the preset to look for browserslist config source.
+          // Read more https://babeljs.io/docs/en/babel-preset-env#browserslist-integration
+          "useBuiltIns": "entry"
+        }
+      }
+    ]
+  ]
 }
