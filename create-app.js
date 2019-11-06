@@ -5,6 +5,7 @@ const makeDir = require('make-dir')
 const os = require('os')
 const path = require('path')
 const merge = require('deepmerge')
+const userName = require('git-user-name')
 
 const { downloadAndExtractExample } = require('./helpers/examples')
 const { hasExample } = require('./helpers/examples')
@@ -55,7 +56,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
 
   const gitRemote = `git+ssh://git@github.com/amclin/${appName}.git`
   const homepage = `https://github.com/amclin/${appName}`
-  const author = `Anthony McLin`
+  const author = userName()
   const year = new Date().getFullYear()
 
   if (noGit) {
