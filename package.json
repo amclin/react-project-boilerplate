@@ -167,6 +167,7 @@
     "cpy": "7.3.0",
     "cross-spawn": "7.0.1",
     "deepmerge": "^4.1.1",
+    "git-user-name": "^2.0.0",
     "got": "9.6.0",
     "make-dir": "3.0.0",
     "promisepipe": "3.0.0",
