@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/amclin/react-project-boilerplate/compare/v3.3.2...v3.4.0) (2019-11-07)
+
+
+### Features
+
+* populate author fields from user's git profile ([87b9a01](https://github.com/amclin/react-project-boilerplate/commit/87b9a01d89d5efbdce1a094abefd41cd852a49d3))
+
 ## [3.3.2](https://github.com/amclin/react-project-boilerplate/compare/v3.3.1...v3.3.2) (2019-11-01)
 
 
