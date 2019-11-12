@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/amclin/react-project-boilerplate/compare/v3.4.1...v3.4.2) (2019-11-12)
+
+
+### Bug Fixes
+
+* **deps:** bump chalk from 2.4.2 to 3.0.0 ([6384274](https://github.com/amclin/react-project-boilerplate/commit/638427402ca8e0fbb426c29da1b2c66e75c7b03d))
+
 ## [3.4.1](https://github.com/amclin/react-project-boilerplate/compare/v3.4.0...v3.4.1) (2019-11-12)
 
 
