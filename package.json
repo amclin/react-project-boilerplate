@@ -162,7 +162,7 @@
     ]
   },
   "dependencies": {
-    "chalk": "2.4.2",
+    "chalk": "3.0.0",
     "commander": "4.0.1",
     "cpy": "7.3.0",
     "cross-spawn": "7.0.1",
