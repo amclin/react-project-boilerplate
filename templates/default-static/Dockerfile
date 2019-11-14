@@ -14,8 +14,10 @@ WORKDIR /app
 # node_modules is deleted here. We can't exclude
 # it using .dockerignore because we need the
 # docker-compiled version in the docker image
-RUN rm -rf node_modules && npm install && npm run build && npm run export
-RUN ls -la
+RUN rm -rf node_modules &&\
+    npm install &&\
+    npm run build &&\
+    npm run export
 
 ###### Stage 2 - Run production webserver on nginx
 FROM nginx:alpine

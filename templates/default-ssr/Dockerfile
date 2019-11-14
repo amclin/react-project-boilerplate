@@ -16,14 +16,16 @@ WORKDIR /app
 # node_modules is deleted here. We can't exclude
 # it using .dockerignore because we need the
 # docker-compiled version in the docker image
-RUN rm -rf node_modules && npm install && npm run build
+RUN rm -rf node_modules &&\
+    npm install &&\
+    npm run build
 
 ###### Stage 2 - Run production NextJS app server
 FROM node:lts
 
-ENV NODE_ENV production
-ENV PORT $port
+ENV NODE_ENV=production
 EXPOSE $port
+    PORT=$port
 
 COPY --from=build-stage /app /app
 WORKDIR /app
