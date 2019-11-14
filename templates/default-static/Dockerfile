@@ -36,6 +36,6 @@ COPY --from=build-stage /app/out /usr/share/nginx/html
 
 # Users are not allowed to listen on priviliged ports so replace default 80 with ${PORT}
 RUN sed -i.bak "s/listen\(.*\)80;/listen ${PORT};/" /etc/nginx/conf.d/default.conf
-EXPOSE $port
+EXPOSE $PORT
 
 CMD ["nginx", "-g", "daemon off;"]

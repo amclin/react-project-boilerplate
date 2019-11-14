@@ -1,7 +1,5 @@
 # Multistage build to optimize the final Docker image size
 
-ARG port=3000
-
 ###### Stage 1 - Install deps and compile the NextJS app
 FROM node:lts as build-stage
 LABEL author="%%AUTHOR%%"
@@ -22,10 +20,11 @@ RUN rm -rf node_modules &&\
 
 ###### Stage 2 - Run production NextJS app server
 FROM node:lts
+ARG PORT=3000
 
 ENV NODE_ENV=production
-EXPOSE $port
-    PORT=$port
+    PORT=$PORT
+EXPOSE $PORT
 
 COPY --from=build-stage /app /app
 WORKDIR /app
