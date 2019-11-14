@@ -1,7 +1,5 @@
 # Multistage build to optimize the final Docker image size
 
-ARG port=3000
-
 ###### Stage 1 - Install deps and compile the NextJS app
 FROM node:lts as build-stage
 LABEL author="%%AUTHOR%%"
@@ -16,14 +14,17 @@ WORKDIR /app
 # node_modules is deleted here. We can't exclude
 # it using .dockerignore because we need the
 # docker-compiled version in the docker image
-RUN rm -rf node_modules && npm install && npm run build
+RUN rm -rf node_modules &&\
+    npm install &&\
+    npm run build
 
 ###### Stage 2 - Run production NextJS app server
 FROM node:lts
+ARG PORT=3000
 
-ENV NODE_ENV production
-ENV PORT $port
-EXPOSE $port
+ENV NODE_ENV=production
+    PORT=$PORT
+EXPOSE $PORT
 
 COPY --from=build-stage /app /app
 WORKDIR /app
