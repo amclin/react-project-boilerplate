@@ -1,3 +1,18 @@
+# [3.5.0](https://github.com/amclin/react-project-boilerplate/compare/v3.4.2...v3.5.0) (2019-11-14)
+
+
+### Bug Fixes
+
+* **docker:** containers for static sites wouldn't start ([1f70bdb](https://github.com/amclin/react-project-boilerplate/commit/1f70bdb89f100c5264792c06e5d8f2a8dcb297a9))
+* **docker:** normalize port configuration across both types of projects ([5a99229](https://github.com/amclin/react-project-boilerplate/commit/5a99229470ec791c516a211e1cac2d09908d92f6))
+* **docker:** reduce intermediary containers and build noise ([1f86727](https://github.com/amclin/react-project-boilerplate/commit/1f86727146ad1910b9e6ddee219d46f99e45ee96))
+* **docker:** static generated sites were not hosted at the root URL ([53b6ed8](https://github.com/amclin/react-project-boilerplate/commit/53b6ed8be6d9249012452fb615f204825bf8a715))
+
+
+### Features
+
+* **performance:** improved cache performance for assets on static sites ([c8f29b3](https://github.com/amclin/react-project-boilerplate/commit/c8f29b3540597b5e26f25fa9e65da0aa3b2da8ea))
+
 ## [3.4.2](https://github.com/amclin/react-project-boilerplate/compare/v3.4.1...v3.4.2) (2019-11-12)
 
 
