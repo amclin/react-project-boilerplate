@@ -1,7 +1,5 @@
 # Multistage build to optimize the final Docker image size
 
-ARG port=3000
-
 ###### Stage 1 - Install deps and compile the NextJS app
 FROM node:lts as build-stage
 LABEL author="%%AUTHOR%%"
@@ -21,6 +19,7 @@ RUN ls -la
 
 ###### Stage 2 - Run production webserver on nginx
 FROM nginx:alpine
+ARG PORT=3000
 
 # Add app-specific configs and files
 COPY config/nginx.conf /etc/nginx/conf.d/default.conf
@@ -33,8 +32,8 @@ COPY --from=build-stage /app /usr/share/nginx/html
 # comment user directive as master process is run as user in OpenShift anyhow
 # RUN sed -i.bak 's/^user/#user/' /etc/nginx/nginx.conf
 
-# Users are not allowed to listen on priviliged ports so replace default 80 with ${SERVICE_PORT}
-RUN sed -i.bak 's/listen\(.*\)80;/listen $port;/' /etc/nginx/conf.d/default.conf
+# Users are not allowed to listen on priviliged ports so replace default 80 with ${PORT}
+RUN sed -i.bak "s/listen\(.*\)80;/listen ${PORT};/" /etc/nginx/conf.d/default.conf
 EXPOSE $port
 
 CMD ["nginx", "-g", "daemon off;"]
