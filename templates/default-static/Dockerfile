@@ -23,7 +23,7 @@ ARG PORT=3000
 
 # Add app-specific configs and files
 COPY config/nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build-stage /app /usr/share/nginx/html
+COPY --from=build-stage /app/out /usr/share/nginx/html
 
 # nginix images don't run by default on OpenShift because of permissions
 # https://torstenwalter.de/openshift/nginx/2017/08/04/nginx-on-openshift.html
