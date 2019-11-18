@@ -1,3 +1,10 @@
+## [3.5.1](https://github.com/amclin/react-project-boilerplate/compare/v3.5.0...v3.5.1) (2019-11-18)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump https-proxy-agent from 2.2.2 to 2.2.4 ([df75a52](https://github.com/amclin/react-project-boilerplate/commit/df75a52148fe3d677028784d09927cbf4d8f8364))
+
 # [3.5.0](https://github.com/amclin/react-project-boilerplate/compare/v3.4.2...v3.5.0) (2019-11-14)
 
 
