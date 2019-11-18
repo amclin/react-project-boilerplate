@@ -22,7 +22,10 @@ const program = new Commander.Command(packageJson.name)
   })
   .option('--use-npm')
   .option('--no-git', 'skip git creation and commits')
-  .option('--with-ssr', 'the generated project will have React server-side rendering')
+  .option(
+    '--with-ssr',
+    'the generated project will have React server-side rendering'
+  )
   .option(
     '-e, --example <example-path>',
     'an example to bootstrap the app with'
@@ -56,8 +59,19 @@ async function run() {
     questions.push({
       type: 'confirm',
       name: 'isStatic',
-      message: 'Is this app a statically-generated site? (For server-side-rendering choose No)',
+      message:
+        'Is this app a statically-generated site? (For server-side-rendering choose No)',
       initial: true
+    })
+  }
+
+  const defaultGitUrl = 'git+ssh://git@github.com/example/example.git'
+  if (program.git) {
+    questions.push({
+      type: 'text',
+      name: 'gitUrl',
+      message: 'Please provide the full URL used to clone the git repo:',
+      initial: defaultGitUrl
     })
   }
 
@@ -98,7 +112,8 @@ async function run() {
     appPath: resolvedProjectPath,
     useNpm: !!program.useNpm,
     noGit: !program.git,
-    isStatic: (program.withSsr) ? !program.withSsr : res.isStatic,
+    isStatic: program.withSsr ? !program.withSsr : res.isStatic,
+    gitRemote: program.git ? res.gitUrl : defaultGitUrl,
     example:
       typeof program.example === 'string' && program.example.trim()
         ? program.example.trim()
@@ -115,7 +130,11 @@ async function notifyUpdate() {
       const isYarn = shouldUseYarn()
 
       log()
-      log(chalk.yellow.bold('A new version of `create-amclin-nextjs-app` is available!'))
+      log(
+        chalk.yellow.bold(
+          'A new version of `create-amclin-nextjs-app` is available!'
+        )
+      )
       log(`
         You can update by running:
           ${chalk.cyan(
@@ -125,7 +144,9 @@ async function notifyUpdate() {
           )}
       `)
       log()
-      log(`But an even better option is to globally uninstall and in the future run:`)
+      log(
+        `But an even better option is to globally uninstall and in the future run:`
+      )
       log(chalk.cyan()` npx create-amclin-nextjs-app`)
       log(`That way you'll always have the latest.`)
     }
