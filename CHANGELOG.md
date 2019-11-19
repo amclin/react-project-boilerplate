@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/amclin/react-project-boilerplate/compare/v3.5.1...v3.6.0) (2019-11-19)
+
+
+### Features
+
+* prompt for remote git repository ([4e83d22](https://github.com/amclin/react-project-boilerplate/commit/4e83d2264169ce414e9b48781c5947705a96aa2f))
+
 ## [3.5.1](https://github.com/amclin/react-project-boilerplate/compare/v3.5.0...v3.5.1) (2019-11-18)
 
 
