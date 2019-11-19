@@ -55,4 +55,6 @@ describe('populate-project', () => {
     expect(result.includes('mockAppName'))
     expect(result.includes('http://example.com/mockHomepage'))
   })
+
+  it.skip('logs an error when it cannot replace variables', {})
 })

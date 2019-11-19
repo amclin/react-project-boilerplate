@@ -21,7 +21,17 @@ const templateSettings = require('./templates/default.json')
 const ssrTemplateSettings = require('./templates/default-ssr.json')
 const staticTemplateSettings = require('./templates/default-static.json')
 
-const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) => {
+const createApp = async ({
+  appPath,
+  example,
+  gitRemote,
+  isStatic,
+  noGit = false,
+  useNpm
+}) => {
+  const root = path.resolve(appPath)
+  const appName = path.basename(root)
+
   if (example) {
     const found = await hasExample(example)
     if (!found) {
@@ -34,8 +44,6 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
     }
   }
 
-  const root = path.resolve(appPath)
-  const appName = path.basename(root)
   const version = '0.1.0'
 
   await makeDir(root)
@@ -54,7 +62,6 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
   await makeDir(root)
   process.chdir(root)
 
-  const gitRemote = `git+ssh://git@github.com/amclin/${appName}.git`
   const homepage = `https://github.com/amclin/${appName}`
   const author = userName()
   const year = new Date().getFullYear()
@@ -103,9 +110,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
           url: `${homepage}/issues`
         }
       },
-      (isStatic) ?
-        staticTemplateSettings.package :
-        ssrTemplateSettings.package
+      isStatic ? staticTemplateSettings.package : ssrTemplateSettings.package
     )
 
     fs.writeFileSync(
@@ -142,11 +147,8 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
     })
     log()
 
-    const copyTemplateFiles = (dir) => {
-      return cpy([
-        '**',
-        '.dependabot/**'
-      ], root, {
+    const copyTemplateFiles = dir => {
+      return cpy(['**', '.dependabot/**'], root, {
         parents: true,
         cwd: path.join(__dirname, 'templates', dir),
         rename: name => {
@@ -170,11 +172,7 @@ const createApp = async ({ appPath, useNpm, noGit = false, isStatic, example }) 
     // For sites with server-side React (not staticly generated)
     // We need a different docker file and different build
     // instructions
-    await copyTemplateFiles(
-      (isStatic) ?
-        'default-static' :
-        'default-ssr'
-    )
+    await copyTemplateFiles(isStatic ? 'default-static' : 'default-ssr')
 
     await populateProject({ root, appName, homepage, author, year })
   }
