@@ -5,7 +5,11 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-# react-project-boilerplate
+# create-amclin-nextjs-app
+
+- [Using the generator](#using)
+- [Folder Structure of generated projects](./tree/master/templates/default)
+- [Contributing to this project](./CONTRIBUTING.md)
 
 This package includes the global command for creating new React projects incorporating [Next.js](https://github.com/zeit/next.js), CICD pipelines, unit testing, quality gates, and code styling. It is useful for ensuring consistent working environments across multiple different applications.
 
@@ -41,3 +45,6 @@ Skip the process of creating a git repo for the project. **Note:** *this can res
 Skip the question and assume the generated project will need server-side rendering:
 
 `npx create-amclin-nextjs-app --with-ssr`
+
+## Contributing
+Help is always appreciated, please log bug reports, features, and fixes. See [Contribution Guidelines](CONTRIBUTING.md) for more on how you can help.
