@@ -4,17 +4,22 @@ const { execSync } = require('child_process')
 const rimraf = require('rimraf')
 const { error } = require('./helpers/logger')
 
-// TODO: Jest can't process coverage of spaned processes
-// May need to wrap NYC to get the coverage of all the
-// code executed here
-// https://github.com/amclin/react-project-boilerplate/issues/28
+const WORKAROUND_PREPEND = 'nyc --reporter none';
+
+// TODO: Once nyc major version 15 is released, update to that version and make any necessary code
+// adjustments to accommodate breaking changes (if applicable). Current version of nyc
+// relies on npm module spawn-wrap and has issues with edge cases when used in this particular
+// manner - particularly on Windows runtimes: https://github.com/facebook/jest/issues/5274#issuecomment-554657586 
+
+// Discussion thread: https://github.com/amclin/react-project-boilerplate/issues/28
 
 describe('Integration Test', () => {
 describe('Generated App', () => {
   beforeAll( async () => {
     // Run the generator expecting successful STDOUT
     try {
-      await execSync('node ./index.js --use-npm --no-git --with-ssr -- tmp', { stdio: 'inherit' })
+      // Interim workaround: https://github.com/facebook/jest/issues/3190#issuecomment-354758036
+      await execSync(`${WORKAROUND_PREPEND} node ./index.js --use-npm --no-git --with-ssr -- tmp`, { stdio: 'inherit' })
     } catch (e) {
       error('Failed to complete generation process.', e)
       expect(true).toEqual(false) // Force test failure
