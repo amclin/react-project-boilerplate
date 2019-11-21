@@ -4,14 +4,13 @@ const { execSync } = require('child_process')
 const rimraf = require('rimraf')
 const { error } = require('./helpers/logger')
 
-const WORKAROUND_PREPEND = 'nyc --reporter none';
-
 // TODO: Once nyc major version 15 is released, update to that version and make any necessary code
 // adjustments to accommodate breaking changes (if applicable). Current version of nyc
 // relies on npm module spawn-wrap and has issues with edge cases when used in this particular
 // manner - particularly on Windows runtimes: https://github.com/facebook/jest/issues/5274#issuecomment-554657586 
 
 // Discussion thread: https://github.com/amclin/react-project-boilerplate/issues/28
+const WORKAROUND_PREPEND = 'nyc --reporter none';
 
 describe('Integration Test', () => {
 describe('Generated App', () => {
