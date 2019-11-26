@@ -28,7 +28,7 @@
     "pretest": "npm run lint",
     "semantic-release": "npx semantic-release",
     "start": "next start",
-    "test": "jest --coverage",
+    "test": "nyc jest --coverage",
     "test:badges": "jest-coverage-badges"
   },
   "devDependencies": {
@@ -55,6 +55,7 @@
     "jest-coverage-badges": "^1.1.2",
     "lint-staged": "^9.4.0",
     "next": "^9.1.1",
+    "nyc": "^14.1.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
     "prop-types": "^15.7.2",
@@ -84,6 +85,7 @@
     ]
   },
   "jest": {
+    "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx,ts,tsx}"
     ],
@@ -97,11 +99,7 @@
       "/__mocks__/"
     ],
     "coverageReporters": [
-      "clover",
-      "json",
-      "json-summary",
-      "lcov",
-      "text"
+      "none"
     ],
     "coverageThreshold": {
       "global": {
@@ -122,6 +120,13 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 1.5,
+    "functions": 22.5,
+    "lines": 11,
+    "statements": 11
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
