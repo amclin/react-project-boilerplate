@@ -89,6 +89,7 @@
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/build/",
+      "<rootDir>/default/src/pages/_document.jsx",
       "<rootDir>/out/",
       "<rootDir>/.next/",
       "<rootDir>/node_modules/",

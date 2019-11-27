@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle creates a <head> element suitable for global usage across all pages 1`] = `
+<Head>
+  <title>
+    mock title for test
+  </title>
+</Head>
+`;

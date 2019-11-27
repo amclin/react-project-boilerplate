@@ -19,6 +19,9 @@
   },
   "plugins": ["react"],
   "rules": {
-    "react/prop-types": ["error"]
+    "react/prop-types": ["error"],
+    "react/jsx-props-no-spreading": ["warn"],
+    "react/forbid-prop-types": ["warn"],
+    "no-unused-vars": ["warn"]
   }
 }
