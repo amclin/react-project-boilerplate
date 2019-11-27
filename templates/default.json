@@ -62,6 +62,7 @@
       "collectCoverageFrom": ["**/*.{js,jsx,ts,tsx}"],
       "coveragePathIgnorePatterns": [
         "<rootDir>/build/",
+        "<rootDir>/src/pages/_app.jsx",
         "<rootDir>/src/pages/_document.jsx",
         "<rootDir>/out/",
         "<rootDir>/.next/",
