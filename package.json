@@ -1,6 +1,6 @@
 {
   "name": "create-amclin-nextjs-app",
-  "version": "3.6.0",
+  "version": "3.6.1",
   "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
   "repository": {
     "type": "git",
@@ -93,7 +93,7 @@
       "<rootDir>/.next/",
       "<rootDir>/node_modules/",
       "<rootDir>/coverage/",
-      "<rootDir>/tmp/",
+      "<rootDir>/tmp-*/",
       "/__mocks__/"
     ],
     "coverageReporters": [
@@ -117,7 +117,7 @@
       "<rootDir>/build/",
       "<rootDir>/out/",
       "<rootDir>/coverage/",
-      "<rootDir>/tmp/"
+      "<rootDir>/tmp-*/"
     ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
