@@ -1,3 +1,10 @@
+## [3.6.2](https://github.com/amclin/react-project-boilerplate/compare/v3.6.1...v3.6.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **test command:** tmp dir now use random int to not conflict ([36bffdf](https://github.com/amclin/react-project-boilerplate/commit/36bffdf1c146ca5d3c976f41b148f4c26577fd40))
+
 ## [3.6.1](https://github.com/amclin/react-project-boilerplate/compare/v3.6.0...v3.6.1) (2019-12-02)
 
 
