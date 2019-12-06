@@ -1,3 +1,10 @@
+## [3.6.3](https://github.com/amclin/react-project-boilerplate/compare/v3.6.2...v3.6.3) (2019-12-06)
+
+
+### Bug Fixes
+
+* **deps:** bump cpy from 7.3.0 to 8.0.0 ([2cb9822](https://github.com/amclin/react-project-boilerplate/commit/2cb98224448451b5dcd50ca4df8ce9ff9b0dd502))
+
 ## [3.6.2](https://github.com/amclin/react-project-boilerplate/compare/v3.6.1...v3.6.2) (2019-12-02)
 
 
