@@ -1,3 +1,10 @@
+## [3.6.5](https://github.com/amclin/react-project-boilerplate/compare/v3.6.4...v3.6.5) (2019-12-10)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.0.2 to 10.0.3 ([61c6da8](https://github.com/amclin/react-project-boilerplate/commit/61c6da832161c8ae95fb033d082f986dd2b41b8d))
+
 ## [3.6.4](https://github.com/amclin/react-project-boilerplate/compare/v3.6.3...v3.6.4) (2019-12-09)
 
 
