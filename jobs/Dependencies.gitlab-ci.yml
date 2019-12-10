@@ -1,0 +1,9 @@
+Install Dependencies:
+    stage: dependencies
+    image: node:latest
+    script:
+      - npm install
+    artifacts:
+      paths:
+        - node_modules/
+  

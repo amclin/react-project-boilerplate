@@ -1,0 +1,9 @@
+# Generates version numbers and changelog
+
+version:
+  stage: release
+  script:
+    - npm run test:badges && npm run semantic-release
+  only:
+    refs:
+      - master
