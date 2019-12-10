@@ -1,0 +1,37 @@
+image: node:latest
+
+stages:
+  - dependencies
+  - test
+  # - build
+  - release
+  # - deploy  # dummy stage to follow the template guidelines
+  # - review
+  # - dast
+  # - staging
+  # - canary
+  # - production
+  # - incremental rollout 10%
+  # - incremental rollout 25%
+  # - incremental rollout 50%
+  # - incremental rollout 100%
+  # - performance
+  # - cleanup
+
+cache:
+  paths:
+    - node_modules/
+
+include:
+  - local: jobs/Dependencies.gitlab-ci.yml
+  - local: jobs/Build.gitlab-ci.yml
+  - local: jobs/Test.gitlab-ci.yml
+#  - template: Jobs/Code-Quality.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
+  - local: jobs/Release.gitlab-ci.yml
+#  - template: Jobs/Deploy.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Jobs/Deploy.gitlab-ci.yml
+#  - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
+#  - template: Security/DAST.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Security/DAST.gitlab-ci.yml
+#  - template: Security/Container-Scanning.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Security/Container-Scanning.gitlab-ci.yml
+#  - template: Security/Dependency-Scanning.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Security/Dependency-Scanning.gitlab-ci.yml
+#  - template: Security/License-Management.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Security/License-Management.gitlab-ci.yml
+#  - template: Security/SAST.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Security/SAST.gitlab-ci.yml
