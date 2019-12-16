@@ -1,3 +1,10 @@
+## [3.6.8](https://github.com/amclin/react-project-boilerplate/compare/v3.6.7...v3.6.8) (2019-12-16)
+
+
+### Bug Fixes
+
+* **deps:** bump replace-in-file from 4.2.0 to 5.0.2 ([bbd323d](https://github.com/amclin/react-project-boilerplate/commit/bbd323dd5a15db03b9962916d86cb57539f46343))
+
 ## [3.6.7](https://github.com/amclin/react-project-boilerplate/compare/v3.6.6...v3.6.7) (2019-12-13)
 
 
