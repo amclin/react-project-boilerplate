@@ -1,0 +1,2 @@
+API_GATEWAY_URL=https://countries.trevorblades.com/
+PROXY_SERVER_URL=${API_GATEWAY_URL}

@@ -22,6 +22,7 @@
     "react/prop-types": ["error"],
     "react/jsx-props-no-spreading": ["warn"],
     "react/forbid-prop-types": ["warn"],
-    "no-unused-vars": ["warn"]
+    "no-unused-vars": ["warn"],
+    "import/no-unresolved": ["warn"]
   }
 }

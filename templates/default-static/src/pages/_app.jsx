@@ -37,4 +37,4 @@ MyApp.defaultProps = {
   pageProps: undefined
 }
 
-export default withApollo(MyApp)
+export default withApollo(MyApp, {ssr: false})

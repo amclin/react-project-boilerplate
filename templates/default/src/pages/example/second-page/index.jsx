@@ -4,7 +4,7 @@ import PageTitle from '../../../components/organisms/PageTitle'
 
 const SecondPage = () => {
   return (
-    <>
+    <div style={{textAlign: 'center'}}>
       <PageTitle title="Second Page - %%APPNAME%%" />
       <main>
         <p>This is another page at a different URL.</p>
@@ -13,7 +13,7 @@ const SecondPage = () => {
           <Link href="/">homepage</Link>
         </p>
       </main>
-    </>
+    </div>
   )
 }
 

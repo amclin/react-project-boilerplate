@@ -23,15 +23,15 @@
     "build": "next build",
     "dev": "next",
     "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
+    "lint:eslint": "eslint \"**/*.{jsx,js}\"",
     "lint:prettier": "pretty-quick",
-    "pretest": "npm run lint",
     "semantic-release": "npx semantic-release",
     "start": "next start",
     "test": "jest --coverage",
     "test:badges": "jest-coverage-badges"
   },
   "devDependencies": {
+    "@apollo/react-testing": "^3.1.3",
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@commitlint/cli": "^8.2.0",
@@ -89,8 +89,11 @@
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/build/",
-      "<rootDir>/default/src/pages/_app.jsx",
-      "<rootDir>/default/src/pages/_document.jsx",
+      "<rootDir>/helpers/",
+      "<rootDir>/templates/default/src/pages/_app.jsx",
+      "<rootDir>/templates/default/src/pages/_document.jsx",
+      "<rootDir>/templates/default/src/config/",
+      "<rootDir>/templates/default/src/utils/",
       "<rootDir>/out/",
       "<rootDir>/.next/",
       "<rootDir>/node_modules/",
@@ -119,7 +122,8 @@
       "<rootDir>/build/",
       "<rootDir>/out/",
       "<rootDir>/coverage/",
-      "<rootDir>/tmp/"
+      "<rootDir>/tmp/",
+      "<rootDir>/templates/default/src/utils/"
     ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
@@ -164,6 +168,11 @@
     ]
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@apollo/react-ssr": "^3.1.3",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
     "chalk": "3.0.0",
     "commander": "4.0.1",
     "cpy": "7.3.0",
@@ -171,6 +180,9 @@
     "deepmerge": "^4.1.1",
     "git-user-name": "^2.0.0",
     "got": "9.6.0",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-unfetch": "^3.0.0",
     "make-dir": "3.0.0",
     "promisepipe": "3.0.0",
     "prompts": "2.3.0",

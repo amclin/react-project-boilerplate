@@ -1,6 +1,22 @@
 {
-  "dependencies": ["next", "react", "react-dom", "prop-types"],
+  "dependencies": [
+    "next", 
+    "react", 
+    "react-dom", 
+    "prop-types",
+    "@apollo/react-hooks",
+    "@apollo/react-ssr",
+    "apollo-cache-inmemory",
+    "apollo-client",
+    "apollo-link-http",
+    "isomorphic-unfetch",
+    "graphql",
+    "graphql-tag",
+    "dotenv",
+    "dotenv-expand"
+  ],
   "devDependencies": [
+    "@apollo/react-testing",
     "@babel/core",
     "@babel/preset-env",
     "@commitlint/cli",
@@ -26,7 +42,8 @@
     "plop",
     "prettier",
     "pretty-quick",
-    "react-test-renderer"
+    "react-test-renderer",
+    "babel-plugin-graphql-tag"
   ],
   "package": {
     "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
@@ -40,12 +57,11 @@
       "dev": "next",
       "generate": "plop",
       "lint": "npm run lint:eslint",
-      "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
+      "lint:eslint": "eslint \"**/*.{jsx,js}\"",
       "lint:prettier": "pretty-quick",
-      "pretest": "npm run lint",
       "semantic-release": "npx semantic-release",
       "start": "next start",
-      "test": "jest --coverage",
+      "test": "APP_ENV=dev jest --coverage",
       "test:badges": "jest-coverage-badges"
     },
     "husky": {
@@ -59,15 +75,20 @@
       "extends": ["@commitlint/config-angular"]
     },
     "jest": {
+      "setupFiles": ["<rootDir>/src/utils/dotenv"],
       "collectCoverageFrom": ["**/*.{js,jsx,ts,tsx}"],
       "coveragePathIgnorePatterns": [
         "<rootDir>/build/",
         "<rootDir>/src/pages/_app.jsx",
         "<rootDir>/src/pages/_document.jsx",
+        "<rootDir>/src/components/organisms/CountrySelector/CountrySelector.jsx",
         "<rootDir>/out/",
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
+        "<rootDir>/next.config.js",
+        "<rootDir>/src/config",
+        "<rootDir>/src/utils/apollo.js",
         "/__mocks__/"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],

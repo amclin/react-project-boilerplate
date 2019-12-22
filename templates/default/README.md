@@ -26,9 +26,11 @@ After checking out this repo, run `npm install` to install dependencies
 Run `npm run dev` to launch a NextJS development webserver at `http://localhost:3000`
 
 ### Running in Production Mode
+
 For convenience and consistency, the preferred method of running in produciton mode is to use Docker. This will best match how an application is running on a shared environment.
 
 #### Build a Docker image
+
 Create a Docker image from your current source code by running:
 
 `npm run docker`
@@ -45,8 +47,26 @@ docker run -p 0.0.0.0:3000:3000 %%APPNAME%%:latest
 If you'd like to run on a different port, replace the first `3000` with the desired port.
 
 #### Alternative "local" production mode
+
 Alternatively the application can be run locally without using Docker. See [NextJS documentation for more details](https://nextjs.org/docs#production-deployment).
+
+## Environmental Configs (.env file)
+
+The order of loading files is:
+
+1. Local overrides (.env.local)
+2. Env specific (ie. .env.production)
+3. Default (.env)
+
+Use Environments:
+
+Add the APP_ENV file if not present (nameed `.env.<APP_ENV>`) and use it running `APP_ENV=production <your_command>` 
 
 ## Contributing
 
 Add new components and features using `npm run generate`. See [Contributing New Components](CONTRIBUTING.md#new-components) for more details.
+
+## Code references
+
+- Apollo `fetchMore` with `useQuery` : https://github.com/zeit/next.js/blob/canary/examples/with-apollo/components/PostList.js
+

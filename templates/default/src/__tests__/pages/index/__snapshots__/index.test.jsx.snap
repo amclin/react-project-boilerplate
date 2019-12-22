@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages:Homepage renders the homepage 1`] = `
-Array [
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
   <p>
     Welcome to the boilerplate React app using NextJS!
-  </p>,
+  </p>
   <p>
     Try navigating to
     <a
@@ -12,9 +18,15 @@ Array [
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
-      another page
+       another page 
     </a>
     and observe the URL changing
-  </p>,
-]
+  </p>
+  <p>
+    Or try interacting with our graphql country endpoint
+  </p>
+  <div>
+    Loading Countries...
+  </div>
+</div>
 `;

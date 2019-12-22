@@ -60,7 +60,7 @@ async function run() {
       type: 'confirm',
       name: 'isStatic',
       message:
-        'Is this app a statically-generated site? (For server-side-rendering choose No)',
+        'Is this app a static site (no server)? (For server-side-rendering choose No)',
       initial: true
     })
   }

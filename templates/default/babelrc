@@ -6,5 +6,10 @@
         "preset-env": { "targets": { "node": "current" } }
       }
     ]
+  ],
+  "plugins": [
+    [
+      "graphql-tag"
+    ]
   ]
 }
