@@ -1,3 +1,66 @@
+## [3.6.9](https://github.com/amclin/react-project-boilerplate/compare/v3.6.8...v3.6.9) (2019-12-19)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.0.4 to 10.1.0 ([7ced164](https://github.com/amclin/react-project-boilerplate/commit/7ced164006214a952181cdf3f0b3909e2d214371))
+
+## [3.6.8](https://github.com/amclin/react-project-boilerplate/compare/v3.6.7...v3.6.8) (2019-12-16)
+
+
+### Bug Fixes
+
+* **deps:** bump replace-in-file from 4.2.0 to 5.0.2 ([bbd323d](https://github.com/amclin/react-project-boilerplate/commit/bbd323dd5a15db03b9962916d86cb57539f46343))
+
+## [3.6.7](https://github.com/amclin/react-project-boilerplate/compare/v3.6.6...v3.6.7) (2019-12-13)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump npm from 6.12.1 to 6.13.4 ([224e570](https://github.com/amclin/react-project-boilerplate/commit/224e570207b364f365775693aa783d70619ce8af))
+
+## [3.6.6](https://github.com/amclin/react-project-boilerplate/compare/v3.6.5...v3.6.6) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.0.3 to 10.0.4 ([d03c4f8](https://github.com/amclin/react-project-boilerplate/commit/d03c4f85839190a37b098e2be54dda5177d89f6b))
+
+## [3.6.5](https://github.com/amclin/react-project-boilerplate/compare/v3.6.4...v3.6.5) (2019-12-10)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.0.2 to 10.0.3 ([61c6da8](https://github.com/amclin/react-project-boilerplate/commit/61c6da832161c8ae95fb033d082f986dd2b41b8d))
+
+## [3.6.4](https://github.com/amclin/react-project-boilerplate/compare/v3.6.3...v3.6.4) (2019-12-09)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.0.1 to 10.0.2 ([dbac866](https://github.com/amclin/react-project-boilerplate/commit/dbac866f65f68e2e25e4af439ed32d684efff2fb))
+
+## [3.6.3](https://github.com/amclin/react-project-boilerplate/compare/v3.6.2...v3.6.3) (2019-12-06)
+
+
+### Bug Fixes
+
+* **deps:** bump cpy from 7.3.0 to 8.0.0 ([2cb9822](https://github.com/amclin/react-project-boilerplate/commit/2cb98224448451b5dcd50ca4df8ce9ff9b0dd502))
+
+## [3.6.2](https://github.com/amclin/react-project-boilerplate/compare/v3.6.1...v3.6.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **test command:** tmp dir now use random int to not conflict ([36bffdf](https://github.com/amclin/react-project-boilerplate/commit/36bffdf1c146ca5d3c976f41b148f4c26577fd40))
+
+## [3.6.1](https://github.com/amclin/react-project-boilerplate/compare/v3.6.0...v3.6.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 9.6.0 to 10.0.1 ([295f250](https://github.com/amclin/react-project-boilerplate/commit/295f250c5edc280d75d6d3df62cd6823197c5d9a))
+
 # [3.6.0](https://github.com/amclin/react-project-boilerplate/compare/v3.5.1...v3.6.0) (2019-11-19)
 
 

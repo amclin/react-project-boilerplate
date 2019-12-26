@@ -4,7 +4,7 @@ const rimraf = require('rimraf')
 const { populateProject } = require('./populate-project')
 const { log, error } = require('./logger')
 
-const tmpDir = 'tmp'
+const tmpDir = `tmp-${Math.floor(Math.random() * 1000000)}`
 const tmpFile = `${tmpDir}/testPopulateProject.md`
 const mockMd = `
   sample content
@@ -18,14 +18,14 @@ const mockMd = `
 describe('populate-project', () => {
   beforeEach(() => {
     // Cleanup the temp
-    rimraf.sync('./tmp', {}, () => {
-      log('Could not remove tmp directory before test.')
+    rimraf.sync(`./${tmpDir}`, {}, () => {
+      log(`Could not remove tmp directory (${tmpDir}) before test.`)
     })
   })
   afterEach(() => {
     // Cleanup the temp
-    rimraf.sync('./tmp', {}, () => {
-      log('Could not remove tmp directory after test.')
+    rimraf.sync(`./${tmpDir}`, {}, () => {
+      log(`Could not remove tmp directory (${tmpDir}) after test.`)
     })
   })
 

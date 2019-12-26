@@ -1,0 +1,18 @@
+# Example: https://gitlab.com/gitlab-org/gitlab-ce/blob/master/lib/gitlab/ci/templates/Jobs/Test.gitlab-ci.yml
+
+variables:
+    JEST_JUNIT_OUTPUT_DIR: reports
+  
+  test:
+    stage: test
+    script:
+      - npm run test:ci
+    except:
+      variables:
+        - $TEST_DISABLED
+    artifacts:
+      paths:
+        - coverage/
+        - reports/
+      reports:
+        junit: reports/junit.xml
