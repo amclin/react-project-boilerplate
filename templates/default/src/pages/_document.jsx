@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Flavicon from '../components/molecules/Favicon'
+import Favicon from '../components/molecules/Favicon'
 import Manifest from '../components/molecules/Manifest'
 
 class MyDocument extends Document {
@@ -20,7 +20,7 @@ class MyDocument extends Document {
            * meta tags, global scripts, global stylesheets, rel links, etc.
            * Tracking scripts like Google Analytics (try https://github.com/react-ga/react-ga)
            */}
-          <Flavicon />
+          <Favicon />
           <Manifest />
         </Head>
         <body>
