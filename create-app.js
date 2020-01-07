@@ -1,5 +1,4 @@
 const chalk = require('chalk')
-const cpy = require('cpy')
 const fs = require('fs')
 const makeDir = require('make-dir')
 const os = require('os')
@@ -8,6 +7,7 @@ const merge = require('deepmerge')
 const userName = require('git-user-name')
 
 const { downloadAndExtractExample } = require('./helpers/examples')
+const { copyTemplateFiles } = require('./helpers/copy-template-files')
 const { hasExample } = require('./helpers/examples')
 const { install } = require('./helpers/install')
 const { isFolderEmpty } = require('./helpers/is-folder-empty')
@@ -147,32 +147,12 @@ const createApp = async ({
     })
     log()
 
-    const copyTemplateFiles = dir => {
-      return cpy(['**', '.dependabot/**'], root, {
-        parents: true,
-        cwd: path.join(__dirname, 'templates', dir),
-        rename: name => {
-          const dotFiles = [
-            'babelrc',
-            'editorconfig',
-            'eslintrc.json',
-            'gitignore',
-            'travis.yml'
-          ]
-          if (dotFiles.indexOf(name) > -1) {
-            return '.'.concat(name)
-          }
-          return name
-        }
-      })
-    }
-
-    await copyTemplateFiles('default')
+    await copyTemplateFiles(root, 'default')
 
     // For sites with server-side React (not staticly generated)
     // We need a different docker file and different build
     // instructions
-    await copyTemplateFiles(isStatic ? 'default-static' : 'default-ssr')
+    await copyTemplateFiles(root, isStatic ? 'default-static' : 'default-ssr')
 
     await populateProject({ root, appName, homepage, author, year })
   }
