@@ -1,3 +1,10 @@
+## [3.6.13](https://github.com/amclin/react-project-boilerplate/compare/v3.6.12...v3.6.13) (2020-01-07)
+
+
+### Bug Fixes
+
+* **ci:** bump semantic-release dependency for gitlab users ([14063f5](https://github.com/amclin/react-project-boilerplate/commit/14063f5f4da80c76047a640160198b1fde8f80f1))
+
 ## [3.6.12](https://github.com/amclin/react-project-boilerplate/compare/v3.6.11...v3.6.12) (2020-01-06)
 
 
