@@ -1,3 +1,10 @@
+## [3.6.14](https://github.com/amclin/react-project-boilerplate/compare/v3.6.13...v3.6.14) (2020-01-07)
+
+
+### Bug Fixes
+
+* **deps:** lock NextJS version to 9.1.6 ([e25e89b](https://github.com/amclin/react-project-boilerplate/commit/e25e89b6c118844ef4680ad861ea29e24559eec8))
+
 ## [3.6.13](https://github.com/amclin/react-project-boilerplate/compare/v3.6.12...v3.6.13) (2020-01-07)
 
 
