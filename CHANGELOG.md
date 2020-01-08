@@ -1,3 +1,10 @@
+# [3.7.0](https://github.com/amclin/react-project-boilerplate/compare/v3.6.14...v3.7.0) (2020-01-08)
+
+
+### Features
+
+* **env:** added environmental variables and next.config.js setup ([78e6873](https://github.com/amclin/react-project-boilerplate/commit/78e6873e73214af6911315ec4ebd96aae16b36d9))
+
 ## [3.6.14](https://github.com/amclin/react-project-boilerplate/compare/v3.6.13...v3.6.14) (2020-01-07)
 
 
