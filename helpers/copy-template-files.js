@@ -9,10 +9,7 @@ const copyTemplateFiles = (root, dir) => {
       const dotFiles = [
         'babelrc',
         'editorconfig',
-        'env',
-        'env.dev',
         'eslintrc.json',
-        'eslintignore',
         'gitignore',
         'travis.yml'
       ]

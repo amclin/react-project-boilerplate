@@ -30,19 +30,27 @@ This package includes the global command for creating new React projects incorpo
 ### Advanced Examples
 
 #### Specify project name
+
 Skip the prompt and specify the project name on the command line:
 
 `npx create-amclin-nextjs-app -- myprojectname`
 
 #### Skip Git repo generation
-Skip the process of creating a git repo for the project. **Note:** *this can result in failures as some of the dependencies expect git to be present*:
+
+Skip the process of creating a git repo for the project. **Note:** _this can result in failures as some of the dependencies expect git to be present_:
 
 `npx create-amclin-nextjs-app --no-git`
 
 #### Assume Server-Side-Rendering (SSR)
+
 Skip the question and assume the generated project will need server-side rendering:
 
 `npx create-amclin-nextjs-app --with-ssr`
 
+## Environmental Configs (.env file)
+
+The logic is located in `next.config.js`. You may use a `.env` file to provide environemntal variables, or you may use them from the commandline `ENV_VARIABLE=X <your_command>`.
+
 ## Contributing
+
 Help is always appreciated, please log bug reports, features, and fixes. See [Contribution Guidelines](CONTRIBUTING.md) for more on how you can help.
