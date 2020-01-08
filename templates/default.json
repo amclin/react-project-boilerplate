@@ -124,5 +124,18 @@
         "@semantic-release/github"
       ]
     }
-  }
+  },
+  "browserslist": [
+    ">= 0.5%",
+    "chrome >= 42",
+    "and_chr >= 42",
+    "and_ff >= 42",
+    "android >= 4.4",
+    "edge >= 12",
+    "firefox >= 38",
+    "ie >= 11",
+    "ios_saf >= 9",
+    "safari >= 9",
+    "node 10"
+  ]
 }
