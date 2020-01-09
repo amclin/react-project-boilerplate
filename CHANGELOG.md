@@ -1,3 +1,10 @@
+# [3.8.0](https://github.com/amclin/react-project-boilerplate/compare/v3.7.0...v3.8.0) (2020-01-09)
+
+
+### Features
+
+* **_document.js:** add _document.js and an example of css styling ([52dbd64](https://github.com/amclin/react-project-boilerplate/commit/52dbd64fdd5e272b4a22e3843008d5b259f221c3))
+
 # [3.7.0](https://github.com/amclin/react-project-boilerplate/compare/v3.6.14...v3.7.0) (2020-01-08)
 
 
