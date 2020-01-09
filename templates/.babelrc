@@ -4,5 +4,14 @@
 // of the generated projects themselves. That comes from the
 // babelrc file within the template.
 {
-  "presets": ["@babel/preset-env","next/babel"]
+  "presets": [
+    [
+      "next/babel", 
+      {
+        // This tells the preset to look for browserslist in package.json
+        // See: https://babeljs.io/docs/en/babel-preset-env#browserslist-integration
+        "useBuiltIns": "entry"
+      }
+    ]
+  ]
 }
