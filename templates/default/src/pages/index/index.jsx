@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import PageTitle from '../../components/organisms/PageTitle'
+import CountrySelector from '../../components/organisms/CountrySelector'
 
 const Home = () => {
   return (
@@ -8,10 +9,11 @@ const Home = () => {
       <PageTitle title="%%APPNAME%%" />
       <p>Welcome to the boilerplate React app using NextJS!</p>
       <p>
-        Try navigating to
+        Try navigating to&nbsp;
         <Link href="/example/second-page">another page</Link>
-        and observe the URL changing
+        &nbsp;and observe the URL changing
       </p>
+      <CountrySelector />
       <style jsx global>
         {`
           .text-center {

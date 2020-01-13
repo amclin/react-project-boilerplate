@@ -1,5 +1,5 @@
 {
-    "presets": [
+  "presets": [
     [
       "next/babel", 
       {
@@ -8,5 +8,6 @@
         "useBuiltIns": "entry"
       }
     ]
-  ]
+  ],
+  "plugins": ["jsx-remove-data-test-id"]
 }

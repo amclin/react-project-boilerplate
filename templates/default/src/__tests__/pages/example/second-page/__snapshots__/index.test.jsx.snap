@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages:SecondPage renders a second example page 1`] = `
-<div
-  className="jsx-3583494339 text-center"
->
-  <main
-    className="jsx-3583494339"
+<DocumentFragment>
+  <div
+    class="jsx-3583494339 text-center"
   >
-    <p
-      className="jsx-3583494339"
+    <main
+      class="jsx-3583494339"
     >
-      This is another page at a different URL.
-    </p>
-    <p
-      className="jsx-3583494339"
-    >
-      Return to the
-      <a
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
+      <p
+        class="jsx-3583494339"
       >
-        homepage
-      </a>
-    </p>
-  </main>
-</div>
+        This is another page at a different URL.
+      </p>
+      <p
+        class="jsx-3583494339"
+      >
+        Return to the 
+        <a
+          href="/"
+        >
+          homepage
+        </a>
+      </p>
+    </main>
+  </div>
+</DocumentFragment>
 `;

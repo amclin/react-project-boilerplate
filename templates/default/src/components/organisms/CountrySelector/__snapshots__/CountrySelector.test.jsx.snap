@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountrySelector renders without issue 1`] = `
+<DocumentFragment>
+  <div
+    class="jsx-2836699520 country-selector"
+  >
+    <div
+      class="jsx-2836699520"
+    >
+      Choose a country!
+    </div>
+    <select
+      class="jsx-2836699520"
+      data-testid="countries"
+    >
+      <option
+        class="jsx-2836699520"
+        data-testid="country-option"
+        value="US"
+      >
+        United States
+      </option>
+      <option
+        class="jsx-2836699520"
+        data-testid="country-option"
+        value="FR"
+      >
+        France
+      </option>
+    </select>
+    <div
+      class="jsx-2836699520"
+    >
+      Your chosen country is:
+    </div>
+    <div
+      class="jsx-563423332 country"
+    >
+      <div
+        class="jsx-563423332"
+        data-testid="country-name"
+      >
+        United States
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

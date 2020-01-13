@@ -1,11 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import {{properCase pageName}} from '{{relativeSegments pagePath}}../../../pages/{{pagePath}}'
 
 describe('Pages:{{properCase pageName}}', () => {
   it('renders the {{pageName}} page', () => {
-    const component = renderer.create(<{{properCase pageName}} />)
-    const tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
+    const { asFragment } = render(<{{properCase pageName}} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

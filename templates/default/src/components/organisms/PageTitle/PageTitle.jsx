@@ -5,7 +5,9 @@ import Head from 'next/head'
 const PageTitle = ({ title }) => {
   return (
     <Head>
-      <title key="title">{title}</title>
+      <title data-testid="title" key="title">
+        {title}
+      </title>
     </Head>
   )
 }

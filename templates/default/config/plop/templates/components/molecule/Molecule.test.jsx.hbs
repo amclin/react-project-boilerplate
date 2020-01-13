@@ -1,13 +1,10 @@
 import React from 'react'
-import TestRenderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import {{properCase componentName}} from '.'
 
 describe('{{properCase componentName}}', () => {
   it('creates {{componentDescription}}', () => {
-    const result = TestRenderer.create(
-      <{{properCase componentName}} />
-    ).toJSON()
-
-    expect(result).toMatchSnapshot()
+    const { asFragment } = render(<{{properCase componentName}} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -22,16 +22,13 @@ export default MockComponent
 
 exports[`Integration Test Generated App New component wizard(plop) can generate new atoms through the wizard 3`] = `
 "import React from 'react'
-import TestRenderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import MockComponent from '.'
 
 describe('MockComponent', () => {
   it('creates short description', () => {
-    const result = TestRenderer.create(
-      <MockComponent />
-    ).toJSON()
-
-    expect(result).toMatchSnapshot()
+    const { asFragment } = render(<MockComponent />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })
 "
@@ -59,16 +56,13 @@ export default MockComponent
 
 exports[`Integration Test Generated App New component wizard(plop) can generate new molecules through the wizard 3`] = `
 "import React from 'react'
-import TestRenderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import MockComponent from '.'
 
 describe('MockComponent', () => {
   it('creates short description', () => {
-    const result = TestRenderer.create(
-      <MockComponent />
-    ).toJSON()
-
-    expect(result).toMatchSnapshot()
+    const { asFragment } = render(<MockComponent />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })
 "
@@ -96,16 +90,13 @@ export default MockComponent
 
 exports[`Integration Test Generated App New component wizard(plop) can generate new organisms through the wizard 3`] = `
 "import React from 'react'
-import TestRenderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import MockComponent from '.'
 
 describe('MockComponent', () => {
   it('creates short description', () => {
-    const result = TestRenderer.create(
-      <MockComponent />
-    ).toJSON()
-
-    expect(result).toMatchSnapshot()
+    const { asFragment } = render(<MockComponent />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })
 "

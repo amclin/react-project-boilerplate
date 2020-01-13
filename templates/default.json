@@ -5,6 +5,8 @@
     "@babel/preset-env",
     "@commitlint/cli",
     "@commitlint/config-angular",
+    "@testing-library/jest-dom",
+    "@testing-library/react",
     "@semantic-release/changelog",
     "@semantic-release/commit-analyzer",
     "@semantic-release/git",
@@ -12,6 +14,7 @@
     "@semantic-release/npm",
     "babel-eslint",
     "babel-jest",
+    "babel-plugin-jsx-remove-data-test-id",
     "eslint",
     "eslint-config-airbnb",
     "eslint-config-prettier",
@@ -25,8 +28,7 @@
     "lint-staged",
     "plop",
     "prettier",
-    "pretty-quick",
-    "react-test-renderer"
+    "pretty-quick"
   ],
   "package": {
     "description": "Boilerplate repo for React apps with CICD pipelines, best practices, and code governance",
