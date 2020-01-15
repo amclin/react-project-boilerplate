@@ -9,7 +9,7 @@ const SecondPage = () => {
       <main>
         <p>This is another page at a different URL.</p>
         <p>
-          Return to the
+          Return to the&nbsp;
           <Link href="/">homepage</Link>
         </p>
       </main>

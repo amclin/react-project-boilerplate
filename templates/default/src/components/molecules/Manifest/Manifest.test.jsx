@@ -1,13 +1,10 @@
 import React from 'react'
-import TestRenderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import Manifest from '.'
 
 describe('Manifest', () => {
   it('creates a manifest <link> element suitable for the document head', () => {
-    const result = TestRenderer.create(
-      <Manifest />
-    ).toJSON()
-
-    expect(result).toMatchSnapshot()
+    const { asFragment } = render(<Manifest />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_document runs without error 1`] = `<DocumentFragment />`;

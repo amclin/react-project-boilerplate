@@ -3,6 +3,7 @@ node_modules
 
 # IDE/OS files
 .vscode
+.DS_Store
 
 # Compiled build files, dev files, and reports
 build

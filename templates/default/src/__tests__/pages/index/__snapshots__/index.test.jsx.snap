@@ -1,26 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages:Homepage renders the homepage 1`] = `
-<div
-  className="jsx-3583494339 text-center"
->
-  <p
-    className="jsx-3583494339"
+<DocumentFragment>
+  <div
+    class="jsx-3583494339 text-center"
   >
-    Welcome to the boilerplate React app using NextJS!
-  </p>
-  <p
-    className="jsx-3583494339"
-  >
-    Try navigating to
-    <a
-      href="/example/second-page"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
+    <p
+      class="jsx-3583494339"
     >
-      another page
-    </a>
-    and observe the URL changing
-  </p>
-</div>
+      Welcome to the boilerplate React app using NextJS!
+    </p>
+    <p
+      class="jsx-3583494339"
+    >
+      Try navigating to 
+      <a
+        href="/example/second-page"
+      >
+        another page
+      </a>
+       and observe the URL changing
+    </p>
+    <div
+      class="jsx-2836699520 country-selector"
+    >
+      <div
+        class="jsx-2836699520"
+      >
+        Choose a country!
+      </div>
+      <select
+        class="jsx-2836699520"
+        data-testid="countries"
+      >
+        <option
+          class="jsx-2836699520"
+          data-testid="country-option"
+          value="US"
+        >
+          United States
+        </option>
+        <option
+          class="jsx-2836699520"
+          data-testid="country-option"
+          value="FR"
+        >
+          France
+        </option>
+      </select>
+      <div
+        class="jsx-2836699520"
+      >
+        Your chosen country is:
+      </div>
+      <div
+        class="jsx-563423332 country"
+      >
+        <div
+          class="jsx-563423332"
+          data-testid="country-name"
+        >
+          United States
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;
