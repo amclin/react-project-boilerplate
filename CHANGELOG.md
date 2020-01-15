@@ -1,3 +1,11 @@
+## [3.9.1](https://github.com/amclin/react-project-boilerplate/compare/v3.9.0...v3.9.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **deps:** bump NextJS to 9.2.0 ([8092ee4](https://github.com/amclin/react-project-boilerplate/commit/8092ee449f64ffa70a42ca2090757bb881bc9680)), closes [#161](https://github.com/amclin/react-project-boilerplate/issues/161)
+* **deps:** bump NextJS to 9.2.0 ([f8d8f38](https://github.com/amclin/react-project-boilerplate/commit/f8d8f38fc33ebd1d4408cc8d26b47c10aa4f21fe)), closes [#151](https://github.com/amclin/react-project-boilerplate/issues/151)
+
 # [3.9.0](https://github.com/amclin/react-project-boilerplate/compare/v3.8.1...v3.9.0) (2020-01-15)
 
 
