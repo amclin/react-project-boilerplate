@@ -1,22 +1,31 @@
 import React, { useState } from 'react'
+import { useQuery } from '@apollo/react-hooks'
+import COUNTRIES_QUERY from '../../../graphql/queries/countries'
 import Country from '../../atoms/Country'
 
 const CountrySelector = () => {
-  // Data will be sourced from apollo once added
-  const countries = [
-    {
-      code: 'US',
-      name: 'United States'
-    },
-    {
-      code: 'FR',
-      name: 'France'
-    }
-  ]
-  const [selectedCountryCode, handleSelectedCountryCode] = useState('US')
+  const { loading, error, data } = useQuery(COUNTRIES_QUERY)
+  const [selectedCountryCode, handleSelectedCountryCode] = useState('')
+
+  if (error) {
+    return (
+      <div data-testid="error-div" className="country-selector">
+        Error loading countries!
+      </div>
+    )
+  }
+  if (loading) {
+    return (
+      <div data-testid="loading-div" className="country-selector">
+        Loading Countries...
+      </div>
+    )
+  }
+
+  const { countries = [] } = data
 
   return (
-    <div className="country-selector">
+    <div data-testid="selector-container" className="country-selector">
       <div>Choose a country!</div>
       <select
         value={selectedCountryCode}
@@ -33,19 +42,10 @@ const CountrySelector = () => {
           </option>
         ))}
       </select>
-      <div>Your chosen country is:</div>
-      <Country
-        name={countries.find(c => c.code === selectedCountryCode).name}
-      />
-      <style jsx>
-        {`
-          .country-selector {
-            border: solid 1px black;
-            margin: 15px;
-            padding: 15px;
-          }
-        `}
-      </style>
+      <div data-testid="chosen-text">
+        {selectedCountryCode ? 'Your chosen country is:' : 'No country chosen.'}
+      </div>
+      {selectedCountryCode && <Country code={selectedCountryCode} />}
     </div>
   )
 }

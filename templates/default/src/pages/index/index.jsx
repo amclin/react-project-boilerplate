@@ -19,6 +19,17 @@ const Home = () => {
           .text-center {
             text-align: center;
           }
+          .country-selector {
+            border: solid 1px black;
+            margin: 15px;
+            padding: 15px;
+          }
+          .country {
+            border: dashed 1px gray;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 16px;
+          }
         `}
       </style>
     </div>

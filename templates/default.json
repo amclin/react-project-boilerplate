@@ -1,5 +1,18 @@
 {
-  "dependencies": ["next@^9.2.0", "react@^16.12.0", "react-dom@^16.12.0", "prop-types", "dotenv"],
+  "dependencies": [
+    "next@^9.2.0",
+    "react",
+    "react-dom",
+    "prop-types",
+    "@apollo/react-hooks",
+    "apollo-cache-inmemory",
+    "apollo-client",
+    "apollo-link-http",
+    "isomorphic-unfetch",
+    "graphql",
+    "graphql-tag",
+    "dotenv"
+  ],
   "devDependencies": [
     "@babel/core",
     "@babel/preset-env",
@@ -14,6 +27,7 @@
     "@semantic-release/npm",
     "babel-eslint",
     "babel-jest",
+    "babel-plugin-graphql-tag",
     "babel-plugin-jsx-remove-data-test-id",
     "eslint",
     "eslint-config-airbnb",
@@ -68,6 +82,8 @@
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
+        "<rootDir>/src/utils/apollo.jsx",
+        "<rootDir>/src/pages/_app.jsx",
         "/__mocks__/"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],

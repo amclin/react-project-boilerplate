@@ -3,13 +3,17 @@
 exports[`Country should render a Country 1`] = `
 <DocumentFragment>
   <div
-    class="jsx-563423332 country"
+    class="country"
   >
     <div
-      class="jsx-563423332"
       data-testid="country-name"
     >
       United States
+    </div>
+    <div
+      data-testid="country-emoji"
+    >
+      E
     </div>
   </div>
 </DocumentFragment>
