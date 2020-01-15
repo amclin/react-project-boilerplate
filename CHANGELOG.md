@@ -1,3 +1,10 @@
+## [3.8.1](https://github.com/amclin/react-project-boilerplate/compare/v3.8.0...v3.8.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 10.2.1 to 10.2.2 ([bda2406](https://github.com/amclin/react-project-boilerplate/commit/bda2406ecd2b07111d0bf9b960bc9d9348732914))
+
 # [3.8.0](https://github.com/amclin/react-project-boilerplate/compare/v3.7.0...v3.8.0) (2020-01-09)
 
 
