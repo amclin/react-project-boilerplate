@@ -1,3 +1,10 @@
+# [3.9.0](https://github.com/amclin/react-project-boilerplate/compare/v3.8.1...v3.9.0) (2020-01-15)
+
+
+### Features
+
+* **react-testing-library:** migration plus sample tests, components, and hooks ([4a451a4](https://github.com/amclin/react-project-boilerplate/commit/4a451a4782a2780cc9342fe2ecc62bf7ef3073f4))
+
 ## [3.8.1](https://github.com/amclin/react-project-boilerplate/compare/v3.8.0...v3.8.1) (2020-01-15)
 
 
