@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages:Version renders the version page 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="version-json"
+    id="version-json"
+  >
+    {"appEnv":"TEST","paths":["/index.html","example/second-page.html","version.html"]}
+  </div>
+</DocumentFragment>
+`;

@@ -21,6 +21,22 @@ exports[`Pages:Homepage renders the homepage 1`] = `
       </a>
        and observe the URL changing
     </p>
+    <p
+      class="jsx-3583494339"
+    >
+      See app information on the version page at 
+      <a
+        href="/api/version"
+      >
+        SSR HERE
+      </a>
+       or 
+      <a
+        href="/version"
+      >
+        Static Site HERE
+      </a>
+    </p>
     <div
       class="jsx-2836699520 country-selector"
     >
