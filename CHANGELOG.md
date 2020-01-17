@@ -1,3 +1,10 @@
+# [3.10.0](https://github.com/amclin/react-project-boilerplate/compare/v3.9.1...v3.10.0) (2020-01-17)
+
+
+### Features
+
+* **deps:** generated projects get auto-merged dependency updates ([1109165](https://github.com/amclin/react-project-boilerplate/commit/110916581b75e17b3b6e297095926250d9ad3261))
+
 ## [3.9.1](https://github.com/amclin/react-project-boilerplate/compare/v3.9.0...v3.9.1) (2020-01-15)
 
 
