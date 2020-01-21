@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
 // }
 
 MyApp.propTypes = {
-  Component: PropTypes.node.isRequired,
+  Component: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
   // eslint-disable-next-line
   pageProps: PropTypes.object
 }

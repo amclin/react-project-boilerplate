@@ -12,14 +12,23 @@ describe('apollo', () => {
   // eslint-disable-next-line
   class SampleApp extends Component {
     render() {
-      return <div>OK!</div>
+      return <div data-testid="sample-app">OK!</div>
     }
   }
 
-  it('should run without error', () => {
-    const SampleComponentWithApollo = withApollo(SampleApp, { ssr: true })
-    const { asFragment } = render(<SampleComponentWithApollo />)
+  SampleApp.getInitialProps = async appContext => {
+    const appProps = await SampleApp.getInitialProps(appContext)
 
+    return { ...appProps }
+  }
+
+  it('should run without error', () => {
+    const SampleComponentWithApollo = withApollo(SampleApp)
+    // call below for greater coverage, but currently ctx is undefined
+    // SampleComponentWithApollo.getInitialProps()
+    const { asFragment, getByTestId } = render(<SampleComponentWithApollo />)
+
+    expect(getByTestId('sample-app')).toBeTruthy()
     expect(asFragment()).toMatchSnapshot()
   })
 })

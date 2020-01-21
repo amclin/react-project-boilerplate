@@ -1,23 +1,26 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
+import { render } from '@testing-library/react'
 import App from '../../pages/_app'
 
-App.displayName = 'App'
-
 jest.mock('../../utils/apollo', () => ({
-  withApollo: () => async Component => {
-    const props = await Component.getInitialProps({ Component })
-
-    // eslint-disable-next-line
-    return <Component {...props} />
-  }
+  withApollo: Component => ({ ...pageProps }) => (
+    <div data-testid="apollo-wrapper">
+      <Component {...pageProps} />
+    </div>
+  )
 }))
 
-const mockComponent = () => {
-  return <div>Ok!</div>
-}
+const mockComponent = () => <div data-testid="mock-component">Ok!</div>
 
 describe('App', () => {
   it('controls the root NextJS app', () => {
-    expect(<App Component={mockComponent} pageProps={{}} />).toMatchSnapshot()
+    const { asFragment, getByTestId } = render(
+      <App Component={mockComponent} pageProps={{}} />
+    )
+
+    expect(getByTestId('apollo-wrapper')).toBeTruthy()
+    expect(getByTestId('mock-component')).toBeTruthy()
+    expect(asFragment()).toMatchSnapshot()
   })
 })

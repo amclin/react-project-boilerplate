@@ -1,8 +1,8 @@
 {
   "dependencies": [
     "next@^9.2.0",
-    "react",
-    "react-dom",
+    "react@^16.12.0",
+    "react-dom@^16.12.0",
     "prop-types",
     "@apollo/react-hooks",
     "apollo-cache-inmemory",
@@ -83,7 +83,6 @@
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
         "<rootDir>/src/utils/apollo.jsx",
-        "<rootDir>/src/pages/_app.jsx",
         "/__mocks__/"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],
