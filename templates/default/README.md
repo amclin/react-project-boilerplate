@@ -26,9 +26,11 @@ After checking out this repo, run `npm install` to install dependencies
 Run `npm run dev` to launch a NextJS development webserver at `http://localhost:3000`
 
 ### Running in Production Mode
+
 For convenience and consistency, the preferred method of running in produciton mode is to use Docker. This will best match how an application is running on a shared environment.
 
 #### Build a Docker image
+
 Create a Docker image from your current source code by running:
 
 `npm run docker`
@@ -36,6 +38,7 @@ Create a Docker image from your current source code by running:
 **Warning** You must have Docker Desktop or similar Docker daemon installed and running or the script will fail.
 
 #### Run a Docker Container
+
 Once the Docker image exists in your registry of choice (local or remote), you can then run the app and specify what port it should run on:
 
 ```
@@ -45,7 +48,24 @@ docker run -p 0.0.0.0:3000:3000 %%APPNAME%%:latest
 If you'd like to run on a different port, replace the first `3000` with the desired port.
 
 #### Alternative "local" production mode
+
 Alternatively the application can be run locally without using Docker. See [NextJS documentation for more details](https://nextjs.org/docs#production-deployment).
+
+## Enviornmental Variables
+
+For nextjs, add these `process.env.<VAR>` will be found in `next.config.js` to be used in the `publicRuntimeConfig` for access inside the app. (This is so nextjs can make sure `process.env` doesn't get hard coded in the build file like webpack does).
+
+Use `APP_ENV` to define the enviornment (i.e. `default`, `dev`, `qa`, `prod`).
+
+Use `API_GATEWAY_URL` to specify the gateway.
+
+### Version Page
+
+**For SSR**, the route is `/api/version`.
+
+**For static sites**, the route is `/version.html`.
+
+> NOTE: As you add new environmental variables that should be on this version page, also place them here.
 
 ## Contributing
 
