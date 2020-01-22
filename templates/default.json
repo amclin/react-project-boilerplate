@@ -82,7 +82,6 @@
         "<rootDir>/.next/",
         "<rootDir>/node_modules/",
         "<rootDir>/coverage/",
-        "<rootDir>/src/utils/apollo.jsx",
         "/__mocks__/"
       ],
       "coverageReporters": ["clover", "json", "json-summary", "lcov", "text"],

@@ -21,7 +21,7 @@ let apolloClient = null
  */
 function createApolloClient(initialState = {}) {
   return new ApolloClient({
-    ssrMode: false,
+    ssrMode: false, // !process.browser
     link: new HttpLink({
       uri: apiGatewayUrl, // Server URL (must be absolute)
       // credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
@@ -39,7 +39,8 @@ function createApolloClient(initialState = {}) {
 function initApolloClient(initialState) {
   // Make sure to create a new client for every server-side request so that data
   // isn't shared between connections (which would be bad)
-  if (typeof window === 'undefined') {
+
+  if (!process.browser) {
     return createApolloClient(initialState)
   }
 
@@ -69,18 +70,6 @@ export function withApollo(PageComponent) {
     )
   }
 
-  // Set the correct displayName in development
-  if (process.env.NODE_ENV !== 'production') {
-    const displayName =
-      PageComponent.displayName || PageComponent.name || 'Component'
-
-    if (displayName === 'App') {
-      console.warn('This withApollo HOC only works with PageComponents.')
-    }
-
-    WithApollo.displayName = `withApollo(${displayName})`
-  }
-
   if (PageComponent.getInitialProps) {
     WithApollo.getInitialProps = async ctx => {
       // Initialize ApolloClient, add it to the ctx object so
@@ -89,13 +78,10 @@ export function withApollo(PageComponent) {
       const apolloClient = (ctx.apolloClient = initApolloClient())
 
       // Run wrapped getInitialProps methods
-      let pageProps = {}
-      if (PageComponent.getInitialProps) {
-        pageProps = await PageComponent.getInitialProps(ctx)
-      }
+      const pageProps = await PageComponent.getInitialProps(ctx)
 
       // Only on the server:
-      if (typeof window === 'undefined') {
+      if (!process.browser) {
         // When redirecting, the response is finished.
         // No point in continuing to render
         if (ctx.res && ctx.res.finished) {
