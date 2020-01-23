@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`apollo client side with getInitialProps 1`] = `Promise {}`;
+
+exports[`apollo client side with getInitialProps 2`] = `
+<DocumentFragment>
+  <div
+    data-testid="sample-app"
+  >
+    OK!
+  </div>
+</DocumentFragment>
+`;
+
+exports[`apollo server side 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="sample-app"
+  >
+    OK!
+  </div>
+</DocumentFragment>
+`;
+
+exports[`apollo server side with getInitialProps finished 1`] = `Promise {}`;
+
+exports[`apollo server side with getInitialProps finished 2`] = `
+<DocumentFragment>
+  <div
+    data-testid="sample-app"
+  >
+    OK!
+  </div>
+</DocumentFragment>
+`;
+
+exports[`apollo server side with getInitialProps unfinished 1`] = `Promise {}`;
+
+exports[`apollo server side with getInitialProps unfinished 2`] = `
+<DocumentFragment>
+  <div
+    data-testid="sample-app"
+  >
+    OK!
+  </div>
+</DocumentFragment>
+`;
