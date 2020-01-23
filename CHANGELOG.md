@@ -1,3 +1,16 @@
+# [3.11.0](https://github.com/amclin/react-project-boilerplate/compare/v3.10.0...v3.11.0) (2020-01-23)
+
+
+### Bug Fixes
+
+* **apollo:** test coverage put to 100% ([7f40b76](https://github.com/amclin/react-project-boilerplate/commit/7f40b7690c6f2866d3fe3fa9e09fbac9b809deb5))
+* **apollo tests:** added greater coverage ([e28bcd7](https://github.com/amclin/react-project-boilerplate/commit/e28bcd70aa32a0e220ced42c44172ef037a0a398))
+
+
+### Features
+
+* **apollo:** add apollo client and tests ([7aee390](https://github.com/amclin/react-project-boilerplate/commit/7aee390defdb5144b3418839ff4778f8ae5837e6))
+
 # [3.10.0](https://github.com/amclin/react-project-boilerplate/compare/v3.9.1...v3.10.0) (2020-01-17)
 
 
