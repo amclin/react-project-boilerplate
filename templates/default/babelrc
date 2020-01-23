@@ -9,5 +9,10 @@
       }
     ]
   ],
-  "plugins": ["jsx-remove-data-test-id"]
+  "plugins": ["graphql-tag"],
+  "env": {
+    "production": {
+      "plugins": ["jsx-remove-data-test-id"]
+    }
+  }
 }

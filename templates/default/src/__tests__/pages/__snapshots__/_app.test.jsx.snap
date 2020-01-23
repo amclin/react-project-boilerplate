@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App controls the root NextJS app 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="apollo-wrapper"
+  >
+    <div
+      data-testid="mock-component"
+    >
+      Ok!
+    </div>
+  </div>
+</DocumentFragment>
+`;
