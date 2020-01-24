@@ -1,3 +1,10 @@
+## [3.11.1](https://github.com/amclin/react-project-boilerplate/compare/v3.11.0...v3.11.1) (2020-01-24)
+
+
+### Performance Improvements
+
+* **deps:** reduce runtime dependencies for faster installs ([431ae2e](https://github.com/amclin/react-project-boilerplate/commit/431ae2e3dae1d49bd37b154ae7d963b0de6b69a9))
+
 # [3.11.0](https://github.com/amclin/react-project-boilerplate/compare/v3.10.0...v3.11.0) (2020-01-23)
 
 
