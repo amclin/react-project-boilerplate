@@ -1,5 +1,6 @@
 # 3rd party libraries
 node_modules
+dist
 
 # IDE/OS files
 .vscode
