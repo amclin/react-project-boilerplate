@@ -1,17 +1,17 @@
 {
   "dependencies": [
-    "next@^9.2.0",
-    "react@^16.12.0",
-    "react-dom@^16.12.0",
-    "prop-types",
     "@apollo/react-hooks",
     "apollo-cache-inmemory",
     "apollo-client",
     "apollo-link-http",
-    "isomorphic-unfetch",
+    "dotenv",
     "graphql",
     "graphql-tag",
-    "dotenv"
+    "isomorphic-unfetch",
+    "next@^9.2.0",
+    "prop-types",
+    "react@^16.12.0",
+    "react-dom@^16.12.0"
   ],
   "devDependencies": [
     "@babel/core",
