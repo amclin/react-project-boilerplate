@@ -1,3 +1,10 @@
+## [3.11.6](https://github.com/amclin/react-project-boilerplate/compare/v3.11.5...v3.11.6) (2020-02-03)
+
+
+### Bug Fixes
+
+* **deps:** bump commander from 4.1.0 to 4.1.1 ([f8af50f](https://github.com/amclin/react-project-boilerplate/commit/f8af50fe7a6db1f0fe732b90fcf9c41e6f44ea35))
+
 ## [3.11.5](https://github.com/amclin/react-project-boilerplate/compare/v3.11.4...v3.11.5) (2020-01-31)
 
 
