@@ -1,3 +1,10 @@
+## [3.11.8](https://github.com/amclin/react-project-boilerplate/compare/v3.11.7...v3.11.8) (2020-02-13)
+
+
+### Bug Fixes
+
+* **deps:** bump make-dir from 3.0.0 to 3.0.2 ([6a1c148](https://github.com/amclin/react-project-boilerplate/commit/6a1c1482de45fcefbdc7abb17f43d7848bd8bdc8))
+
 ## [3.11.7](https://github.com/amclin/react-project-boilerplate/compare/v3.11.6...v3.11.7) (2020-02-10)
 
 
