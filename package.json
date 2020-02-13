@@ -181,7 +181,7 @@
     "deepmerge": "^4.1.1",
     "git-user-name": "^2.0.0",
     "got": "10.5.5",
-    "make-dir": "3.0.0",
+    "make-dir": "3.0.2",
     "promisepipe": "3.0.0",
     "prompts": "2.3.0",
     "replace-in-file": "^5.0.2",
