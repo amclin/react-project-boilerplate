@@ -1,3 +1,10 @@
+## [3.11.12](https://github.com/amclin/react-project-boilerplate/compare/v3.11.11...v3.11.12) (2020-03-10)
+
+
+### Bug Fixes
+
+* **deps:** bump cpy from 8.0.1 to 8.1.0 ([37ffddc](https://github.com/amclin/react-project-boilerplate/commit/37ffddc7995b638c366c530159b68509e0ce88fb))
+
 ## [3.11.11](https://github.com/amclin/react-project-boilerplate/compare/v3.11.10...v3.11.11) (2020-02-21)
 
 
