@@ -1,3 +1,10 @@
+## [3.11.13](https://github.com/amclin/react-project-boilerplate/compare/v3.11.12...v3.11.13) (2020-03-13)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump acorn from 6.4.0 to 6.4.1 ([538bc6b](https://github.com/amclin/react-project-boilerplate/commit/538bc6b15e9cf7364dc402eaacbd14c351b88ff7))
+
 ## [3.11.12](https://github.com/amclin/react-project-boilerplate/compare/v3.11.11...v3.11.12) (2020-03-10)
 
 
