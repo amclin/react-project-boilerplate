@@ -1,3 +1,10 @@
+## [3.11.15](https://github.com/amclin/react-project-boilerplate/compare/v3.11.14...v3.11.15) (2020-03-20)
+
+
+### Bug Fixes
+
+* **deps:** rollback CommanderJS to 4.1.1 ([364e9c6](https://github.com/amclin/react-project-boilerplate/commit/364e9c66f4109a038a9ec040a91e809fe5f1d396)), closes [#279](https://github.com/amclin/react-project-boilerplate/issues/279)
+
 ## [3.11.14](https://github.com/amclin/react-project-boilerplate/compare/v3.11.13...v3.11.14) (2020-03-18)
 
 
