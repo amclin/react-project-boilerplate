@@ -11,14 +11,14 @@ const packageJson = require('./package.json')
 const { shouldUseYarn } = require('./helpers/should-use-yarn')
 const { log, error } = require('./helpers/logger')
 
-let projectPath = ''
+let projectPath
 
 const program = new Commander.Command(packageJson.name)
   .version(packageJson.version)
   .arguments('<project-directory>')
   .usage(`${chalk.yellow('[project-directory]')} ${chalk.yellow('[options]')}`)
   .action(name => {
-    projectPath = name
+    projectPath = typeof(name) === 'string' ? name.trim() : undefined
   })
   .option('--use-npm')
   .option('--no-git', 'skip git creation and commits')
@@ -35,9 +35,6 @@ const program = new Commander.Command(packageJson.name)
 
 async function run() {
   const questions = []
-  if (typeof projectPath === 'string') {
-    projectPath = projectPath.trim()
-  }
 
   if (!projectPath) {
     questions.push({
