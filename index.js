@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const chalk = require('chalk')
-const Commander = require('commander')
+const { Command } = require('commander')
 const path = require('path')
 const prompts = require('prompts')
 const checkForUpdate = require('update-check')
@@ -13,7 +13,8 @@ const { log, error } = require('./helpers/logger')
 
 let projectPath
 
-const program = new Commander.Command(packageJson.name)
+const program = new Command()
+  .name(packageJson.name)
   .version(packageJson.version)
   .arguments('<project-directory>')
   .usage(`${chalk.yellow('[project-directory]')} ${chalk.yellow('[options]')}`)
