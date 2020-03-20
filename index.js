@@ -16,7 +16,7 @@ let projectPath
 const program = new Command()
   .name(packageJson.name)
   .version(packageJson.version)
-  .arguments('<project-directory>')
+  .arguments('[project-directory]')
   .usage(`${chalk.yellow('[project-directory]')} ${chalk.yellow('[options]')}`)
   .action(name => {
     projectPath = typeof(name) === 'string' ? name.trim() : undefined
