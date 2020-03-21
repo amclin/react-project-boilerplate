@@ -1,3 +1,10 @@
+## [3.11.17](https://github.com/amclin/react-project-boilerplate/compare/v3.11.16...v3.11.17) (2020-03-21)
+
+
+### Bug Fixes
+
+* **deps:** [security] update npm dependencies ([5c38db8](https://github.com/amclin/react-project-boilerplate/commit/5c38db815245445db0ea1bc99365a00c7957a312))
+
 ## [3.11.16](https://github.com/amclin/react-project-boilerplate/compare/v3.11.15...v3.11.16) (2020-03-21)
 
 
