@@ -26,7 +26,7 @@
     "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
     "lint:prettier": "pretty-quick",
     "pretest": "npm run lint",
-    "semantic-release": "npx --package semantic-release@^16.0.1 semantic-release",
+    "semantic-release": "npx --package semantic-release@^17.0.4 semantic-release",
     "start": "next start",
     "test": "jest --coverage",
     "test:badges": "jest-coverage-badges"
