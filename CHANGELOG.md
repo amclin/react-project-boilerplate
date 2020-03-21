@@ -1,3 +1,11 @@
+## [3.11.16](https://github.com/amclin/react-project-boilerplate/compare/v3.11.15...v3.11.16) (2020-03-21)
+
+
+### Bug Fixes
+
+* **cli:** preserve optional repo name ([1d93d50](https://github.com/amclin/react-project-boilerplate/commit/1d93d50b2ccc366cf1ba1ef58d170618c8b9a1a0)), closes [#281](https://github.com/amclin/react-project-boilerplate/issues/281)
+* **deps:** update Commander 4.1.1 to Commander 5.0.0 ([c87e08c](https://github.com/amclin/react-project-boilerplate/commit/c87e08c1a7af2657bc7cfe3f1ebf5efd8118b0ad))
+
 ## [3.11.15](https://github.com/amclin/react-project-boilerplate/compare/v3.11.14...v3.11.15) (2020-03-20)
 
 
