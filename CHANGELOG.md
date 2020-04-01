@@ -1,3 +1,10 @@
+## [3.11.19](https://github.com/amclin/react-project-boilerplate/compare/v3.11.18...v3.11.19) (2020-04-01)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump NextJS in generated projects from 9.2.0 to 9.3.3 ([5d86ff3](https://github.com/amclin/react-project-boilerplate/commit/5d86ff31eb4f9aedec31a890b94df1ad386dba6b))
+
 ## [3.11.18](https://github.com/amclin/react-project-boilerplate/compare/v3.11.17...v3.11.18) (2020-03-25)
 
 
