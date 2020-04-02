@@ -174,7 +174,7 @@
     "node 10"
   ],
   "dependencies": {
-    "chalk": "3.0.0",
+    "chalk": "4.0.0",
     "commander": "^5.0.0",
     "cpy": "8.1.0",
     "cross-spawn": "7.0.1",
