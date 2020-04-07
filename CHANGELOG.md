@@ -1,3 +1,10 @@
+## [3.11.21](https://github.com/amclin/react-project-boilerplate/compare/v3.11.20...v3.11.21) (2020-04-07)
+
+
+### Bug Fixes
+
+* **deps:** bump cross-spawn from 7.0.1 to 7.0.2 ([4c29140](https://github.com/amclin/react-project-boilerplate/commit/4c29140068cdcdc1cceca2b9b6c0d7541c96497e))
+
 ## [3.11.20](https://github.com/amclin/react-project-boilerplate/compare/v3.11.19...v3.11.20) (2020-04-02)
 
 
