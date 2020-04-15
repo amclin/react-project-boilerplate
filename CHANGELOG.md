@@ -1,3 +1,10 @@
+## [3.11.22](https://github.com/amclin/react-project-boilerplate/compare/v3.11.21...v3.11.22) (2020-04-15)
+
+
+### Bug Fixes
+
+* **deps:** bump update-check from 1.5.3 to 1.5.4 ([be58932](https://github.com/amclin/react-project-boilerplate/commit/be589329937b9b0b97d36941c5aea7e6942d4d5f))
+
 ## [3.11.21](https://github.com/amclin/react-project-boilerplate/compare/v3.11.20...v3.11.21) (2020-04-07)
 
 
