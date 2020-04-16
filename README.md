@@ -54,3 +54,5 @@ The logic is located in `next.config.js`. You may use a `.env` file to provide e
 ## Contributing
 
 Help is always appreciated, please log bug reports, features, and fixes. See [Contribution Guidelines](CONTRIBUTING.md) for more on how you can help.
+
+<!-- noninvasive commit for testing Jest //TODO remove -->
