@@ -1,3 +1,10 @@
+# [3.12.0](https://github.com/amclin/react-project-boilerplate/compare/v3.11.22...v3.12.0) (2020-04-20)
+
+
+### Features
+
+* **container:** [security] run static sites with unprivledged nginx ([1fcc6ab](https://github.com/amclin/react-project-boilerplate/commit/1fcc6ab8a683d8d6b04809bd398bbdc2f55ad159))
+
 ## [3.11.22](https://github.com/amclin/react-project-boilerplate/compare/v3.11.21...v3.11.22) (2020-04-15)
 
 
