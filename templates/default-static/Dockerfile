@@ -20,22 +20,20 @@ RUN rm -rf node_modules &&\
     npm run export
 
 ###### Stage 2 - Run production webserver on nginx
-FROM nginx:alpine
+# We use a non-root version of Nginx for security reasons:
+# https://hub.docker.com/r/nginxinc/nginx-unprivileged
+FROM nginxinc/nginx-unprivileged:alpine
+
 ARG PORT=3000
 
 # Add app-specific configs and files
 COPY config/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build-stage /app/out /usr/share/nginx/html
 
-# nginix images don't run by default on OpenShift because of permissions
-# https://torstenwalter.de/openshift/nginx/2017/08/04/nginx-on-openshift.html
-# support running as arbitrary user which belongs to the root group
-# RUN chmod g+rwx /var/cache/nginx /var/run /var/log/nginx
-# comment user directive as master process is run as user in OpenShift anyhow
-# RUN sed -i.bak 's/^user/#user/' /etc/nginx/nginx.conf
-
-# Users are not allowed to listen on priviliged ports so replace default 80 with ${PORT}
+# Non-root users are not allowed to listen on priviliged ports so replace default 80 with ${PORT}
+USER root
 RUN sed -i.bak "s/listen\(.*\)80;/listen ${PORT};/" /etc/nginx/conf.d/default.conf
+USER 101
 EXPOSE $PORT
 
 CMD ["nginx", "-g", "daemon off;"]
