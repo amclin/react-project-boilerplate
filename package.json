@@ -185,7 +185,7 @@
     "promisepipe": "3.0.0",
     "prompts": "2.3.2",
     "replace-in-file": "^6.0.0",
-    "tar": "6.0.1",
+    "tar": "6.0.2",
     "update-check": "1.5.4",
     "validate-npm-package-name": "3.0.0"
   }
