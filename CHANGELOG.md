@@ -1,3 +1,13 @@
+## [3.12.3](https://github.com/amclin/react-project-boilerplate/compare/v3.12.2...v3.12.3) (2020-05-05)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 11.0.1 to 11.1.0 ([730d5b1](https://github.com/amclin/react-project-boilerplate/commit/730d5b13751c848c6991c3695906b8dd9d60e364))
+* **deps:** bump make-dir from 3.0.2 to 3.1.0 ([8d14181](https://github.com/amclin/react-project-boilerplate/commit/8d14181ccaa7397e9c936cfc06e15db1fe791bd8))
+* **deps:** bump replace-in-file from 5.0.2 to 6.0.0 ([b694e55](https://github.com/amclin/react-project-boilerplate/commit/b694e55e9fefe87970cba385ec01db501d9f1ca4))
+* **deps:** bump tar from 6.0.1 to 6.0.2 ([1faedf2](https://github.com/amclin/react-project-boilerplate/commit/1faedf2a764eaa550749ba06f0492ff1c458d5fd))
+
 ## [3.12.2](https://github.com/amclin/react-project-boilerplate/compare/v3.12.1...v3.12.2) (2020-04-27)
 
 
