@@ -1,3 +1,10 @@
+## [3.12.6](https://github.com/amclin/react-project-boilerplate/compare/v3.12.5...v3.12.6) (2020-05-12)
+
+
+### Bug Fixes
+
+* **deps:** unpin dependency versions ([803e548](https://github.com/amclin/react-project-boilerplate/commit/803e5488ca3af1db821ae3fca8af9c12436bdee0))
+
 ## [3.12.5](https://github.com/amclin/react-project-boilerplate/compare/v3.12.4...v3.12.5) (2020-05-08)
 
 
