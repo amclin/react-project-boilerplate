@@ -1,3 +1,10 @@
+## [3.12.12](https://github.com/amclin/react-project-boilerplate/compare/v3.12.11...v3.12.12) (2020-06-08)
+
+
+### Bug Fixes
+
+* **deps:** bump replace-in-file from 6.0.0 to 6.1.0 ([8ed3c6c](https://github.com/amclin/react-project-boilerplate/commit/8ed3c6ceaa011c0a1eac43881252c6e8e1ac1e24))
+
 ## [3.12.11](https://github.com/amclin/react-project-boilerplate/compare/v3.12.10...v3.12.11) (2020-06-05)
 
 
