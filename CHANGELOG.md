@@ -1,3 +1,10 @@
+## [3.12.14](https://github.com/amclin/react-project-boilerplate/compare/v3.12.13...v3.12.14) (2020-06-26)
+
+
+### Bug Fixes
+
+* manifest and favicons were returning 404s ([92358de](https://github.com/amclin/react-project-boilerplate/commit/92358de55c71ba1d9fefa10070ed7e747160dc29)), closes [#424](https://github.com/amclin/react-project-boilerplate/issues/424)
+
 ## [3.12.13](https://github.com/amclin/react-project-boilerplate/compare/v3.12.12...v3.12.13) (2020-06-09)
 
 
