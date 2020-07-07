@@ -1,3 +1,11 @@
+## [3.12.16](https://github.com/amclin/react-project-boilerplate/compare/v3.12.15...v3.12.16) (2020-07-07)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump npm from 6.14.3 to 6.14.6 ([798a69a](https://github.com/amclin/react-project-boilerplate/commit/798a69a1bfeaecaa8a9b8b96cd9226a5ea68fddc))
+* **deps:** bump got from 11.4.0 to 11.5.0 ([74bf140](https://github.com/amclin/react-project-boilerplate/commit/74bf140d909cc972f98b48b7d5d7622d8c9d1d36))
+
 ## [3.12.15](https://github.com/amclin/react-project-boilerplate/compare/v3.12.14...v3.12.15) (2020-07-06)
 
 
