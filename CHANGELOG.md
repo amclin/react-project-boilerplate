@@ -1,3 +1,11 @@
+## [3.12.17](https://github.com/amclin/react-project-boilerplate/compare/v3.12.16...v3.12.17) (2020-07-16)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump lodash from 4.17.15 to 4.17.19 ([059b1e5](https://github.com/amclin/react-project-boilerplate/commit/059b1e5f6a37dbe7eef02a204ad36f2eac017a2b))
+* **deps:** bump got from 11.5.0 to 11.5.1 ([1ffe711](https://github.com/amclin/react-project-boilerplate/commit/1ffe7118037d313d43417c2a73aa80e2a6a021de))
+
 ## [3.12.16](https://github.com/amclin/react-project-boilerplate/compare/v3.12.15...v3.12.16) (2020-07-07)
 
 
