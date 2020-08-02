@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`_document runs without error 1`] = `<DocumentFragment />`;
+exports[`_document runs without error 1`] = `
+<Html
+  lang="en"
+>
+  <Head>
+    <Favicon />
+    <Manifest />
+  </Head>
+  <body>
+    <Main />
+    <NextScript />
+  </body>
+</Html>
+`;
