@@ -1,3 +1,10 @@
+# [3.13.0](https://github.com/amclin/react-project-boilerplate/compare/v3.12.18...v3.13.0) (2020-08-02)
+
+
+### Features
+
+* **deps:** bump minimum NextJS from 9.3.3 to 9.5.1 ([1e1709d](https://github.com/amclin/react-project-boilerplate/commit/1e1709df4f8392dd0d8884083519193c76970930))
+
 ## [3.12.18](https://github.com/amclin/react-project-boilerplate/compare/v3.12.17...v3.12.18) (2020-07-29)
 
 
