@@ -1,3 +1,10 @@
+## [3.13.2](https://github.com/amclin/react-project-boilerplate/compare/v3.13.1...v3.13.2) (2020-08-18)
+
+
+### Bug Fixes
+
+* **deps:** bump tar from 6.0.2 to 6.0.5 ([00aebe0](https://github.com/amclin/react-project-boilerplate/commit/00aebe01ce89517c04de07f65f09cd17e0303537))
+
 ## [3.13.1](https://github.com/amclin/react-project-boilerplate/compare/v3.13.0...v3.13.1) (2020-08-07)
 
 
