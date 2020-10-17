@@ -1,3 +1,10 @@
+## [3.13.8](https://github.com/amclin/react-project-boilerplate/compare/v3.13.7...v3.13.8) (2020-10-17)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump npm-user-validate from 1.0.0 to 1.0.1 ([c8d91a1](https://github.com/amclin/react-project-boilerplate/commit/c8d91a1232d0297312eeb8849af564fa33465506))
+
 ## [3.13.7](https://github.com/amclin/react-project-boilerplate/compare/v3.13.6...v3.13.7) (2020-09-21)
 
 
