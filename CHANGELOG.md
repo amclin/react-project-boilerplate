@@ -1,3 +1,10 @@
+## [3.13.11](https://github.com/amclin/react-project-boilerplate/compare/v3.13.10...v3.13.11) (2020-12-18)
+
+
+### Bug Fixes
+
+* **deps:** bump prompts from 2.3.2 to 2.4.0 ([a26afaa](https://github.com/amclin/react-project-boilerplate/commit/a26afaae4a5df2560d76500523491810b969485a))
+
 ## [3.13.10](https://github.com/amclin/react-project-boilerplate/compare/v3.13.9...v3.13.10) (2020-12-18)
 
 
