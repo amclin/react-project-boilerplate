@@ -1,3 +1,10 @@
+## [3.13.10](https://github.com/amclin/react-project-boilerplate/compare/v3.13.9...v3.13.10) (2020-12-18)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 11.7.0 to 11.8.1 ([160e586](https://github.com/amclin/react-project-boilerplate/commit/160e58697fa6d42744db92a32a6b67e3f01f4323))
+
 ## [3.13.9](https://github.com/amclin/react-project-boilerplate/compare/v3.13.8...v3.13.9) (2020-12-18)
 
 
