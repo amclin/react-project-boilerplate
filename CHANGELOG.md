@@ -1,3 +1,10 @@
+## [3.13.12](https://github.com/amclin/react-project-boilerplate/compare/v3.13.11...v3.13.12) (2020-12-22)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump ini from 1.3.5 to 1.3.8 ([4979748](https://github.com/amclin/react-project-boilerplate/commit/49797483be35638afd56f908ef097b740fa7b6bc))
+
 ## [3.13.11](https://github.com/amclin/react-project-boilerplate/compare/v3.13.10...v3.13.11) (2020-12-18)
 
 
