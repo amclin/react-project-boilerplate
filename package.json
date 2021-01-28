@@ -20,8 +20,6 @@
   },
   "homepage": "https://github.com/amclin/react-project-boilerplate#readme",
   "scripts": {
-    "build": "next build",
-    "dev": "next",
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
     "lint:prettier": "pretty-quick",
