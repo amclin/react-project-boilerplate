@@ -11,8 +11,7 @@ const canUseGit = () => {
   }
 }
 
-const initGit = (root, { gitRemote }) => {
-  return new Promise((resolve, reject) => {
+const initGit = (root, { gitRemote }) => new Promise((resolve, reject) => {
     if (canUseGit()) {
       try {
         execSync('git init')
@@ -27,10 +26,8 @@ const initGit = (root, { gitRemote }) => {
       reject(new Error('No git binary found'))
     }
   })
-}
 
-const commitFirst = ({ version }) => {
-  return new Promise((resolve, reject) => {
+const commitFirst = ({ version }) => new Promise((resolve, reject) => {
     if (canUseGit()) {
       try {
         // Add all files
@@ -53,7 +50,6 @@ const commitFirst = ({ version }) => {
       reject(new Error('No git binary found'))
     }
   })
-}
 
 module.exports = {
   canUseGit,

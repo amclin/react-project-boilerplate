@@ -17,9 +17,7 @@ const getProxy = () => {
   }
 }
 
-const getOnline = () => {
-  return new Promise(resolve => {
-    return dns.lookup('registry.yarnpkg.com', registryErr => {
+const getOnline = () => new Promise(resolve => dns.lookup('registry.yarnpkg.com', registryErr => {
       if (!registryErr) {
         return resolve(true)
       }
@@ -37,9 +35,7 @@ const getOnline = () => {
       return dns.lookup(hostname, proxyErr => {
         resolve(proxyErr == null)
       })
-    })
-  })
-}
+    }))
 
 module.exports = {
   getOnline,
