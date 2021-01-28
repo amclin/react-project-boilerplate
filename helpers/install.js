@@ -50,8 +50,7 @@ const install = ({
   useYarn,
   isOnline,
   devDependencies = false
-}) => {
-  return new Promise((resolve, reject) => {
+}) => new Promise((resolve, reject) => {
     const buildCommand = (useYarn) ? buildYarnCommand : buildNpmCommand
     const {command, args} = buildCommand({dependencies, devDependencies, isOnline, root})
 
@@ -67,7 +66,6 @@ const install = ({
       resolve()
     })
   })
-}
 
 module.exports = {
   install
