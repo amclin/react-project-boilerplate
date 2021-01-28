@@ -1,3 +1,11 @@
+## [3.13.13](https://github.com/amclin/react-project-boilerplate/compare/v3.13.12...v3.13.13) (2021-01-28)
+
+
+### Bug Fixes
+
+* remove misleading build scripts ([ddf0e12](https://github.com/amclin/react-project-boilerplate/commit/ddf0e12ce65dff5ed3fb0a5135e0770a99584345))
+* **deps:** bump tar from 6.0.5 to 6.1.0 ([3b6703f](https://github.com/amclin/react-project-boilerplate/commit/3b6703f67677dba0a1670e3ea281e594aaf3a7c9))
+
 ## [3.13.12](https://github.com/amclin/react-project-boilerplate/compare/v3.13.11...v3.13.12) (2020-12-22)
 
 
