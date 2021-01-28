@@ -24,7 +24,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - name: Create badges
-          run: npm run test:badges
+        run: npm run test:badges
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2.3.0
         env:
