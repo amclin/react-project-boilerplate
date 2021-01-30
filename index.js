@@ -14,6 +14,7 @@ const { log, error } = require('./helpers/logger')
 let projectPath
 
 const program = new Command()
+  .storeOptionsAsProperties() // TODO: Remove this and use Commander 7.0 opts() https://github.com/tj/commander.js/pull/1409
   .name(packageJson.name)
   .version(packageJson.version)
   .arguments('[project-directory]')
