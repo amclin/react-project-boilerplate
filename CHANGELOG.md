@@ -1,3 +1,11 @@
+## [3.13.14](https://github.com/amclin/react-project-boilerplate/compare/v3.13.13...v3.13.14) (2021-01-30)
+
+
+### Bug Fixes
+
+* **deps:** bump commander from 6.2.1 to 7.0.0 ([ff372cd](https://github.com/amclin/react-project-boilerplate/commit/ff372cdc0cbaecc951d99b79658228f2cb3020d6))
+* **deps:** update internals to use Commander 7.0 ([12e3e80](https://github.com/amclin/react-project-boilerplate/commit/12e3e80a0bd79975046216657cdd2c613c3d3fb4))
+
 ## [3.13.13](https://github.com/amclin/react-project-boilerplate/compare/v3.13.12...v3.13.13) (2021-01-28)
 
 
