@@ -62,7 +62,7 @@
     "jest": "^26.0.1",
     "jest-coverage-badges": "^1.1.2",
     "lint-staged": "^10.0.1",
-    "next": "^9.5.1",
+    "next": "^10.0.7",
     "prettier": "^2.0.1",
     "pretty-quick": "^3.0.0",
     "prop-types": "^15.7.2",
