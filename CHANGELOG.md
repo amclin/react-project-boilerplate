@@ -1,3 +1,10 @@
+## [3.13.19](https://github.com/amclin/react-project-boilerplate/compare/v3.13.18...v3.13.19) (2021-03-08)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump elliptic from 6.5.3 to 6.5.4 ([b25ed33](https://github.com/amclin/react-project-boilerplate/commit/b25ed337718eec596a6b7e0578918fc8ad168930))
+
 ## [3.13.18](https://github.com/amclin/react-project-boilerplate/compare/v3.13.17...v3.13.18) (2021-03-05)
 
 
