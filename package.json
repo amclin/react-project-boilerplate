@@ -57,7 +57,7 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
-    "husky": "^4.0.0",
+    "husky": "^5.1.3",
     "isomorphic-unfetch": "^3.0.0",
     "jest": "^26.0.1",
     "jest-coverage-badges": "^1.1.2",
