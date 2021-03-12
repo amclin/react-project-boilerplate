@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/amclin/react-project-boilerplate#readme",
   "scripts": {
+    "postinstall": "husky install",
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint --ignore-path .gitignore \"**/*.{jsx,js}\"",
     "lint:prettier": "pretty-quick",
@@ -75,13 +76,6 @@
     "/helpers/**/*.js",
     "/templates/**/*"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
-  },
   "bin": {
     "create-amclin-nextjs-app": "./index.js"
   },
