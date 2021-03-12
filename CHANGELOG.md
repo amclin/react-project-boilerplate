@@ -1,3 +1,16 @@
+# [3.14.0](https://github.com/amclin/react-project-boilerplate/compare/v3.13.19...v3.14.0) (2021-03-12)
+
+
+### Bug Fixes
+
+* husky hooks preventing git commits by CI pipelines ([fc924c6](https://github.com/amclin/react-project-boilerplate/commit/fc924c65d7ee7a82ca43e320495f80dd6674d0e1))
+* husky hooks preventing git commits by CI pipelines ([f3558ed](https://github.com/amclin/react-project-boilerplate/commit/f3558ed8376029fc1b71d5413360c62c0e65689d))
+
+
+### Features
+
+* **deps:** adopt Husky v5 hook syntax ([3e1250a](https://github.com/amclin/react-project-boilerplate/commit/3e1250a8b4a7f99e503600a84a369795d845684e)), closes [#646](https://github.com/amclin/react-project-boilerplate/issues/646) [#631](https://github.com/amclin/react-project-boilerplate/issues/631)
+
 ## [3.13.19](https://github.com/amclin/react-project-boilerplate/compare/v3.13.18...v3.13.19) (2021-03-08)
 
 
