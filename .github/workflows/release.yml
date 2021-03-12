@@ -6,7 +6,7 @@ name: Release
 
 on:
   workflow_run:
-    workflows: ["Run Tests"]
+    workflows: ['Run Tests']
     branches: [master]
     types:
       - completed
@@ -33,6 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          HUSKY: 0
 
   # publish-gpr:
   #   name: Release to GitHub Packages

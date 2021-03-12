@@ -13,4 +13,4 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
-        script: npm run test:badges && npm run semantic-release
+        script: HUSKY=0 npm run test:badges && npm run semantic-release
