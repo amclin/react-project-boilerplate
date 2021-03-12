@@ -64,13 +64,6 @@
       "test": "jest --coverage",
       "test:badges": "jest-coverage-badges"
     },
-    "husky": {
-      "hooks": {
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "pre-commit": "lint-staged",
-        "pre-push": "npm test"
-      }
-    },
     "commitlint": {
       "extends": ["@commitlint/config-angular"]
     },
