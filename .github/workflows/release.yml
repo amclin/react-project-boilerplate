@@ -33,7 +33,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          HUSKY: 0
 
   # publish-gpr:
   #   name: Release to GitHub Packages
