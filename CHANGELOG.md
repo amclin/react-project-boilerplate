@@ -1,3 +1,10 @@
+## [3.14.2](https://github.com/amclin/react-project-boilerplate/compare/v3.14.1...v3.14.2) (2021-03-29)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump y18n from 4.0.0 to 4.0.1 ([8b7ed8d](https://github.com/amclin/react-project-boilerplate/commit/8b7ed8d57889e074802dfce952300653ba65f2dc))
+
 ## [3.14.1](https://github.com/amclin/react-project-boilerplate/compare/v3.14.0...v3.14.1) (2021-03-22)
 
 
