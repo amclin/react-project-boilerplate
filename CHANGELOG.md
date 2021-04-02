@@ -1,3 +1,10 @@
+## [3.14.3](https://github.com/amclin/react-project-boilerplate/compare/v3.14.2...v3.14.3) (2021-04-02)
+
+
+### Bug Fixes
+
+* **deps:** bump prompts from 2.4.0 to 2.4.1 ([9cfbe9d](https://github.com/amclin/react-project-boilerplate/commit/9cfbe9da54faa05d6e7f3f88aaa9c3be8db78e66))
+
 ## [3.14.2](https://github.com/amclin/react-project-boilerplate/compare/v3.14.1...v3.14.2) (2021-03-29)
 
 
