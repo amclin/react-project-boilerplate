@@ -1,3 +1,10 @@
+## [3.14.4](https://github.com/amclin/react-project-boilerplate/compare/v3.14.3...v3.14.4) (2021-04-16)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump ssri from 6.0.1 to 6.0.2 ([515a259](https://github.com/amclin/react-project-boilerplate/commit/515a259e7bf8ccbb23eb4010cd7e891ddf665f27))
+
 ## [3.14.3](https://github.com/amclin/react-project-boilerplate/compare/v3.14.2...v3.14.3) (2021-04-02)
 
 
