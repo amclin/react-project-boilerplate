@@ -28,7 +28,7 @@
     "semantic-release": "npx --package semantic-release@^17.0.4 semantic-release",
     "start": "next start",
     "test": "jest --coverage",
-    "test:badges": "npx -y jest-coverage-badges"
+    "test:badges": "npx -p jest-coverage-badges jest-coverage-badges"
   },
   "devDependencies": {
     "@apollo/react-hooks": "^3.1.3",

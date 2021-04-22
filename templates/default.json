@@ -61,7 +61,7 @@
       "semantic-release": "npx semantic-release",
       "start": "next start",
       "test": "jest --coverage",
-      "test:badges": "npx -y jest-coverage-badges"
+      "test:badges": "npx -p jest-coverage-badges jest-coverage-badges"
     },
     "commitlint": {
       "extends": ["@commitlint/config-angular"]
