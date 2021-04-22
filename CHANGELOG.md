@@ -1,3 +1,15 @@
+# [3.15.0](https://github.com/amclin/react-project-boilerplate/compare/v3.14.5...v3.15.0) (2021-04-22)
+
+
+### Bug Fixes
+
+* **deps:** use npx command save for NPM v6 ([c20ff61](https://github.com/amclin/react-project-boilerplate/commit/c20ff616a0c4729cb6e5c989119558056b120556))
+
+
+### Features
+
+* **deps:** include `jest-coverage-badges` only when needed ([3227983](https://github.com/amclin/react-project-boilerplate/commit/32279836ee66047e665e15c13494393f06354209)), closes [#681](https://github.com/amclin/react-project-boilerplate/issues/681)
+
 ## [3.14.5](https://github.com/amclin/react-project-boilerplate/compare/v3.14.4...v3.14.5) (2021-04-22)
 
 
