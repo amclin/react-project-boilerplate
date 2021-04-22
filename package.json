@@ -28,7 +28,7 @@
     "semantic-release": "npx --package semantic-release@^17.0.4 semantic-release",
     "start": "next start",
     "test": "jest --coverage",
-    "test:badges": "jest-coverage-badges"
+    "test:badges": "npx -y jest-coverage-badges"
   },
   "devDependencies": {
     "@apollo/react-hooks": "^3.1.3",
@@ -61,7 +61,6 @@
     "husky": "^6.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "jest": "^26.0.1",
-    "jest-coverage-badges": "^1.1.2",
     "lint-staged": "^10.0.1",
     "next": "^9.5.1",
     "prettier": "^2.0.1",
