@@ -1,3 +1,10 @@
+## [3.14.5](https://github.com/amclin/react-project-boilerplate/compare/v3.14.4...v3.14.5) (2021-04-22)
+
+
+### Bug Fixes
+
+* **deps:** bump chalk from 4.1.0 to 4.1.1 ([b274f89](https://github.com/amclin/react-project-boilerplate/commit/b274f89d17ae4088cf85dbb0f348ea4afcb7164b))
+
 ## [3.14.4](https://github.com/amclin/react-project-boilerplate/compare/v3.14.3...v3.14.4) (2021-04-16)
 
 
