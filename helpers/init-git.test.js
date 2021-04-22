@@ -9,23 +9,29 @@ describe('init-git', () => {
       expect(canUseGit()).toEqual(true)
     })
     it('returns false if git cli is not available', () => {
-      execSync.mockImplementationOnce(() => { throw new Error('git not available') })
+      execSync.mockImplementationOnce(() => {
+        throw new Error('git not available')
+      })
       expect(canUseGit()).toEqual(false)
     })
   })
   describe('initGit()', () => {
     beforeAll(() => {
       execSync.mockReturnValue(true)
-      initGit('./',{ gitRemote: 'git+https://example.com'})
+      initGit('./', { gitRemote: 'git+https://example.com' })
     })
     it('initializes the git repo', () => {
       expect(execSync).toBeCalledWith(expect.stringContaining(`git init`))
     })
     it('adds a remote origin', () => {
-      expect(execSync).toBeCalledWith(expect.stringContaining(`git remote add origin git+https://example.com`))
+      expect(execSync).toBeCalledWith(
+        expect.stringContaining(`git remote add origin git+https://example.com`)
+      )
     })
     it('adds a remote origin', () => {
-      expect(execSync).toBeCalledWith(expect.stringContaining(`git remote add origin`))
+      expect(execSync).toBeCalledWith(
+        expect.stringContaining(`git remote add origin`)
+      )
     })
   })
   describe('commitFirst()', () => {
@@ -37,17 +43,29 @@ describe('init-git', () => {
     it('adds all files to the git stage', () => {
       expect(execSync).toBeCalledWith(expect.stringContaining(`git add .`))
     })
-    it('adds the code coveragfe badges to the git stage', () => {
-      expect(execSync).toBeCalledWith(expect.stringContaining(`git add coverage/badge-*.svg -f`))
+    it('adds the code coverage badges to the git stage', () => {
+      expect(execSync).toBeCalledWith(
+        expect.stringContaining(`git add coverage/badge-*.svg -f`)
+      )
     })
     it('makes an initial commit to the git repo', () => {
-      expect(execSync).toBeCalledWith(expect.stringContaining(`git commit --no-verify -m "chore: initial commit`))
+      expect(execSync).toBeCalledWith(
+        expect.stringContaining(
+          `git commit --no-verify -m "chore: initial commit`
+        )
+      )
     })
     it('tags the commit with an initial version', () => {
-      expect(execSync).toBeCalledWith(expect.stringContaining(`git tag -a v${version} -m "release v${version} for initial repo creation"`))
+      expect(execSync).toBeCalledWith(
+        expect.stringContaining(
+          `git tag -a v${version} -m "release v${version} for initial repo creation"`
+        )
+      )
     })
-    it('rejects a promise when git cli can\'t be detected.', async () => {
-      execSync.mockImplementationOnce(() => { throw new Error('git not available') })
+    it("rejects a promise when git cli can't be detected.", async () => {
+      execSync.mockImplementationOnce(() => {
+        throw new Error('git not available')
+      })
       let result = true
       await commitFirst({ version }).catch(() => {
         result = false
@@ -56,7 +74,9 @@ describe('init-git', () => {
     })
     it.skip('rejects a promise when git errors', async () => {
       canUseGit.mockImplementationOnce(() => true)
-      execSync.mockImplementationOnce(() => { throw new Error('git fails') })
+      execSync.mockImplementationOnce(() => {
+        throw new Error('git fails')
+      })
       let result = true
       await commitFirst({ version }).catch(() => {
         result = false
