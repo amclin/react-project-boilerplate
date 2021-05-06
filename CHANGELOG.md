@@ -1,3 +1,10 @@
+## [3.15.1](https://github.com/amclin/react-project-boilerplate/compare/v3.15.0...v3.15.1) (2021-05-06)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump lodash from 4.17.20 to 4.17.21 ([8be612a](https://github.com/amclin/react-project-boilerplate/commit/8be612a4cc56b4bfa2a8c1b9efa3c93807c2fb3e))
+
 # [3.15.0](https://github.com/amclin/react-project-boilerplate/compare/v3.14.5...v3.15.0) (2021-04-22)
 
 
