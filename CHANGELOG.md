@@ -1,3 +1,10 @@
+## [3.15.2](https://github.com/amclin/react-project-boilerplate/compare/v3.15.1...v3.15.2) (2021-05-07)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump hosted-git-info from 2.8.8 to 2.8.9 ([91ea707](https://github.com/amclin/react-project-boilerplate/commit/91ea707863a38e3e8fef6556ee0d4668b1b3ff32))
+
 ## [3.15.1](https://github.com/amclin/react-project-boilerplate/compare/v3.15.0...v3.15.1) (2021-05-06)
 
 
