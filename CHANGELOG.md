@@ -1,3 +1,10 @@
+## [3.15.3](https://github.com/amclin/react-project-boilerplate/compare/v3.15.2...v3.15.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump trim-newlines from 3.0.0 to 3.0.1 ([fa29626](https://github.com/amclin/react-project-boilerplate/commit/fa29626ce3dfdcf019d6da10905d69857859e90f))
+
 ## [3.15.2](https://github.com/amclin/react-project-boilerplate/compare/v3.15.1...v3.15.2) (2021-05-07)
 
 
