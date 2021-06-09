@@ -1,3 +1,10 @@
+## [3.15.4](https://github.com/amclin/react-project-boilerplate/compare/v3.15.3...v3.15.4) (2021-06-09)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump normalize-url from 4.5.0 to 4.5.1 ([55356a5](https://github.com/amclin/react-project-boilerplate/commit/55356a53129e51a8506d40436ff236efcb3eb652))
+
 ## [3.15.3](https://github.com/amclin/react-project-boilerplate/compare/v3.15.2...v3.15.3) (2021-06-08)
 
 
