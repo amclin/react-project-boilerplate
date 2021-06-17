@@ -1,3 +1,10 @@
+## [3.15.5](https://github.com/amclin/react-project-boilerplate/compare/v3.15.4...v3.15.5) (2021-06-17)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump ws from 7.4.2 to 7.5.0 ([432e532](https://github.com/amclin/react-project-boilerplate/commit/432e532505c59c72182dab44072fb67fa4c3331f))
+
 ## [3.15.4](https://github.com/amclin/react-project-boilerplate/compare/v3.15.3...v3.15.4) (2021-06-09)
 
 
