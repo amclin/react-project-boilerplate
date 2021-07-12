@@ -27,7 +27,7 @@ const createApp = async ({
   gitRemote,
   isStatic,
   noGit = false,
-  useNpm
+  useNpm,
 }) => {
   const root = path.resolve(appPath)
   const appName = path.basename(root)
@@ -90,7 +90,7 @@ const createApp = async ({
     await install({
       root,
       useYarn,
-      isOnline
+      isOnline,
     })
     log()
   } else {
@@ -103,12 +103,12 @@ const createApp = async ({
         private: true,
         repository: {
           type: 'git',
-          url: gitRemote
+          url: gitRemote,
         },
         homepage,
         bugs: {
-          url: `${homepage}/issues`
-        }
+          url: `${homepage}/issues`,
+        },
       },
       isStatic ? staticTemplateSettings.package : ssrTemplateSettings.package
     )
@@ -119,7 +119,7 @@ const createApp = async ({
     )
 
     log(`Installing runtime dependencies using ${displayedCommand}:`)
-    templateSettings.dependencies.forEach(dep => {
+    templateSettings.dependencies.forEach((dep) => {
       log(`  * ${chalk.cyan(dep)}`)
     })
     log()
@@ -128,12 +128,12 @@ const createApp = async ({
       root,
       dependencies: templateSettings.dependencies,
       useYarn,
-      isOnline
+      isOnline,
     })
     log()
 
     log(`Installing dev dependencies using ${displayedCommand}:`)
-    templateSettings.devDependencies.forEach(dep => {
+    templateSettings.devDependencies.forEach((dep) => {
       log(`  * ${chalk.cyan(dep)}`)
     })
     log()
@@ -143,7 +143,7 @@ const createApp = async ({
       dependencies: templateSettings.devDependencies,
       useYarn,
       isOnline,
-      devDependencies: true
+      devDependencies: true,
     })
     log()
 
@@ -201,18 +201,8 @@ and then run the onetime command:
   ${chalk.cyan('git push --follow-tags push')}`)
     log(`-----------------------------------------------`)
   }
-  log()
-  log(`-Dependabot------------------------------------
-Your project is prepared with Dependabot support
-for automated management of updating dependencies
-with bugfixes and security updates. To enable it,
-you need to visit:
-  ${chalk.cyan(`https://dependabot.com `)}
-and grant Dependabot access to your GitHub
-repository.`)
-  log(`-----------------------------------------------`)
 }
 
 module.exports = {
-  createApp
+  createApp,
 }
