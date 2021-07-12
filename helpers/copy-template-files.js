@@ -2,7 +2,7 @@ const cpy = require('cpy')
 const path = require('path')
 
 const copyTemplateFiles = (root, dir) =>
-  cpy(['**', '.dependabot/**', '.husky/**'], root, {
+  cpy(['**', '.husky/**'], root, {
     parents: true,
     cwd: path.join(__dirname, '..', 'templates', dir),
     rename: (name) => {
