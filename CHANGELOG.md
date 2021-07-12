@@ -1,3 +1,38 @@
+## [3.15.5](https://github.com/amclin/react-project-boilerplate/compare/v3.15.4...v3.15.5) (2021-06-17)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump ws from 7.4.2 to 7.5.0 ([432e532](https://github.com/amclin/react-project-boilerplate/commit/432e532505c59c72182dab44072fb67fa4c3331f))
+
+## [3.15.4](https://github.com/amclin/react-project-boilerplate/compare/v3.15.3...v3.15.4) (2021-06-09)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump normalize-url from 4.5.0 to 4.5.1 ([55356a5](https://github.com/amclin/react-project-boilerplate/commit/55356a53129e51a8506d40436ff236efcb3eb652))
+
+## [3.15.3](https://github.com/amclin/react-project-boilerplate/compare/v3.15.2...v3.15.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump trim-newlines from 3.0.0 to 3.0.1 ([fa29626](https://github.com/amclin/react-project-boilerplate/commit/fa29626ce3dfdcf019d6da10905d69857859e90f))
+
+## [3.15.2](https://github.com/amclin/react-project-boilerplate/compare/v3.15.1...v3.15.2) (2021-05-07)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump hosted-git-info from 2.8.8 to 2.8.9 ([91ea707](https://github.com/amclin/react-project-boilerplate/commit/91ea707863a38e3e8fef6556ee0d4668b1b3ff32))
+
+## [3.15.1](https://github.com/amclin/react-project-boilerplate/compare/v3.15.0...v3.15.1) (2021-05-06)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump lodash from 4.17.20 to 4.17.21 ([8be612a](https://github.com/amclin/react-project-boilerplate/commit/8be612a4cc56b4bfa2a8c1b9efa3c93807c2fb3e))
+
 # [3.15.0](https://github.com/amclin/react-project-boilerplate/compare/v3.14.5...v3.15.0) (2021-04-22)
 
 
