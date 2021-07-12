@@ -1,3 +1,10 @@
+## [3.17.1](https://github.com/amclin/react-project-boilerplate/compare/v3.17.0...v3.17.1) (2021-07-12)
+
+
+### Bug Fixes
+
+* **deps:** bump commander from 7.2.0 to 8.0.0 ([db5e6d9](https://github.com/amclin/react-project-boilerplate/commit/db5e6d922b80d5223795605ea4c86bd66d873ca6))
+
 # [3.17.0](https://github.com/amclin/react-project-boilerplate/compare/v3.16.0...v3.17.0) (2021-07-12)
 
 
