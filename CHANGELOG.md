@@ -1,3 +1,10 @@
+# [3.16.0](https://github.com/amclin/react-project-boilerplate/compare/v3.15.5...v3.16.0) (2021-07-12)
+
+
+### Features
+
+* **ci:** remove dependabot support in generated projects ([5239f18](https://github.com/amclin/react-project-boilerplate/commit/5239f182bc4dea124b4c5c57dae07522250a2969))
+
 ## [3.15.5](https://github.com/amclin/react-project-boilerplate/compare/v3.15.4...v3.15.5) (2021-06-17)
 
 
