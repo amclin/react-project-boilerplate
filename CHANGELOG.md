@@ -1,3 +1,10 @@
+# [3.17.0](https://github.com/amclin/react-project-boilerplate/compare/v3.16.0...v3.17.0) (2021-07-12)
+
+
+### Features
+
+* **ci:** husky 7 no longer needs a .gitignore ([f8eb368](https://github.com/amclin/react-project-boilerplate/commit/f8eb368b2a0adab808c49aacb3d58b7fbf5a2f10))
+
 # [3.16.0](https://github.com/amclin/react-project-boilerplate/compare/v3.15.5...v3.16.0) (2021-07-12)
 
 
