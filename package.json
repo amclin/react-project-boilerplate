@@ -166,7 +166,7 @@
   ],
   "dependencies": {
     "chalk": "^4.0.0",
-    "commander": "^7.0.0",
+    "commander": "^8.0.0",
     "cpy": "^8.1.0",
     "cross-spawn": "7.0.3",
     "deepmerge": "^4.1.1",
