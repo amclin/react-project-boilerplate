@@ -121,7 +121,8 @@
     ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
-    }
+    },
+    "testEnvironment": "jsdom"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
