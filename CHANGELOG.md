@@ -1,3 +1,23 @@
+## [3.17.2](https://github.com/amclin/react-project-boilerplate/compare/v3.17.1...v3.17.2) (2021-10-14)
+
+
+### Bug Fixes
+
+* **deps:** bump chalk from 4.1.1 to 4.1.2 ([25e0d5e](https://github.com/amclin/react-project-boilerplate/commit/25e0d5e56688809f18faee07c6f5118fc4e4a8a2))
+* **deps:** bump commander from 8.0.0 to 8.1.0 ([2b1895a](https://github.com/amclin/react-project-boilerplate/commit/2b1895ad44ed93583b497a1be63d8b1431e340fc))
+* **deps:** bump commander from 8.1.0 to 8.2.0 ([7674500](https://github.com/amclin/react-project-boilerplate/commit/7674500fd18705032afb1945669c64d17f47dc80))
+* **deps:** bump path-parse from 1.0.6 to 1.0.7 ([74097a6](https://github.com/amclin/react-project-boilerplate/commit/74097a6417d0a010293425273c509fe70a728a4f))
+* **deps:** bump prompts from 2.4.1 to 2.4.2 ([3b53b5e](https://github.com/amclin/react-project-boilerplate/commit/3b53b5e85ddf30658134b8dc72c44f968f31509f))
+* **deps:** bump tar from 6.1.0 to 6.1.1 ([b992f8d](https://github.com/amclin/react-project-boilerplate/commit/b992f8d96445e383053f7ae8149df96909136610))
+* **deps:** bump tar from 6.1.1 to 6.1.2 ([58c6482](https://github.com/amclin/react-project-boilerplate/commit/58c6482b9fb9847b2260f470c2fc54aa64d18b1b))
+* **deps:** bump tar from 6.1.10 to 6.1.11 ([29a61a3](https://github.com/amclin/react-project-boilerplate/commit/29a61a3722af7b7c7157c070b0238cf887bb1654))
+* **deps:** bump tar from 6.1.2 to 6.1.3 ([c8c2b64](https://github.com/amclin/react-project-boilerplate/commit/c8c2b64eee55e525f7e28166c8b6e9469c3ef346))
+* **deps:** bump tar from 6.1.3 to 6.1.6 ([85a8e63](https://github.com/amclin/react-project-boilerplate/commit/85a8e63b59c5b8341d92799f22562902a9797803))
+* **deps:** bump tar from 6.1.6 to 6.1.7 ([957ef68](https://github.com/amclin/react-project-boilerplate/commit/957ef680e6cc2080afb20b2ca4630b65ddd923e4))
+* **deps:** bump tar from 6.1.7 to 6.1.8 ([d49ab0b](https://github.com/amclin/react-project-boilerplate/commit/d49ab0bfa19852cc5a91a2c869316e918ce03e65))
+* **deps:** bump tar from 6.1.8 to 6.1.10 ([7fbe3bc](https://github.com/amclin/react-project-boilerplate/commit/7fbe3bcf2c7cff602b00de89de59eec319712202))
+* **deps:** bump tmpl from 1.0.4 to 1.0.5 ([67e8558](https://github.com/amclin/react-project-boilerplate/commit/67e8558090dbad005d04a96f35f21f8db10bbf62))
+
 ## [3.17.1](https://github.com/amclin/react-project-boilerplate/compare/v3.17.0...v3.17.1) (2021-07-12)
 
 
