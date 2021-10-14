@@ -34,7 +34,7 @@ describe('populate-project', () => {
     if (!fs.existsSync(tmpDir)) {
       fs.mkdirSync(tmpDir)
     }
-    fs.writeFileSync(tmpFile, mockMd, e => {
+    fs.writeFileSync(tmpFile, mockMd, (e) => {
       error(e)
       expect(true).toEqual(false) // Force test failure
     })
@@ -44,10 +44,10 @@ describe('populate-project', () => {
       appName: 'mockAppName',
       homepage: 'http://example.com/mockHomepage',
       year: '2000',
-      author: 'Lorem Ipsum'
+      author: 'Lorem Ipsum',
     })
     // load replacement
-    const result = fs.readFileSync(tmpFile, 'utf8', e => {
+    const result = fs.readFileSync(tmpFile, 'utf8', (e) => {
       expect(true).toEqual(false) // Force test failure
       error(e)
     })
@@ -56,5 +56,5 @@ describe('populate-project', () => {
     expect(result.includes('http://example.com/mockHomepage'))
   })
 
-  it.skip('logs an error when it cannot replace variables', {})
+  it.skip('logs an error when it cannot replace variables', () => {})
 })
