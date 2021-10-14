@@ -1,3 +1,15 @@
+# [3.18.0](https://github.com/amclin/react-project-boilerplate/compare/v3.17.2...v3.18.0) (2021-10-14)
+
+
+### Bug Fixes
+
+* **tests:** remove obsolete command causing linting to fail ([ec732f8](https://github.com/amclin/react-project-boilerplate/commit/ec732f81609d7d9b32a1c90ac0c008f0816737cd))
+
+
+### Features
+
+* **tests:** support Jest v27 ([79722be](https://github.com/amclin/react-project-boilerplate/commit/79722be404440dec62385c1288630cf26af68cfe))
+
 ## [3.17.2](https://github.com/amclin/react-project-boilerplate/compare/v3.17.1...v3.17.2) (2021-10-14)
 
 
