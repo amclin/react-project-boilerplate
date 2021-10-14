@@ -99,7 +99,7 @@
     },
     "lint-staged": {
       "**/*.{js,jsx,ts,tsx}": ["eslint"],
-      "**/*": ["pretty-quick — staged", "git add"]
+      "**/*": ["pretty-quick — staged"]
     },
     "prettier": {
       "tabWidth": 2,

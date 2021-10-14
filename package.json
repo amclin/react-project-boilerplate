@@ -129,8 +129,7 @@
       "eslint"
     ],
     "**/*": [
-      "pretty-quick — staged",
-      "git add"
+      "pretty-quick — staged"
     ]
   },
   "prettier": {
