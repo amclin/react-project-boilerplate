@@ -1,3 +1,26 @@
+# [4.0.0](https://github.com/amclin/react-project-boilerplate/compare/v3.18.0...v4.0.0) (2021-10-28)
+
+
+### Bug Fixes
+
+* **deps:** bump commander from 8.2.0 to 8.3.0 ([34f3b33](https://github.com/amclin/react-project-boilerplate/commit/34f3b33b3ce2cbd67f1566fbad5a195864111bec))
+* **deps:** bump replace-in-file from 6.2.0 to 6.3.1 ([a07b583](https://github.com/amclin/react-project-boilerplate/commit/a07b58345d736866eb39f75c802c398a011f357a))
+* **deps:** bump replace-in-file from 6.3.1 to 6.3.2 ([61582a5](https://github.com/amclin/react-project-boilerplate/commit/61582a5b35a36e62f0a5a1e308d2ae46ecf9a0d5))
+
+
+### Features
+
+* add support for Node 16 ([8dffa98](https://github.com/amclin/react-project-boilerplate/commit/8dffa988f204b0aecb8c49c51eec71f966973022))
+* bump to NextJS 12 ([f309b69](https://github.com/amclin/react-project-boilerplate/commit/f309b692437fc389632492b31558fee4c8fea65e))
+
+
+### BREAKING CHANGES
+
+* drop support for Node 12
+* drops support for Node < 14.17
+
+Now requires Node 14.17 or later
+
 # [3.18.0](https://github.com/amclin/react-project-boilerplate/compare/v3.17.2...v3.18.0) (2021-10-14)
 
 ### Bug Fixes
