@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/amclin/react-project-boilerplate/compare/v4.0.0...v4.0.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 11.8.2 to 11.8.3 ([8b0169e](https://github.com/amclin/react-project-boilerplate/commit/8b0169eb523d444ef7be400475373b3867c1c4b8))
+
 # [4.0.0](https://github.com/amclin/react-project-boilerplate/compare/v3.18.0...v4.0.0) (2021-10-28)
 
 
