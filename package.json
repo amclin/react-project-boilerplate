@@ -171,7 +171,7 @@
     "cross-spawn": "7.0.3",
     "deepmerge": "^4.1.1",
     "git-user-name": "^2.0.0",
-    "got": "^11.1.2",
+    "got": "^12.0.0",
     "make-dir": "^3.1.0",
     "promisepipe": "^3.0.0",
     "prompts": "^2.3.2",
