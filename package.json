@@ -35,7 +35,7 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-angular": "^14.1.0",
+    "@commitlint/config-angular": "^16.2.4",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/commit-analyzer": "^9.0.1",
     "@semantic-release/git": "^10.0.0",
