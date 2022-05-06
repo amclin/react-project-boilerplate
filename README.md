@@ -1,3 +1,6 @@
+# THIS PROJECT IS ARCHIVED AND NO LONGER SUPPORTED #
+It is a good reference for how to build a generator for new NextJS projects. But it is out of date with an older version of NextJS and various dependencies. Please see the reference implementations that NextJS provides for more modern solutions.
+
 [![npm version](https://badge.fury.io/js/create-amclin-nextjs-app.svg)](https://www.npmjs.com/create-amclin-nextjs-app)
 ![Build Status](https://github.com/amclin/react-project-boilerplate/workflows/Run%20Tests/badge.svg)
 
